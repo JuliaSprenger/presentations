@@ -1,0 +1,19 @@
+\frametitle{Slide Number Display}
+	\framesubtitle{How to change the slide number style}
+	\begin{block}{Full Display: Current Slide | Overall Number of Slides}
+		\scriptsize\verb+\setbeamertemplate{frame number}[full]+ \hfill
+		\scriptsize\usebeamercolor[fg]{frametitle} Slide 42 $|$ 524
+	\end{block}
+	\begin{block}{No Display: empty}
+		\scriptsize\verb+\setbeamertemplate{frame number}[empty]+ \hfill
+		\scriptsize\usebeamercolor[fg]{frametitle}
+	\end{block}
+	\begin{block}{Default Display: Current Slide}
+		\scriptsize\verb+\setbeamertemplate{frame number}[default]+ \hfill
+		\scriptsize\usebeamercolor[fg]{frametitle} Slide 42
+	\end{block}
+	\begin{block}{Translation}
+	If you choose german as language the name \emph{Slide} will be translated
+	to \emph{Folie} automatically (See \hyperlink{translation}{\alert{this}}
+	slide)
+	\end{block}

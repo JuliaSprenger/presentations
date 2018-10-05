@@ -1,0 +1,15 @@
+\frametitle{Localization/Language}
+	\framesubtitle{Change Helmholtz Banner Text}
+	Using the \texttt{babel} package with the language option automatically sets
+	the correct labels for the slide counter and Helmholtz banner.
+	
+	\begin{block}{Helmholtz Banner and Date in German}
+	\begin{itemize}
+	  \item Take a look at the date and Helmholtz banner in the lower left
+	  corner and the slide name adn frame number in the middle
+	  \item This slide should show the german version
+	  \item Enable options via \verb+\documentclass[english,ngerman]{beamer}+
+	  \item Enabled locally via \verb+\selectlanguage{ngerman}+ before
+	  \verb+\begin{frame}+
+	\end{itemize}
+	\end{block}

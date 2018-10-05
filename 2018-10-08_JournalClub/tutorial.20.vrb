@@ -1,0 +1,18 @@
+\frametitle{Localization}
+	\framesubtitle{How to change the date display to another language}
+	The date will be adjusted automatically. You just have to use the {\tt babel}
+	package with the desired language.
+	\begin{block}{Date style -- Mixed}
+		load package with DE and EN (default): \hfill \verb+\usepackage[ngerman,english]{babel}+ \newline
+		choose German: \hfill \verb+\selectlanguage{ngerman}+ \newline
+		choose English: \hfill \verb+\selectlanguage{english}+
+	\end{block}	
+	\begin{block}{Date style -- German}
+		01. Januar 2018 \hfill
+		\verb+\selectlanguage{ngerman}+
+	\end{block}
+	\begin{block}{Date style -- English}
+		January 01, 2018 \hfill
+		\verb+\selectlanguage{english}+
+	\end{block}
+

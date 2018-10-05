@@ -1,0 +1,18 @@
+\frametitle{Create Handouts}
+	\begin{block}{Switch and Setup Render Mode}
+     \scriptsize
+     		\verb+\documentclass[handout]{beamer}+\\
+			\verb+\mode<handout>{+\\
+			\verb+\pgfpagesuselayout{4 on 1}[a4paper,landscape,border shrink=5mm]}+
+    \end{block}
+	\begin{block}{Define Number of Pages per Sheet}
+    	\scriptsize
+    	\verb+\pgfpagesuselayout{2 on 1}[a4paper,border shrink=5mm]+
+    	\verb+\pgfpagesuselayout{4 on 1}[a4paper,landscape,border shrink=5mm, landscape]+
+    	\verb+\pgfpagesuselayout{8 on 1}[a4paper,border shrink=5mm]+
+    	\verb+\pgfpagesuselayout{16 on 1}[a4paper,landscape,border shrink=5mm, landscape]+
+    \end{block}
+	\begin{block}{Further Reading -- See {\tt Latex-Beamer} manual for details}
+    	{\tiny
+    	{\tt www.ctan.org/tex-archive/macros/latex/contrib/beamer/doc/beameruserguide.pdf}}
+    \end{block}

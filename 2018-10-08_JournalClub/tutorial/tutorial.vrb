@@ -1,0 +1,7 @@
+\frametitle{Poster with \LaTeX -Beamer}
+	To create scientific posters with {\LaTeX} the \verb!beamerposter! extension
+	can be used. Template will be provided soon.
+	\begin{block}{More Information at}
+    \small
+    \url{http://www-i6.informatik.rwth-aachen.de/~dreuw/latexbeamerposter.php}
+    \end{block}
