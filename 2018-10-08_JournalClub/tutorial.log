@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2018.8.30)  6 OCT 2018 21:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2018.8.30)  7 OCT 2018 23:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -968,59 +968,67 @@ Package: inputenc 2018/04/06 v1.3b Input encoding file
 \inpenc@prehook=\toks48
 \inpenc@posthook=\toks49
 )
+(/usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen262
+\WF@size=\dimen263
+\c@WF@wrappedlines=\count171
+\WF@box=\box58
+\WF@everypar=\toks50
+Package: wrapfig 2003/01/31  v 3.6
+)
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\vrule' on input line 16.
+(hyperref)                removing `\vrule' on input line 18.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\beamerfzj@titleformatcaps' on input line 2
-1.
+3.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\new@ifnextchar' on input line 21.
+(hyperref)                removing `\new@ifnextchar' on input line 23.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\emptydummya' on input line 21.
+(hyperref)                removing `\emptydummya' on input line 23.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\emptydummya' on input line 21.
+(hyperref)                removing `\emptydummya' on input line 23.
 
 (./tutorial.aux)
 \openout1 = `tutorial.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 21.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 23.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 23.
  (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    ... okay on input line 23.
 LaTeX Font Info:    Try loading font information for OT1+Carlito-LF on input li
-ne 21.
+ne 23.
 
 (/usr/share/texlive/texmf-dist/tex/latex/carlito/OT1Carlito-LF.fd
 File: OT1Carlito-LF.fd 2014/08/20 (autoinst) Font definitions for OT1/Carlito-L
 F.
 )
 LaTeX Font Info:    Font shape `OT1/Carlito-LF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 21.
+(Font)              scaled to size 10.0pt on input line 23.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1058,17 +1066,17 @@ LaTeX Font Info:    Font shape `OT1/Carlito-LF/m/n' will be
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count171
-\scratchdimen=\dimen262
-\scratchbox=\box58
-\nofMPsegments=\count172
-\nofMParguments=\count173
-\everyMPshowfont=\toks50
-\MPscratchCnt=\count174
-\MPscratchDim=\dimen263
-\MPnumerator=\count175
-\makeMPintoPDFobject=\count176
-\everyMPtoPDFconversion=\toks51
+\scratchcounter=\count172
+\scratchdimen=\dimen264
+\scratchbox=\box59
+\nofMPsegments=\count173
+\nofMParguments=\count174
+\everyMPshowfont=\toks51
+\MPscratchCnt=\count175
+\MPscratchDim=\dimen265
+\MPnumerator=\count176
+\makeMPintoPDFobject=\count177
+\everyMPtoPDFconversion=\toks52
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -1087,8 +1095,8 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box59
-Package hyperref Info: Link coloring OFF on input line 21.
+\AtBeginShipoutBox=\box60
+Package hyperref Info: Link coloring OFF on input line 23.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1096,64 +1104,64 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count177
+\c@section@level=\count178
 )
-LaTeX Info: Redefining \ref on input line 21.
-LaTeX Info: Redefining \pageref on input line 21.
-LaTeX Info: Redefining \nameref on input line 21.
+LaTeX Info: Redefining \ref on input line 23.
+LaTeX Info: Redefining \pageref on input line 23.
+LaTeX Info: Redefining \nameref on input line 23.
 
 (./tutorial.out) (./tutorial.out)
 \@outlinefile=\write5
 \openout5 = `tutorial.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 21.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 23.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 21.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 23.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 21.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 21.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 23.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 23.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/Carlito-LF/bx/n on input line 21.
+(Font)                  OT1/cmr/bx/n --> OT1/Carlito-LF/bx/n on input line 23.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/Carlito-LF/bx/n on input line 21.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 21.
+(Font)                  OT1/cmr/bx/n --> OT1/Carlito-LF/bx/n on input line 23.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 23.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/Carlito-LF/m/n on input line 21.
+(Font)                  OT1/cmss/m/n --> OT1/Carlito-LF/m/n on input line 23.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/Carlito-LF/m/n on input line 21.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 21.
+(Font)                  OT1/cmss/bx/n --> OT1/Carlito-LF/m/n on input line 23.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 23.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/Carlito-LF/m/it on input line 21.
+(Font)                  OT1/cmr/m/it --> OT1/Carlito-LF/m/it on input line 23.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/Carlito-LF/m/it on input line 21.
+(Font)                  OT1/cmr/bx/it --> OT1/Carlito-LF/m/it on input line 23.
 
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 21.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 23.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 21.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 23.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 21.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 23.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
 (Font)                  OT1/Carlito-LF/m/n --> OT1/Carlito-LF/bx/n on input lin
-e 21.
+e 23.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/Carlito-LF/m/it --> OT1/Carlito-LF/bx/it on input l
-ine 21.
+ine 23.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 21.
+(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 23.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
 (Font)                  OT1/Carlito-LF/bx/n --> OT1/Carlito-LF/bx/n on input li
-ne 21.
+ne 23.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
 (Font)                  OT1/Carlito-LF/m/n --> OT1/Carlito-LF/bx/n on input lin
-e 21.
+e 23.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/Carlito-LF/m/it --> OT1/Carlito-LF/bx/it on input l
-ine 21.
+ine 23.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 21.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 23.
 
 (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-basic-dictionary
 -English.dict
@@ -1203,9 +1211,9 @@ Dictionary: translator-theorem-dictionary, Language: English
 ry-German.dict
 Dictionary: translator-theorem-dictionary, Language: German 
 )
-\c@mv@tabular=\count178
-\c@mv@boldtabular=\count179
-LaTeX Info: Redefining \microtypecontext on input line 21.
+\c@mv@tabular=\count179
+\c@mv@boldtabular=\count180
+LaTeX Info: Redefining \microtypecontext on input line 23.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1221,25 +1229,25 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
  (./tutorial.nav)
 LaTeX Font Info:    Font shape `OT1/Carlito-LF/m/n' will be
-(Font)              scaled to size 5.0pt on input line 21.
+(Font)              scaled to size 5.0pt on input line 23.
 LaTeX Font Info:    Font shape `OT1/Carlito-LF/m/n' will be
-(Font)              scaled to size 4.5pt on input line 21.
+(Font)              scaled to size 4.5pt on input line 23.
 <fzj.pdf, id=17, 158.83897pt x 75.69513pt>
 File: fzj.pdf Graphic file (type pdf)
 <use fzj.pdf>
-Package pdftex.def Info: fzj.pdf  used on input line 21.
+Package pdftex.def Info: fzj.pdf  used on input line 23.
 (pdftex.def)             Requested size: 79.41928pt x 37.84746pt.
 LaTeX Font Info:    Font shape `OT1/Carlito-LF/bx/n' in size <16> not available
 
 (Font)              Font shape `OT1/Carlito-LF/b/n' tried instead on input line
- 24.
+ 26.
 LaTeX Font Info:    Font shape `OT1/Carlito-LF/b/n' will be
-(Font)              scaled to size 16.0pt on input line 24.
-LaTeX Font Info:    Calculating math sizes for size <16> on input line 24.
+(Font)              scaled to size 16.0pt on input line 26.
+LaTeX Font Info:    Calculating math sizes for size <16> on input line 26.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <16> not available
-(Font)              size <17.28> substituted on input line 24.
+(Font)              size <17.28> substituted on input line 26.
 
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmss' (encoding: OT1).
@@ -1247,20 +1255,20 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <16> not available
-(Font)              size <17.28> substituted on input line 24.
+(Font)              size <17.28> substituted on input line 26.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <16> not available
-(Font)              size <17.28> substituted on input line 24.
+(Font)              size <17.28> substituted on input line 26.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 24.
+LaTeX Font Info:    Try loading font information for U+msa on input line 26.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 24.
+LaTeX Font Info:    Try loading font information for U+msb on input line 26.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1269,21 +1277,21 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Font shape `OT1/Carlito-LF/m/n' will be
-(Font)              scaled to size 16.0pt on input line 24.
+(Font)              scaled to size 16.0pt on input line 26.
 LaTeX Font Info:    Font shape `OT1/Carlito-LF/m/n' will be
-(Font)              scaled to size 11.19995pt on input line 24.
+(Font)              scaled to size 11.19995pt on input line 26.
 LaTeX Font Info:    Font shape `OT1/Carlito-LF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 24.
+(Font)              scaled to size 8.0pt on input line 26.
 LaTeX Font Info:    Font shape `OT1/Carlito-LF/m/it' will be
-(Font)              scaled to size 16.0pt on input line 24.
+(Font)              scaled to size 16.0pt on input line 26.
 LaTeX Font Info:    Font shape `OT1/Carlito-LF/m/it' will be
-(Font)              scaled to size 11.19995pt on input line 24.
+(Font)              scaled to size 11.19995pt on input line 26.
 LaTeX Font Info:    Font shape `OT1/Carlito-LF/m/it' will be
-(Font)              scaled to size 8.0pt on input line 24.
+(Font)              scaled to size 8.0pt on input line 26.
 <material/drawing.pdf, id=18, 448.99887pt x 477.49826pt>
 File: material/drawing.pdf Graphic file (type pdf)
 <use material/drawing.pdf>
-Package pdftex.def Info: material/drawing.pdf  used on input line 24.
+Package pdftex.def Info: material/drawing.pdf  used on input line 26.
 (pdftex.def)             Requested size: 214.03716pt x 227.62291pt.
 
 Overfull \hbox (14.22546pt too wide) has occurred while \output is active
@@ -1296,10 +1304,10 @@ Overfull \hbox (28.45273pt too wide) has occurred while \output is active
  []
 
 LaTeX Font Info:    Font shape `OT1/Carlito-LF/m/n' will be
-(Font)              scaled to size 4.0pt on input line 24.
+(Font)              scaled to size 4.0pt on input line 26.
 File: fzj.pdf Graphic file (type pdf)
 <use fzj.pdf>
-Package pdftex.def Info: fzj.pdf  used on input line 24.
+Package pdftex.def Info: fzj.pdf  used on input line 26.
 (pdftex.def)             Requested size: 79.41928pt x 37.84746pt.
 [1
 
@@ -1310,19 +1318,19 @@ pdfTeX warning: /usr/bin/pdflatex (file ./fzj.pdf): PDF inclusion: multiple pdf
 s with page group included in a single page
 >]
 LaTeX Font Info:    Font shape `OT1/Carlito-LF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 62.
+(Font)              scaled to size 9.0pt on input line 64.
 LaTeX Font Info:    Font shape `OT1/Carlito-LF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 62.
+(Font)              scaled to size 7.0pt on input line 64.
 LaTeX Font Info:    Font shape `OT1/Carlito-LF/m/it' will be
-(Font)              scaled to size 10.0pt on input line 62.
+(Font)              scaled to size 10.0pt on input line 64.
 LaTeX Font Info:    Font shape `OT1/Carlito-LF/m/it' will be
-(Font)              scaled to size 7.0pt on input line 62.
+(Font)              scaled to size 7.0pt on input line 64.
 LaTeX Font Info:    Font shape `OT1/Carlito-LF/m/it' will be
-(Font)              scaled to size 5.0pt on input line 62.
+(Font)              scaled to size 5.0pt on input line 64.
 LaTeX Font Info:    Font shape `OT1/Carlito-LF/m/n' will be
-(Font)              scaled to size 6.0pt on input line 62.
+(Font)              scaled to size 6.0pt on input line 64.
 LaTeX Font Info:    Font shape `OT1/Carlito-LF/m/it' will be
-(Font)              scaled to size 6.0pt on input line 62.
+(Font)              scaled to size 6.0pt on input line 64.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
@@ -1330,40 +1338,40 @@ Package microtype Info: Loading generic protrusion settings for font family
 LaTeX Font Info:    Font shape `OT1/Carlito-LF/bx/n' in size <10> not available
 
 (Font)              Font shape `OT1/Carlito-LF/b/n' tried instead on input line
- 62.
+ 64.
 LaTeX Font Info:    Font shape `OT1/Carlito-LF/b/n' will be
-(Font)              scaled to size 10.0pt on input line 62.
+(Font)              scaled to size 10.0pt on input line 64.
 File: fzj.pdf Graphic file (type pdf)
 <use fzj.pdf>
-Package pdftex.def Info: fzj.pdf  used on input line 62.
+Package pdftex.def Info: fzj.pdf  used on input line 64.
 (pdftex.def)             Requested size: 79.41928pt x 37.84746pt.
  [2
 
 ]
 File: fzj.pdf Graphic file (type pdf)
 <use fzj.pdf>
-Package pdftex.def Info: fzj.pdf  used on input line 62.
+Package pdftex.def Info: fzj.pdf  used on input line 64.
 (pdftex.def)             Requested size: 79.41928pt x 37.84746pt.
  [3
 
 ]
 File: fzj.pdf Graphic file (type pdf)
 <use fzj.pdf>
-Package pdftex.def Info: fzj.pdf  used on input line 62.
+Package pdftex.def Info: fzj.pdf  used on input line 64.
 (pdftex.def)             Requested size: 79.41928pt x 37.84746pt.
  [4
 
 ]
 File: fzj.pdf Graphic file (type pdf)
 <use fzj.pdf>
-Package pdftex.def Info: fzj.pdf  used on input line 62.
+Package pdftex.def Info: fzj.pdf  used on input line 64.
 (pdftex.def)             Requested size: 79.41928pt x 37.84746pt.
  [5
 
 ]
 File: fzj.pdf Graphic file (type pdf)
 <use fzj.pdf>
-Package pdftex.def Info: fzj.pdf  used on input line 78.
+Package pdftex.def Info: fzj.pdf  used on input line 80.
 (pdftex.def)             Requested size: 79.41928pt x 37.84746pt.
  [6
 
@@ -1371,39 +1379,39 @@ Package pdftex.def Info: fzj.pdf  used on input line 78.
 <figures/figure1.png, id=87, 1887.05pt x 1032.85875pt>
 File: figures/figure1.png Graphic file (type png)
 <use figures/figure1.png>
-Package pdftex.def Info: figures/figure1.png  used on input line 90.
+Package pdftex.def Info: figures/figure1.png  used on input line 92.
 (pdftex.def)             Requested size: 351.57507pt x 192.43094pt.
 File: fzj.pdf Graphic file (type pdf)
 <use fzj.pdf>
-Package pdftex.def Info: fzj.pdf  used on input line 90.
+Package pdftex.def Info: fzj.pdf  used on input line 92.
 (pdftex.def)             Requested size: 79.41928pt x 37.84746pt.
  [7
 
  <./figures/figure1.png>]
 File: fzj.pdf Graphic file (type pdf)
 <use fzj.pdf>
-Package pdftex.def Info: fzj.pdf  used on input line 98.
+Package pdftex.def Info: fzj.pdf  used on input line 100.
 (pdftex.def)             Requested size: 79.41928pt x 37.84746pt.
  [8
 
 ]
 File: fzj.pdf Graphic file (type pdf)
 <use fzj.pdf>
-Package pdftex.def Info: fzj.pdf  used on input line 125.
+Package pdftex.def Info: fzj.pdf  used on input line 127.
 (pdftex.def)             Requested size: 79.41928pt x 37.84746pt.
  [9
 
 ]
 File: fzj.pdf Graphic file (type pdf)
 <use fzj.pdf>
-Package pdftex.def Info: fzj.pdf  used on input line 125.
+Package pdftex.def Info: fzj.pdf  used on input line 127.
 (pdftex.def)             Requested size: 79.41928pt x 37.84746pt.
  [10
 
 ]
 File: fzj.pdf Graphic file (type pdf)
 <use fzj.pdf>
-Package pdftex.def Info: fzj.pdf  used on input line 125.
+Package pdftex.def Info: fzj.pdf  used on input line 127.
 (pdftex.def)             Requested size: 79.41928pt x 37.84746pt.
  [11
 
@@ -1411,58 +1419,107 @@ Package pdftex.def Info: fzj.pdf  used on input line 125.
 <figures/figure2.png, id=123, 1106.1325pt x 691.58376pt>
 File: figures/figure2.png Graphic file (type png)
 <use figures/figure2.png>
-Package pdftex.def Info: figures/figure2.png  used on input line 132.
+Package pdftex.def Info: figures/figure2.png  used on input line 134.
 (pdftex.def)             Requested size: 307.774pt x 192.43094pt.
 File: fzj.pdf Graphic file (type pdf)
 <use fzj.pdf>
-Package pdftex.def Info: fzj.pdf  used on input line 132.
+Package pdftex.def Info: fzj.pdf  used on input line 134.
 (pdftex.def)             Requested size: 79.41928pt x 37.84746pt.
  [12
 
  <./figures/figure2.png>]
 File: fzj.pdf Graphic file (type pdf)
 <use fzj.pdf>
-Package pdftex.def Info: fzj.pdf  used on input line 155.
+Package pdftex.def Info: fzj.pdf  used on input line 157.
 (pdftex.def)             Requested size: 79.41928pt x 37.84746pt.
  [13
 
 ]
+LaTeX Font Info:    Try loading font information for TS1+Carlito-LF on input li
+ne 194.
+
+(/usr/share/texlive/texmf-dist/tex/latex/carlito/TS1Carlito-LF.fd
+File: TS1Carlito-LF.fd 2014/08/20 (autoinst) Font definitions for TS1/Carlito-L
+F.
+)
+LaTeX Font Info:    Font shape `TS1/Carlito-LF/m/n' will be
+(Font)              scaled to size 9.0pt on input line 194.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `Carlito-LF' (encoding: TS1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Font shape `OT1/Carlito-LF/m/it' will be
+(Font)              scaled to size 9.0pt on input line 194.
+
+Overfull \vbox (8.45964pt too high) detected at line 194
+ []
+
 File: fzj.pdf Graphic file (type pdf)
 <use fzj.pdf>
-Package pdftex.def Info: fzj.pdf  used on input line 164.
+Package pdftex.def Info: fzj.pdf  used on input line 194.
 (pdftex.def)             Requested size: 79.41928pt x 37.84746pt.
- [14
+[14
 
 ]
 File: fzj.pdf Graphic file (type pdf)
 <use fzj.pdf>
-Package pdftex.def Info: fzj.pdf  used on input line 176.
+Package pdftex.def Info: fzj.pdf  used on input line 205.
 (pdftex.def)             Requested size: 79.41928pt x 37.84746pt.
  [15
 
 ]
-<figures/figure3.png, id=146, 1346.02875pt x 882.29625pt>
-File: figures/figure3.png Graphic file (type png)
-<use figures/figure3.png>
-Package pdftex.def Info: figures/figure3.png  used on input line 184.
-(pdftex.def)             Requested size: 293.55989pt x 192.43094pt.
 File: fzj.pdf Graphic file (type pdf)
 <use fzj.pdf>
-Package pdftex.def Info: fzj.pdf  used on input line 184.
+Package pdftex.def Info: fzj.pdf  used on input line 210.
 (pdftex.def)             Requested size: 79.41928pt x 37.84746pt.
  [16
 
- <./figures/figure3.png>]
-<figures/figure4.png, id=154, 729.72626pt x 718.685pt>
-File: figures/figure4.png Graphic file (type png)
-<use figures/figure4.png>
-Package pdftex.def Info: figures/figure4.png  used on input line 190.
-(pdftex.def)             Requested size: 195.38078pt x 192.43094pt.
+]
+<figures/figure3.png, id=154, 1346.02875pt x 882.29625pt>
+File: figures/figure3.png Graphic file (type png)
+<use figures/figure3.png>
+Package pdftex.def Info: figures/figure3.png  used on input line 216.
+(pdftex.def)             Requested size: 293.55989pt x 192.43094pt.
 File: fzj.pdf Graphic file (type pdf)
 <use fzj.pdf>
-Package pdftex.def Info: fzj.pdf  used on input line 190.
+Package pdftex.def Info: fzj.pdf  used on input line 216.
 (pdftex.def)             Requested size: 79.41928pt x 37.84746pt.
  [17
+
+ <./figures/figure3.png>]
+File: fzj.pdf Graphic file (type pdf)
+<use fzj.pdf>
+Package pdftex.def Info: fzj.pdf  used on input line 252.
+(pdftex.def)             Requested size: 79.41928pt x 37.84746pt.
+ [18
+
+]
+File: fzj.pdf Graphic file (type pdf)
+<use fzj.pdf>
+Package pdftex.def Info: fzj.pdf  used on input line 275.
+(pdftex.def)             Requested size: 79.41928pt x 37.84746pt.
+ [19
+
+]
+LaTeX Font Info:    Font shape `TS1/Carlito-LF/m/n' will be
+(Font)              scaled to size 10.0pt on input line 301.
+File: fzj.pdf Graphic file (type pdf)
+<use fzj.pdf>
+Package pdftex.def Info: fzj.pdf  used on input line 301.
+(pdftex.def)             Requested size: 79.41928pt x 37.84746pt.
+ [20
+
+]
+<figures/figure4.png, id=177, 729.72626pt x 718.685pt>
+File: figures/figure4.png Graphic file (type png)
+<use figures/figure4.png>
+Package pdftex.def Info: figures/figure4.png  used on input line 339.
+(pdftex.def)             Requested size: 170.71393pt x 168.12335pt.
+File: fzj.pdf Graphic file (type pdf)
+<use fzj.pdf>
+Package pdftex.def Info: fzj.pdf  used on input line 339.
+(pdftex.def)             Requested size: 79.41928pt x 37.84746pt.
+ [21
 
  <./figures/figure4.png>]
 \tf@nav=\write6
@@ -1474,11 +1531,11 @@ Package pdftex.def Info: fzj.pdf  used on input line 190.
 \tf@snm=\write8
 \openout8 = `tutorial.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 773.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 773.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 342.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 342.
  (./tutorial.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 773.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 773.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 342.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 342.
 Package rerunfilecheck Info: File `tutorial.out' has not changed.
 (rerunfilecheck)             Checksum: 575C3E0F9696FA07894087047B0F4CAB;45.
 
@@ -1488,21 +1545,23 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 23649 strings out of 492648
- 457729 string characters out of 6132015
- 566351 words of memory out of 5000000
- 26910 multiletter control sequences out of 15000+600000
- 73084 words of font info for 82 fonts, out of 8000000 for 9000
+ 23802 strings out of 492648
+ 460606 string characters out of 6132015
+ 570585 words of memory out of 5000000
+ 27032 multiletter control sequences out of 15000+600000
+ 79123 words of font info for 93 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  64i,18n,114p,1818b,1206s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/carlito/crlt_cegsyz.enc}</usr/
-share/texlive/texmf-dist/fonts/type1/typoland/carlito/Carlito-Bold.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/typoland/carlito/Carlito.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on tutorial.pdf (17 pages, 2135226 bytes).
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/carlito/crlt_cegsyz.enc}{/usr/
+share/texlive/texmf-dist/fonts/enc/dvips/carlito/crlt_llspvt.enc}</usr/share/te
+xlive/texmf-dist/fonts/type1/typoland/carlito/Carlito-Bold.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/typoland/carlito/Carlito-Italic.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/typoland/carlito/Carlito.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
+Output written on tutorial.pdf (21 pages, 2161921 bytes).
 PDF statistics:
- 187 PDF objects out of 1000 (max. 8388607)
- 137 compressed objects within 2 object streams
- 45 named destinations out of 1000 (max. 500000)
- 22097 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 216 PDF objects out of 1000 (max. 8388607)
+ 161 compressed objects within 2 object streams
+ 53 named destinations out of 1000 (max. 500000)
+ 25169 words of extra memory for PDF output out of 29859 (max. 10000000)
 
