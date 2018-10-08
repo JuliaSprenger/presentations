@@ -72,9 +72,15 @@ english,
      \begin{itemize}
         \item EEG (1875)
         \item MEG (1968)
-        \item PET (1950s)
+        \item PET (1961)
         \item fMRI (1990)
      \end{itemize}
+    \end{itemize}
+    \vfill
+    \textbf{Advances in Cognitive Neuroscience}
+    \begin{itemize}
+     \item face-selective regions in human
+     \item spacial clustering of face neurons in non-human primates
     \end{itemize}
 
 \end{frame}
@@ -90,15 +96,6 @@ english,
     \end{itemize}
 
 \end{frame}
-
-\begin{frame}
-    \frametitle{Advances in Cognitive Science}
-    \begin{itemize}
-     \item face-selective regions in human
-     \item spacial clustering of face neurons in non-human primates
-    \end{itemize}
-\end{frame}
-
 
 \begin{frame}[label=Approaches]
 	\frametitle{Different Approaches}
@@ -145,20 +142,26 @@ english,
     \begin{itemize}
      \item bottom-up approach
      \item mathematical models of elementary computational components and their implementation with biological neurons
+     \begin{itemize}
+      \item sensory coding, normalization, working memory, evidence accumulation and decision mechanisms, and motor control
+     \end{itemize}
+
     \end{itemize}
     Artificial Intelligence
     \begin{itemize}
      \item demonstrates how component functions can be combined to create intelligent behaviour
      \item machine learning, deep neural networks
     \end{itemize}
-    
+    \vfill
     \textbf{Overarching Challenge}
     build solid bridges between theory and experiment
 \end{frame}
 
 \begin{frame}
     \frametitle{From Experiment Toward Theory}
+    \vspace{-0.5cm}
     \begin{itemize}
+     \onslide<1->{
      \item Models of connectivity and dynamics
      \begin{itemize}
         \item correlation among response time series \textrightarrow 'functional connectivity'
@@ -172,6 +175,8 @@ english,
         \end{itemize}
         \item can be applied within individuals (different states) and across individuals (disorders)
      \end{itemize}
+     }
+     \onslide<2->{
      \item Decoding models
      \begin{itemize}
       \item 'what information is present in each brain region' (eg. stimulus orientation or type, face identity, belief related decisions)
@@ -179,6 +184,8 @@ english,
       \item linearly decodable \textrightarrow \textit{explicit} information
       \item advanced decoding: reconstruction
      \end{itemize}
+     }
+     \onslide<3->{
      \item Representational models
      \begin{itemize}
       \item comprehensive predictions about the representational space
@@ -189,24 +196,20 @@ english,
       \end{itemize}
      \item often based on description of stimuli
      \end{itemize}
+     }
     \end{itemize}
-    These models do not reveal the computational mechanisms of information processing underlying some cognitive function
+    \onslide<4->{These models do \textbf{not} reveal the computational mechanisms of information processing underlying some cognitive function}
 \end{frame}
 
 \begin{frame}
-    \frametitle{The many meanings of model}
+    \frametitle{Interlude: The many meanings of model}
     \begin{itemize}
-     \item Data-analysis models (statistical description of measured variables)
+     \item data-analysis models (statistical description of measured variables)
      \item box-and-arrow models (information processing)
      \item oracle model (relies on information without describing the extraction from input)
      \item brain-computational model (mimics brain information processing, eg sensory encoding)
      \item ...
     \end{itemize}
-\end{frame}
-
-
-\begin{frame}
-    \frametitle{From Theory to Experiment}
 \end{frame}
 
 \begin{frame}
@@ -218,15 +221,18 @@ english,
 \begin{frame}
     \frametitle{From Theory to Experiment}
     \begin{itemize}
+     \onslide<1->{
      \item Neural network models
      \begin{itemize}
       \item provide a common language for building task-performing models that meet combined criteria from all three disciplines
       \item can be constructed as biologically plausible systems (feed forward, recurrent, ...)
       \item supervised and unsupervised learning
       \item requires large parametric complexity to capture world knowledge for intelligent behaviour
-      \item overfitting problem \textrightarrow evalutation in term of generalization performance
+      \item over-fitting problem \textrightarrow evaluation in terms of generalization performance
       \item example of visual pathways: visual hierarchy is also formed in deep neural networks
      \end{itemize}
+     }
+     \onslide<2->{
      \item Cognitive models
      \begin{itemize}
       \item high level description of cognitive processes without biological details
@@ -245,9 +251,10 @@ english,
      \item Bayesian models
      \begin{itemize}
       \item provides optimal behaviour under given data and priors
-      \item challenging to learn a generative model from sensory data
+      \item challenging to learn a generative model from sensory data and computation of posterior
      \end{itemize}
      \end{itemize}
+     }
     \end{itemize}
 \end{frame}
 
@@ -263,9 +270,9 @@ english,
     \item Computational Neuroscience
     \begin{itemize}
      \item needs cognitive science to challenge it to engage higher-level cognition
-     \item needs machince learning / AI to provide theoretical and technological basis for modeling functions with biologically plausible dynamical components
+     \item needs machine learning / AI to provide theoretical and technological basis for modeling functions with biologically plausible dynamical components
     \end{itemize}
-    \item AI
+    \item Artificial Intelligence
     \begin{itemize}
      \item needs cognitive science to guide the engineering of intelligence (eg. benchmarks for tasks)
      \item needs computational neuroscience for algorithmic inspiration
@@ -276,7 +283,7 @@ english,
 
 \begin{frame}
     \frametitle{Looking Ahead}
-    The brain seamlessly merges bottom-up disriminative and top-down generative computations in perceptual inference, and model-free and model-based control.
+    The brain seamlessly merges bottom-up discriminative and top-down generative computations in perceptual inference, and model-free and model-based control.
     \begin{itemize}
      \item bottom up and top down
      \begin{itemize}
@@ -296,8 +303,8 @@ english,
      \item bayesian nonparametric models: concept formation from single experience
     \end{itemize}
     \item power discrepancy: efficient statistical and computational implementation in the brain based on 20 Watt
-    \item \textrightarrow need for collaborations between labs with complementary expertise \& open science culture
     \end{itemize}
+    \textbf{\textrightarrow need for collaborations between labs with complementary expertise \& open science culture}
 \end{frame}
 
 
@@ -313,15 +320,15 @@ english,
      \item OpenAI's Gym, Universe, DeepMind's lab
      \item interactions with virtual stimuli, natural environment as games, mass participation
     \end{itemize}
-    Data
-    \begin{itemize}
-     \item behavioural data during task performance
-     \item structural \& functional brain data
-    \end{itemize}
     Models
     \begin{itemize}
      \item task-performing computational models
      \item initially only performing specific task, but must ultimately generalize across tasks 
+    \end{itemize}
+    Data
+    \begin{itemize}
+     \item behavioural data during task performance
+     \item structural \& functional brain data
     \end{itemize}
     Tests
     \begin{itemize}
@@ -330,13 +337,9 @@ english,
     \end{itemize}
     Challenges
     \begin{itemize}
-     \item design shareable tasks and provide human behaioral dataset to set bar for AI model performance
-     \item share brain activity data to constrain models and quantatively compare to models
+     \item design shareable tasks and provide human behavioral data set to set bar for AI model performance
+     \item share brain activity data to constrain models and quantitative compare to models
     \end{itemize}
-
-
-
 \end{frame}
-
 
 \end{document}
