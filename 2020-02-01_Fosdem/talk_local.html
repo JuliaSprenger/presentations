@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Julia Sprenger">
+  <title>Challenges and opportunities in scientific software development</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../reveal.js/css/reveal.css">
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="../reveal.js/css/theme/black.css" id="theme">
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? '../reveal.js/css/print/pdf.css' : '../reveal.js/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="../reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section>
+  <h1 class="title"><small>Challenges and opportunities in scientific software development</small></h1>
+  <p class="author">Julia Sprenger</p>
+  <p class="date">1 Feb 2020</p>
+</section>
+
+<section class="slide level1">
+
+<h2 id="science">Science</h2>
+<p>Aim: understand &lt;system&gt;* better <font size="4">(* molecule, species, earth, universe, ...)</font></p>
+<p><centering><img src="scientificcycle.svg" alt="scientific workflow" /></centering></p>
+<p>software as essential, but a side aspect</p>
+</section>
+<section class="slide level1">
+
+<h2 id="scientific-reality">Scientific Reality</h2>
+<p><br> <centering><img src="projectcycle.svg" alt="project cycle" /></centering></p>
+</section>
+<section class="slide level1">
+
+<h2 id="what-is-not-part-of-this">What is not part of this</h2>
+</section>
+<section class="slide level1">
+
+<h3 id="time-for-improvements-not-directly-contributing-to-the-scientific-progress-e.g."><strong><em>time</em></strong> for improvements not directly contributing to the scientific progress, e.g.</h3>
+<ul>
+<li>infrastructure software development</li>
+<li>refactoring / restructuring of code</li>
+<li>long term maintenance of code</li>
+</ul>
+</section>
+<section class="slide level1">
+
+<h3 id="education-of-software-development-skills"><strong><em>education</em></strong> of software development skills</h3>
+<ul>
+<li>best practices for code style</li>
+<li>quality assurance
+<ul>
+<li>test driven development</li>
+<li>continuous integration</li>
+</ul></li>
+<li>version control</li>
+<li>validation</li>
+</ul>
+</section>
+<section class="slide level1">
+
+<h3 id="money-for"><strong><em>money</em></strong> for</h3>
+<ul>
+<li>software development training courses</li>
+<li>non-scientific software developers</li>
+<li>software infrastructure (IT, self hosted services, ...)</li>
+</ul>
+</section>
+<section class="slide level1">
+
+<h2 id="additional-issues">Additional issues</h2>
+</section>
+<section class="slide level1">
+
+<h3 id="trust"><strong><em>trust</em></strong></h3>
+<ul>
+<li>for <strong>seemingly</strong> small projects software is quickly self-implemented</li>
+<li>for <strong>complex</strong> projects commercial software <strong>seems</strong> more reliable</li>
+</ul>
+</section>
+<section class="slide level1">
+
+<h3 id="trust-1"><strong><em>trust</em></strong></h3>
+<ul>
+<li>publication comes first, software maybe publication later</li>
+<li>making errors is taboo, reputation issue
+<ul>
+<li>Pioneering in code publication <br> <a href="https://doi.org/10.1162/089976606775093882">Izhikevich (2006) Polychronization: Computation with Spikes</a></li>
+<li>Reimplementation and examination <br> <a href="https://doi.org/10.3389/fninf.2018.00046">Pauli et al. (2018) Reproducing Polychronization: A Guide to Maximizing the Reproducibility of Spiking Network Models</a></li>
+</ul></li>
+</ul>
+</section>
+<section class="slide level1">
+
+<figure>
+<img src="Izhikevich_2006.png" alt="Izhikevich_2006" /><figcaption>Izhikevich_2006</figcaption>
+</figure>
+</section>
+<section class="slide level1">
+
+<figure>
+<img src="Pauli_2018.png" alt="Pauli_2018" /><figcaption>Pauli_2018</figcaption>
+</figure>
+</section>
+<section class="slide level1">
+
+<h3 id="dedication"><strong><em>dedication</em></strong></h3>
+<ul>
+<li>software development is a side occupation
+<ul>
+<li>no extended time reserved for this</li>
+<li>not continuous task, but on demand</li>
+<li>has a low priority compared to scientific findings and publications</li>
+</ul></li>
+<li>rapid changes in staff &amp; small / not clearly defined user base</li>
+<li>no dedicated team per software project. <br> funding usually supports individuals.</li>
+<li>focus on numeric precision</li>
+</ul>
+</section>
+<section class="slide level1">
+
+<h2 id="scientists-dream">Scientists Dream</h2>
+<ul>
+<li>easy/automatic setup, plug &amp; play</li>
+<li>no maintenance</li>
+<li>automatic provenance tracking</li>
+<li>compatibility with all other software</li>
+</ul>
+</section>
+<section class="slide level1">
+
+<h2 id="scientists-reality">Scientists Reality</h2>
+<ul>
+<li>use whatever works</li>
+<li>minimize time investment</li>
+<li>prevent maintenance by not updating</li>
+<li>implement quick and hacky solutions</li>
+<li><p>favor costly complete closed-source solution instead of time-intense open source software solution</p></li>
+<li><p>software as a <strong>tool</strong></p></li>
+</ul>
+</section>
+<section class="slide level1">
+
+<h2 id="stages-of-scientific-software">Stages of scientific software</h2>
+<ol type="1">
+<li>custom code for experiment specific task (e.g. experiment control)
+<ul>
+<li>for current use only</li>
+<li>no documentation</li>
+<li>no reuse possible</li>
+<li>not maintainable</li>
+<li>not shareable</li>
+</ul></li>
+</ol>
+</section>
+<section class="slide level1">
+
+<h2 id="stages-of-scientific-software-1">Stages of scientific software</h2>
+<ol start="2" type="1">
+<li>shared code within a small community
+<ul>
+<li>used by multiple people</li>
+<li>sparsely documented</li>
+<li>maintained for the duration of a project</li>
+<li>reuse would require modifications</li>
+</ul></li>
+</ol>
+</section>
+<section class="slide level1">
+
+<h2 id="stages-of-scientific-software-2">Stages of scientific software</h2>
+<ol start="3" type="1">
+<li>globally shared code
+<ul>
+<li>used in different projects</li>
+<li>well documented</li>
+<li>maintained across projects</li>
+</ul></li>
+</ol>
+</section>
+<section class="slide level1">
+
+<h2 id="examples-of-open-source-scientific-software-projects">Examples of open source scientific software projects</h2>
+</section>
+<section class="slide level1">
+
+<table>
+<tr valign="top">
+<td width="70%">
+<h3 id="odmltables"><a href="https://odmltables.readthedocs.io">odMLtables</a></h3>
+</td>
+<td width="30%">
+<img src="odMLtables_100x100.png" />
+</td>
+</tr>
+</table>
+<ul>
+<li>extends usability of open metadata markup language (odML)</li>
+<li>interface between common laboratory formats (xls/csv) and odML</li>
+<li>additional utility functionalities</li>
+</ul>
+</section>
+<section class="slide level1">
+
+<h2 id="odmltables-1"><a href="https://odmltables.readthedocs.io">odMLtables</a></h2>
+<ul>
+<li>initiated in 2015</li>
+<li>1 developer</li>
+<li>0 contributors</li>
+<li>1-10 users</li>
+<li>1 publication</li>
+</ul>
+</section>
+<section class="slide level1">
+
+<table>
+<tr valign="top">
+<td width="70%">
+<h3 id="neo"><a href="https://neo.readthedocs.io">Neo</a></h3>
+</td>
+<td width="30%">
+<img src="neo_logo.png" alt="neo"   title="" width="200" />
+</td>
+</tr>
+</table>
+<ul>
+<li>interface between 30+ electrophysiology dataset formats (proprietary &amp; open)</li>
+<li>standardized data representation</li>
+</ul>
+<p><img src="NeoAsInterface2Elephant_white.png" alt="neo"  title="" width="600" /></p>
+</section>
+<section class="slide level1">
+
+<h2 id="neo-1"><a href="https://neo.readthedocs.io">Neo</a></h2>
+<ul>
+<li>initiated in 2009</li>
+<li>successor of previous electrophysiology data handling packages</li>
+<li>used in 130+ repositories</li>
+<li>3 developers (3 labs)</li>
+<li>55 contributors (8 active)</li>
+<li><p>~100 direct users</p></li>
+<li><p>presented at scientific conferences &amp; workshops</p></li>
+</ul>
+</section>
+<section class="slide level1">
+
+<h3 id="nest"><a href="(https://www.nest-simulator.org/)">Nest</a></h3>
+<figure>
+<img src="nest_logo.png" />
+</figure>
+<ul>
+<li>simulator for spiking neural network models</li>
+<li>scalable from desktop to hpc</li>
+<li>community-standard</li>
+</ul>
+</section>
+<section class="slide level1">
+
+<h2 id="nest-1"><a href="https://www.nest-simulator.org/">Nest</a></h2>
+<ul>
+<li>initiated in 1993</li>
+<li>owned by <em>The Neural Simulation Technology Initiative</em></li>
+<li>&gt; 10 developers (5 active)</li>
+<li>1 funded position for project documentation</li>
+<li>79 contributors (&gt;10 active)</li>
+<li>dedicated <a href="https://www.nest-simulator.org/">website</a> (news, announcements, tutorials, videos, brochures)</li>
+<li>publication list (user / software development)</li>
+<li>dedicated nest conferences &amp; user workshops &amp; hackathons</li>
+</ul>
+</section>
+<section class="slide level1">
+
+<h2 id="recommendations-for-open-software-projects">Recommendations for open software projects</h2>
+<ul>
+<li>involve a large user (and potential contributor) base</li>
+<li>simplify usage and contribution on all levels
+<ul>
+<li>user &amp; developer guide</li>
+<li>tutorials</li>
+<li>solve simple issues first</li>
+<li>define project standards and contribution guide</li>
+</ul></li>
+<li>advertise within potential user community</li>
+</ul>
+</section>
+<section class="slide level1">
+
+<h2 id="recommendations-for-scientists">Recommendations for scientists</h2>
+<ul>
+<li>use existing open source tools, don't start from scratch</li>
+<li>make sure your software outlives your career
+<ul>
+<li><a href="https://bestpractices.coreinfrastructure.org">bestpractices.coreinfrastructure.org</a></li>
+</ul></li>
+<li>create links to other packages</li>
+<li>integrate your project into larger framework</li>
+</ul>
+</section>
+<section class="slide level1">
+
+<h2 id="recommendations-for-institutes">Recommendations for institutes</h2>
+<ul>
+<li>provide kickstarts in basic software development techniques
+<ul>
+<li>version control, coding standards, CI</li>
+<li>pair programming, test driven development, code review</li>
+<li><strike> scrum </strike>, kanban</li>
+</ul></li>
+<li>have a dedicated software coordinator</li>
+<li>define project standards</li>
+<li>organize hackathons / topic weeks / workshops</li>
+</ul>
+</section>
+<section class="slide level1">
+
+<p><centering><img src="projectcycle_final.svg" alt="project cycle" /></centering></p>
+</section>
+<section class="slide level1">
+
+<h2 id="what-can-you-do">What can you do?</h2>
+<h3 id="as-a-software-developer">... as a software developer</h3>
+<ul>
+<li>make your documentation readable by non-experts</li>
+<li>include an 'installation for dummies'</li>
+<li>advertise within potential user community (conferences, workshops)</li>
+</ul>
+</section>
+<section class="slide level1">
+
+<h2 id="thank-you">Thank you!</h2>
+</section>
+<section id="additional-references" class="slide level1">
+<h1>Additional references</h1>
+<ul>
+<li><a href="https://www.chronicle.com/blogs/profhacker/markdown-slideshow-example-pandoc/46683">Creating slides with pandoc</a></li>
+<li><a href="http://wcm1.web.rice.edu/slides/onlinepub.txt">Example markdown presentation</a></li>
+<li><a href="https://github.com/jgm/pandoc/wiki/Using-pandoc-to-produce-reveal.js-slides">Using pandoc to create reveal.js slides</a></li>
+<li><a href="https://kieranhealy.org/blog/archives/2014/01/23/plain-text/">From markdown to manuscripts</a></li>
+<li><a href="https://pandoc.org/demos.html">Pandoc examples</a></li>
+</ul>
+</section>
+    </div>
+  </div>
+
+  <script src="../reveal.js/lib/js/head.min.js"></script>
+  <script src="../reveal.js/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: '../reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '../reveal.js/plugin/zoom-js/zoom.js', async: true },
+              { src: '../reveal.js/plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+    </body>
+</html>
