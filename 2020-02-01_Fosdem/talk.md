@@ -181,9 +181,22 @@ Physics
 
 <td></table>
 
+
 ---
 
-## Recommendations for open software projects
+## What can you do?
+
+### ... as a software developer
+  - talk to scientists to discover new interesting problems
+  - get involved in existing scientific projects and provide feedback
+
+
+  - make your documentation readable by non-experts, _'installation for dummies'_
+  - advertise existing software within potential user community (conferences, workshops)
+
+---
+
+### ... as scientific open software project
 
   - involve a large user (and potential contributor) base
   - simplify usage and contribution on all levels
@@ -195,13 +208,27 @@ Physics
 
 ---
 
-## Recommendations for scientists
+### ... as a scientists
 
   - use existing open source tools, don't start from scratch
   - make sure your software outlives your career
       - [bestpractices.coreinfrastructure.org](https://bestpractices.coreinfrastructure.org)
   - create links to other packages
   - integrate your project into larger framework
+
+  - consider software development aspects from the beginning
+
+
+---
+
+## Scientific Vision
+
+<centering>![project cycle](projectcycle_final.svg)</centering>
+
+
+---
+
+## Thank you!
 
 ---
 
@@ -214,25 +241,6 @@ Physics
   - have a dedicated software coordinator
   - define project standards
   - organize hackathons / topic weeks / workshops
-
----
-
-## Scientific Vision
-
-<centering>![project cycle](projectcycle_final.svg)</centering>
-
----
-
-## What can you do?
-
-### ... as a software developer
-  - make your documentation readable by non-experts
-  - include an 'installation for dummies'
-  - advertise within potential user community (conferences, workshops)
-
----
-
-## Thank you!
 
 ---
 
