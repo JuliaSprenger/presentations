@@ -11,12 +11,10 @@ Aim: understand \<system\>* better <font size="4">(* molecule, species, earth, u
 
 <centering>![scientific workflow](scientificcycle.svg)</centering>
 
-software as essential, but a side aspect
-
 ---
 
 ## Scientific Reality
-<br>
+
 <centering>![project cycle](projectcycle.svg)</centering>
 
 ---
@@ -60,20 +58,13 @@ software as essential, but a side aspect
 ---
 
 ### ***trust***
-  - publication comes first, software maybe publication later
+  - publication comes first, software release _maybe_ later
   - making errors is taboo, reputation issue
-    - Pioneering in code publication <br>
-     [Izhikevich (2006) Polychronization: Computation with Spikes](https://doi.org/10.1162/089976606775093882)
-    - Reimplementation and examination <br>
-     [Pauli et al. (2018) Reproducing Polychronization: A Guide to Maximizing the Reproducibility of Spiking Network Models](https://doi.org/10.3389/fninf.2018.00046)
-
----
-
-![Izhikevich_2006](Izhikevich_2006.png)
-
----
-
-![Pauli_2018](Pauli_2018.png)
+  - publishing code pushes scientific progress
+      - Pioneering in code publication <br>
+       [Izhikevich (2006) Polychronization: Computation with Spikes](https://doi.org/10.1162/089976606775093882)
+      - Reimplementation and examination <br>
+       [Pauli et al. (2018) Reproducing Polychronization: A Guide to Maximizing the Reproducibility of Spiking Network Models](https://doi.org/10.3389/fninf.2018.00046)
 
 ---
 
@@ -87,55 +78,6 @@ software as essential, but a side aspect
   - no dedicated team per software project. <br> funding usually supports individuals.
   - focus on numeric precision
 
----
-
-## Scientists Dream
-
-  - easy/automatic setup, plug & play
-  - no maintenance
-  - automatic provenance tracking
-  - compatibility with all other software
-
----
-
-## Scientists Reality
-  - use whatever works
-  - minimize time investment
-  - prevent maintenance by not updating
-  - implement quick and hacky solutions
-  - favor costly complete closed-source solution instead of time-intense open source software solution
-
-  - software as a **tool**
-
----
-
-## Stages of scientific software
-
-1) custom code for experiment specific task (e.g. experiment control)
-    - for current use only
-    - no documentation
-    - no reuse possible
-    - not maintainable
-    - not shareable
-
----
-
-## Stages of scientific software
-
-2) shared code within a small community
-    - used by multiple people
-    - sparsely documented
-    - maintained for the duration of a project
-    - reuse would require modifications
-
----
-
-## Stages of scientific software
-
-3) globally shared code
-    - used in different projects
-    - well documented
-    - maintained across projects
 
 ---
 
@@ -200,12 +142,12 @@ software as essential, but a side aspect
 ![](nest_logo.png)
 
   - simulator for spiking neural network models
-  - scalable from desktop to hpc
+  - scales from laptops to exascale computers [[Jordan et al. 2018](https://doi.org/10.3389/fninf.2018.00002)]
   - community-standard
 
 ---
 
-##[Nest](https://www.nest-simulator.org/)
+## [Nest](https://www.nest-simulator.org/)
 
   - initiated in 1993
   - owned by _The Neural Simulation Technology Initiative_
@@ -215,6 +157,29 @@ software as essential, but a side aspect
   - dedicated [website](https://www.nest-simulator.org/) (news, announcements, tutorials, videos, brochures)
   - publication list (user / software development)
   - dedicated nest conferences & user workshops & hackathons
+
+---
+
+## There's a lot more
+<table><tr valign="top"><td width="50%">
+
+Neuroscience
+
+<img src="hbp.png" alt="neo"	title="" width="200" />
+
+Biology
+
+  <img src="open_worm.jpeg" alt="neo"	title="" width="200" />
+
+</td><td width="50%">
+
+Physics
+
+  <img src="root.png" alt="neo"	title="" width="200" /> <br>
+
+... and a large and growing number of smaller projects
+
+<td></table>
 
 ---
 
@@ -240,9 +205,9 @@ software as essential, but a side aspect
 
 ---
 
-## Recommendations for Institutes
+## Recommendations for institutes
 
-  - provide kickstarts in basic software development techniques
+  - provide kickstart in basic software development techniques
       - version control, coding standards, CI
       - pair programming, test driven development, code review
       - <strike> scrum </strike>, kanban
@@ -252,7 +217,7 @@ software as essential, but a side aspect
 
 ---
 
-## Scientic Vision
+## Scientific Vision
 
 <centering>![project cycle](projectcycle_final.svg)</centering>
 
@@ -271,9 +236,66 @@ software as essential, but a side aspect
 
 ---
 
-# Additional references
+## Additional references
+### Using markdown and pandoc for presentations
 - [Creating slides with pandoc](https://www.chronicle.com/blogs/profhacker/markdown-slideshow-example-pandoc/46683)
 - [Example markdown presentation](http://wcm1.web.rice.edu/slides/onlinepub.txt)
 - [Using pandoc to create reveal.js slides](https://github.com/jgm/pandoc/wiki/Using-pandoc-to-produce-reveal.js-slides)
 - [From markdown to manuscripts](https://kieranhealy.org/blog/archives/2014/01/23/plain-text/)
 - [Pandoc examples](https://pandoc.org/demos.html)
+
+---
+
+## Differences Academia & Business
+
+ - Academia
+      - reputation of an individual counts
+      - longer software development cycles
+      - main focus: scientific results & paper publications
+
+ - Business
+      - reputation of company counts
+      - scrum style software development cycles
+      - main focus: product development & marketing
+
+---
+
+![](Izhikevich_2006.png)
+
+---
+
+![](Pauli_2018.png)
+
+---
+
+## Stages of scientific software
+
+1) custom code for experiment specific task (e.g. experiment control)
+    - for current use only
+    - no documentation
+    - no reuse possible
+    - not maintainable
+    - not shareable
+
+---
+
+2) shared code within a small community
+    - used by multiple people
+    - sparsely documented
+    - maintained for the duration of a project
+    - reuse would require modifications
+
+---
+
+3) globally shared code
+    - used in different projects
+    - well documented
+    - maintained across projects
+
+
+
+---
+ ## Growing number of scientific open software projects & code
+    - Increasing awareness of software as scientific basis [Katerbow & Feulner (2018): Recommendations on the
+    Development, Use and Provision of Research Software, Research Software Working Group of the Alliance of German Science Organisations](https://zenodo.org/record/1172988)
+    - Funding initiatives will require code & software publication

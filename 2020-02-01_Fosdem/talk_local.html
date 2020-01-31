@@ -33,23 +33,19 @@
   <p class="date">1 Feb 2020</p>
 </section>
 
-<section class="slide level1">
-
-<h2 id="science">Science</h2>
+<section id="science" class="slide level2">
+<h2>Science</h2>
 <p>Aim: understand &lt;system&gt;* better <font size="4">(* molecule, species, earth, universe, ...)</font></p>
 <p><centering><img src="scientificcycle.svg" alt="scientific workflow" /></centering></p>
-<p>software as essential, but a side aspect</p>
 </section>
-<section class="slide level1">
-
-<h2 id="scientific-reality">Scientific Reality</h2>
-<p><br> <centering><img src="projectcycle.svg" alt="project cycle" /></centering></p>
+<section id="scientific-reality" class="slide level2">
+<h2>Scientific Reality</h2>
+<p><centering><img src="projectcycle.svg" alt="project cycle" /></centering></p>
 </section>
-<section class="slide level1">
-
-<h2 id="what-is-not-part-of-this">What is not part of this</h2>
+<section id="what-is-not-part-of-this" class="slide level2">
+<h2>What is not part of this</h2>
 </section>
-<section class="slide level1">
+<section class="slide level2">
 
 <h3 id="time-for-improvements-not-directly-contributing-to-the-scientific-progress-e.g."><strong><em>time</em></strong> for improvements not directly contributing to the scientific progress, e.g.</h3>
 <ul>
@@ -58,7 +54,7 @@
 <li>long term maintenance of code</li>
 </ul>
 </section>
-<section class="slide level1">
+<section class="slide level2">
 
 <h3 id="education-of-software-development-skills"><strong><em>education</em></strong> of software development skills</h3>
 <ul>
@@ -72,7 +68,7 @@
 <li>validation</li>
 </ul>
 </section>
-<section class="slide level1">
+<section class="slide level2">
 
 <h3 id="money-for"><strong><em>money</em></strong> for</h3>
 <ul>
@@ -81,11 +77,10 @@
 <li>software infrastructure (IT, self hosted services, ...)</li>
 </ul>
 </section>
-<section class="slide level1">
-
-<h2 id="additional-issues">Additional issues</h2>
+<section id="additional-issues" class="slide level2">
+<h2>Additional issues</h2>
 </section>
-<section class="slide level1">
+<section class="slide level2">
 
 <h3 id="trust"><strong><em>trust</em></strong></h3>
 <ul>
@@ -93,31 +88,20 @@
 <li>for <strong>complex</strong> projects commercial software <strong>seems</strong> more reliable</li>
 </ul>
 </section>
-<section class="slide level1">
+<section class="slide level2">
 
 <h3 id="trust-1"><strong><em>trust</em></strong></h3>
 <ul>
-<li>publication comes first, software maybe publication later</li>
-<li>making errors is taboo, reputation issue
+<li>publication comes first, software release <em>maybe</em> later</li>
+<li>making errors is taboo, reputation issue</li>
+<li>publishing code pushes scientific progress
 <ul>
 <li>Pioneering in code publication <br> <a href="https://doi.org/10.1162/089976606775093882">Izhikevich (2006) Polychronization: Computation with Spikes</a></li>
 <li>Reimplementation and examination <br> <a href="https://doi.org/10.3389/fninf.2018.00046">Pauli et al. (2018) Reproducing Polychronization: A Guide to Maximizing the Reproducibility of Spiking Network Models</a></li>
 </ul></li>
 </ul>
 </section>
-<section class="slide level1">
-
-<figure>
-<img src="Izhikevich_2006.png" alt="Izhikevich_2006" /><figcaption>Izhikevich_2006</figcaption>
-</figure>
-</section>
-<section class="slide level1">
-
-<figure>
-<img src="Pauli_2018.png" alt="Pauli_2018" /><figcaption>Pauli_2018</figcaption>
-</figure>
-</section>
-<section class="slide level1">
+<section class="slide level2">
 
 <h3 id="dedication"><strong><em>dedication</em></strong></h3>
 <ul>
@@ -132,72 +116,10 @@
 <li>focus on numeric precision</li>
 </ul>
 </section>
-<section class="slide level1">
-
-<h2 id="scientists-dream">Scientists Dream</h2>
-<ul>
-<li>easy/automatic setup, plug &amp; play</li>
-<li>no maintenance</li>
-<li>automatic provenance tracking</li>
-<li>compatibility with all other software</li>
-</ul>
+<section id="examples-of-open-source-scientific-software-projects" class="slide level2">
+<h2>Examples of open source scientific software projects</h2>
 </section>
-<section class="slide level1">
-
-<h2 id="scientists-reality">Scientists Reality</h2>
-<ul>
-<li>use whatever works</li>
-<li>minimize time investment</li>
-<li>prevent maintenance by not updating</li>
-<li>implement quick and hacky solutions</li>
-<li><p>favor costly complete closed-source solution instead of time-intense open source software solution</p></li>
-<li><p>software as a <strong>tool</strong></p></li>
-</ul>
-</section>
-<section class="slide level1">
-
-<h2 id="stages-of-scientific-software">Stages of scientific software</h2>
-<ol type="1">
-<li>custom code for experiment specific task (e.g. experiment control)
-<ul>
-<li>for current use only</li>
-<li>no documentation</li>
-<li>no reuse possible</li>
-<li>not maintainable</li>
-<li>not shareable</li>
-</ul></li>
-</ol>
-</section>
-<section class="slide level1">
-
-<h2 id="stages-of-scientific-software-1">Stages of scientific software</h2>
-<ol start="2" type="1">
-<li>shared code within a small community
-<ul>
-<li>used by multiple people</li>
-<li>sparsely documented</li>
-<li>maintained for the duration of a project</li>
-<li>reuse would require modifications</li>
-</ul></li>
-</ol>
-</section>
-<section class="slide level1">
-
-<h2 id="stages-of-scientific-software-2">Stages of scientific software</h2>
-<ol start="3" type="1">
-<li>globally shared code
-<ul>
-<li>used in different projects</li>
-<li>well documented</li>
-<li>maintained across projects</li>
-</ul></li>
-</ol>
-</section>
-<section class="slide level1">
-
-<h2 id="examples-of-open-source-scientific-software-projects">Examples of open source scientific software projects</h2>
-</section>
-<section class="slide level1">
+<section class="slide level2">
 
 <table>
 <tr valign="top">
@@ -215,9 +137,8 @@
 <li>additional utility functionalities</li>
 </ul>
 </section>
-<section class="slide level1">
-
-<h2 id="odmltables-1"><a href="https://odmltables.readthedocs.io">odMLtables</a></h2>
+<section id="odmltables-1" class="slide level2">
+<h2><a href="https://odmltables.readthedocs.io">odMLtables</a></h2>
 <ul>
 <li>initiated in 2015</li>
 <li>1 developer</li>
@@ -226,7 +147,7 @@
 <li>1 publication</li>
 </ul>
 </section>
-<section class="slide level1">
+<section class="slide level2">
 
 <table>
 <tr valign="top">
@@ -244,9 +165,8 @@
 </ul>
 <p><img src="NeoAsInterface2Elephant_white.png" alt="neo"  title="" width="600" /></p>
 </section>
-<section class="slide level1">
-
-<h2 id="neo-1"><a href="https://neo.readthedocs.io">Neo</a></h2>
+<section id="neo-1" class="slide level2">
+<h2><a href="https://neo.readthedocs.io">Neo</a></h2>
 <ul>
 <li>initiated in 2009</li>
 <li>successor of previous electrophysiology data handling packages</li>
@@ -257,7 +177,7 @@
 <li><p>presented at scientific conferences &amp; workshops</p></li>
 </ul>
 </section>
-<section class="slide level1">
+<section class="slide level2">
 
 <h3 id="nest"><a href="(https://www.nest-simulator.org/)">Nest</a></h3>
 <figure>
@@ -265,13 +185,12 @@
 </figure>
 <ul>
 <li>simulator for spiking neural network models</li>
-<li>scalable from desktop to hpc</li>
+<li>scales from laptops to exascale computers [<a href="https://doi.org/10.3389/fninf.2018.00002">Jordan et al. 2018</a>]</li>
 <li>community-standard</li>
 </ul>
 </section>
-<section class="slide level1">
-
-<h2 id="nest-1"><a href="https://www.nest-simulator.org/">Nest</a></h2>
+<section id="nest-1" class="slide level2">
+<h2><a href="https://www.nest-simulator.org/">Nest</a></h2>
 <ul>
 <li>initiated in 1993</li>
 <li>owned by <em>The Neural Simulation Technology Initiative</em></li>
@@ -283,9 +202,25 @@
 <li>dedicated nest conferences &amp; user workshops &amp; hackathons</li>
 </ul>
 </section>
-<section class="slide level1">
-
-<h2 id="recommendations-for-open-software-projects">Recommendations for open software projects</h2>
+<section id="theres-a-lot-more" class="slide level2">
+<h2>There's a lot more</h2>
+<table>
+<tr valign="top">
+<td width="50%">
+<p>Neuroscience</p>
+<p><img src="hbp.png" alt="neo"    title="" width="200" /></p>
+<p>Biology</p>
+<p><img src="open_worm.jpeg" alt="neo"   title="" width="200" /></p>
+</td>
+<td width="50%">
+<p>Physics</p>
+<p><img src="root.png" alt="neo" title="" width="200" /> <br></p>
+<p>... and a large and growing number of smaller projects</p>
+<td>
+</table>
+</section>
+<section id="recommendations-for-open-software-projects" class="slide level2">
+<h2>Recommendations for open software projects</h2>
 <ul>
 <li>involve a large user (and potential contributor) base</li>
 <li>simplify usage and contribution on all levels
@@ -298,9 +233,8 @@
 <li>advertise within potential user community</li>
 </ul>
 </section>
-<section class="slide level1">
-
-<h2 id="recommendations-for-scientists">Recommendations for scientists</h2>
+<section id="recommendations-for-scientists" class="slide level2">
+<h2>Recommendations for scientists</h2>
 <ul>
 <li>use existing open source tools, don't start from scratch</li>
 <li>make sure your software outlives your career
@@ -311,11 +245,10 @@
 <li>integrate your project into larger framework</li>
 </ul>
 </section>
-<section class="slide level1">
-
-<h2 id="recommendations-for-institutes">Recommendations for institutes</h2>
+<section id="recommendations-for-institutes" class="slide level2">
+<h2>Recommendations for institutes</h2>
 <ul>
-<li>provide kickstarts in basic software development techniques
+<li>provide kickstart in basic software development techniques
 <ul>
 <li>version control, coding standards, CI</li>
 <li>pair programming, test driven development, code review</li>
@@ -326,13 +259,12 @@
 <li>organize hackathons / topic weeks / workshops</li>
 </ul>
 </section>
-<section class="slide level1">
-
+<section id="scientific-vision" class="slide level2">
+<h2>Scientific Vision</h2>
 <p><centering><img src="projectcycle_final.svg" alt="project cycle" /></centering></p>
 </section>
-<section class="slide level1">
-
-<h2 id="what-can-you-do">What can you do?</h2>
+<section id="what-can-you-do" class="slide level2">
+<h2>What can you do?</h2>
 <h3 id="as-a-software-developer">... as a software developer</h3>
 <ul>
 <li>make your documentation readable by non-experts</li>
@@ -340,12 +272,12 @@
 <li>advertise within potential user community (conferences, workshops)</li>
 </ul>
 </section>
-<section class="slide level1">
-
-<h2 id="thank-you">Thank you!</h2>
+<section id="thank-you" class="slide level2">
+<h2>Thank you!</h2>
 </section>
-<section id="additional-references" class="slide level1">
-<h1>Additional references</h1>
+<section id="additional-references" class="slide level2">
+<h2>Additional references</h2>
+<h3 id="using-markdown-and-pandoc-for-presentations">Using markdown and pandoc for presentations</h3>
 <ul>
 <li><a href="https://www.chronicle.com/blogs/profhacker/markdown-slideshow-example-pandoc/46683">Creating slides with pandoc</a></li>
 <li><a href="http://wcm1.web.rice.edu/slides/onlinepub.txt">Example markdown presentation</a></li>
@@ -353,6 +285,75 @@
 <li><a href="https://kieranhealy.org/blog/archives/2014/01/23/plain-text/">From markdown to manuscripts</a></li>
 <li><a href="https://pandoc.org/demos.html">Pandoc examples</a></li>
 </ul>
+</section>
+<section id="differences-academia-business" class="slide level2">
+<h2>Differences Academia &amp; Business</h2>
+<ul>
+<li>Academia
+<ul>
+<li>reputation of an individual counts</li>
+<li>longer software development cycles</li>
+<li>main focus: scientific results &amp; paper publications</li>
+</ul></li>
+<li>Business
+<ul>
+<li>reputation of company counts</li>
+<li>scrum style software development cycles</li>
+<li>main focus: product development &amp; marketing</li>
+</ul></li>
+</ul>
+</section>
+<section class="slide level2">
+
+<figure>
+<img src="Izhikevich_2006.png" />
+</figure>
+</section>
+<section class="slide level2">
+
+<figure>
+<img src="Pauli_2018.png" />
+</figure>
+</section>
+<section id="stages-of-scientific-software" class="slide level2">
+<h2>Stages of scientific software</h2>
+<ol type="1">
+<li>custom code for experiment specific task (e.g. experiment control)
+<ul>
+<li>for current use only</li>
+<li>no documentation</li>
+<li>no reuse possible</li>
+<li>not maintainable</li>
+<li>not shareable</li>
+</ul></li>
+</ol>
+</section>
+<section class="slide level2">
+
+<ol start="2" type="1">
+<li>shared code within a small community
+<ul>
+<li>used by multiple people</li>
+<li>sparsely documented</li>
+<li>maintained for the duration of a project</li>
+<li>reuse would require modifications</li>
+</ul></li>
+</ol>
+</section>
+<section class="slide level2">
+
+<ol start="3" type="1">
+<li>globally shared code
+<ul>
+<li>used in different projects</li>
+<li>well documented</li>
+<li>maintained across projects</li>
+</ul></li>
+</ol>
+</section>
+<section class="slide level2">
+
+<p>## Growing number of scientific open software projects &amp; code - Increasing awareness of software as scientific basis <a href="https://zenodo.org/record/1172988">Katerbow &amp; Feulner (2018): Recommendations on the Development, Use and Provision of Research Software, Research Software Working Group of the Alliance of German Science Organisations</a> - Funding initiatives will require code &amp; software publication</p>
 </section>
     </div>
   </div>
