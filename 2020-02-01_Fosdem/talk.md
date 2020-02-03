@@ -75,9 +75,8 @@ Aim: understand \<system\>* better <font size="4">(* molecule, species, earth, u
     - has a low priority compared to scientific findings and publications
 
   - rapid changes in staff & small / not clearly defined user base
-  - no dedicated team per software project. <br> funding usually supports individuals.
+  - no dedicated team per software project <br> funding usually supports individuals
   - focus on numeric precision
-
 
 ---
 
@@ -186,7 +185,7 @@ Physics
 
 ## What can you do?
 
-### ... as a software developer
+### ... as software developer
   - talk to scientists to discover new interesting problems
   - get involved in existing scientific projects and provide feedback
 
@@ -208,7 +207,7 @@ Physics
 
 ---
 
-### ... as a scientists
+### ... as scientist
 
   - use existing open source tools, don't start from scratch
   - make sure your software outlives your career
@@ -229,6 +228,10 @@ Physics
 ---
 
 ## Thank you!
+
+---
+
+# Backup slides
 
 ---
 
@@ -303,7 +306,6 @@ Physics
 
 
 ---
- ## Growing number of scientific open software projects & code
-    - Increasing awareness of software as scientific basis [Katerbow & Feulner (2018): Recommendations on the
-    Development, Use and Provision of Research Software, Research Software Working Group of the Alliance of German Science Organisations](https://zenodo.org/record/1172988)
-    - Funding initiatives will require code & software publication
+## Growing number of scientific open software projects & code
+  - Increasing awareness of software as scientific basis [Katerbow & Feulner (2018): Recommendations on the Development, Use and Provision of Research Software, Research Software Working Group of the Alliance of German Science Organisations](https://zenodo.org/record/1172988)
+  - Funding initiatives will require code & software publication
