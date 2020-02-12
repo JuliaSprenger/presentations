@@ -18,7 +18,8 @@ body {
   background-size: 12%, 20%, 13%;
   background-position: top 3% left 2%, bottom 2% left 2%, bottom 2% right 130px;
   */
-  background-color: #fff; }
+  background-color: #fff;
+}
 
 
 .reveal .left {
@@ -275,6 +276,29 @@ body {
   color: #fff;
   background: #0ff; }
 
+
+  /*********************************************
+ * SLIDE NUMBER
+ *********************************************/
+.reveal .slide-number {
+  position: absolute;
+  display: block;
+  right: 8px;
+  bottom: 8px;
+  z-index: 31;
+  font-family: Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 1;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 5px; }
+
+.reveal .slide-number a {
+  color: currentColor; }
+
+.reveal .slide-number-delimiter {
+  margin: 0 3px; }
+
 /*********************************************
  * IMAGES
  *********************************************/
@@ -285,7 +309,7 @@ body {
   box-shadow: 0 0 0px rgba(0, 0, 0, 0.15); }
 
 .reveal section figure img {
-  border: 1px solid #dddddd; /*#005b82; */
+  border: 0px solid #dddddd; /*#005b82; */
   border-radius: 7px;
   padding: 7px;
   box-shadow: none; }

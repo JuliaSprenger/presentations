@@ -43,7 +43,7 @@ def plot_medline_trends(*filenames):
     plt.legend()
     plt.ticklabel_format(axis='y', style='sci', scilimits=(-1, 1))
     plt.tight_layout()
-    plt.xlim(1970, 2018)
+    plt.xlim(1970, 2017)
 
     plt.savefig('trends.svg', format='svg')
     # plt.show()
@@ -90,7 +90,7 @@ def plot_timelines(*filenames):
             plt.xlabel(x_label)
             plt.ylabel(y_label)
             plt.legend()
-            plt.xlim(1980,2020)
+            plt.xlim(1980,2019)
 
     plt.savefig('timelines.svg', format='svg')
     # plt.show()

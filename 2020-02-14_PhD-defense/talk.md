@@ -1,5 +1,5 @@
 ---
-author: PhD defense<br>Julia Sprenger
+author: PhD Defense<br><br>Julia Sprenger<br><br> <div style="margin-top:100px; position:relative; float:right;"> ![](material/logos/fzj_mod.svg){width=250px .left}![](material/logos/rwth.svg){width=200px .left}</div><br><br><br>
 title: <small>Tools and Workflows for Data & Metadata Management of Complex Experiments </small>
 subtitle: <tiny>Building a Foundation for Reproducible & Collaborative Analysis in the Neurosciences</tiny>
 date: 14 Feb 2020
@@ -11,43 +11,58 @@ css: slides.css
 
 ## Neuroscience
 
-  ![](material/pyramidal_neuron.png){width=80%}
+  Image of a neuron, 1912
+
+  ![](material/pyramidal_neuron_blue.png){width=70%}
 
   <tiny>Figure adapted from ___Brain and spinal cord - manual for the study of the morphology and fibre tracts of the central nervous system (1912) Dr.med. Emil Villinger___</tiny>
 
 ## But what does this tell us?
 
-  ![](material/cortex.png){width=80%}
+  ![](material/cortex_blue.png){width=70%}
 
   <tiny>Figure adapted from ___Brain and spinal cord - manual for the study of the morphology and fibre tracts of the central nervous system (1912) Dr.med. Emil Villinger___</tiny>
 
 ## Additional information is required
 
-  ![](material/cortex.png){width=60% .left}
+### Recording data
 
-  Essential Metadata
+  ![](material/cortex_blue.png){width=60% .left}
 
-  >* date
-  * subject
+### Metadata
+
+  >* date and time
   * brain area
+  * subject
   * preparation technique
-  * visualization technique
+  * visualization techniquec
 
   . . .
 
   Additional Metadata
 
-  * experimenter
-  * weather / season
-  * experimental notes
-  * ...
+  >* experimenter
+  * temperature
+  * experimental notes, etc
 
+  . . .
+
+  Additional data modalities
+
+  <div style="margin-left:-600px">
+
+  >* electric activity of neurons
+  * connectivity between cells, etc
+
+  </div>
 
 ## Growing importance of reproducibility & collaboration
 
-  ![](material/trends.svg){width=80%}
+ Fraction of publications relating to reproducibility and collaboration
+  ![](material/trends.svg){width=70%}
+  <tiny> based on data from [Corlan (2004)](http://dan.corlan.net/medline-trend.html) and [PubMed](https://www.ncbi.nlm.nih.gov/pubmed/) </tiny>
 
-## Overview - Involved Projects & Publications
+## Overview — projects & publications
 
 ### Data publication
   >  **Massively parallel multi-electrode recordings of macaque motor cortex during an instructed delayed reach-to-grasp task**<br>
@@ -60,63 +75,47 @@ css: slides.css
 
 ### **The _Neo_ package**
 
-  - community based Python package
+  - open source, community based Python package
   - standardized representation of electrophysiological data
   - interfacing to numerous proprietary and open source formats
-
 
 # Neuroscience today
 
 ## A recent example — _Brochier et al. 2018_
 
-  ![](material/scidata_experiment.svg){width=55% .left}
+  ![](material/scidata_experiment_simple.svg){width=45% .left}
 
 ### Overview
 
   * 96 recording electrodes
   * sampling rate 30kHz
   * online  & offline signal processing
-  * proprietary recording devices
   * custom recording setup
   * ~ 10k metadata values per session
 
+  * proprietary recording devices & formats
+  * ~ 5GB data per session
 
-## The metadata concept
-
-  ![](material/scidata_odMLgeneration_diagram_0.png){width=50% .right}
-
-### Metadata pipeline
-
-  * multiple, diverse source files
-  * hierarchical metadata collection
-  * scripted aggregation of metadata
-    1. generation of hierarchical <br>structure
-    2. enrichment with metadata
-
-  ![](material/odml.png){width=45% .left}
-
-## The metadata concept
-
-  ![](material/scidata_odMLgeneration_diagram.png){width=50% .right}
-
-### Issues
-
-  * manual generation of <br> source files is laborious <br> using _odml_ features
-  * structure and content are not <br> completely independent <br>
-    → convoluted generation and <br> enrichment process
-  * requires manual inspection <br> of output for status tracking
-  * compilation mechanism is <br> obscured in scripts
-  * reuse in other context requires <br> extended adjustments
-
-## Conclusions
+## Requirements for modern neuroscience
 
 There is need for
 
-  - *facilitated metadata collection* for experimentalists
-  - *unification* of data and metadata formats
-  - improved metadata acquisition & handling in terms of *reproducibility* & *transferability*
+  - comprehensive metadata organization → odML, *odMLtables*
+  - comprehensive data organization → *Neo*
+  - systematic organization of data & metadata processes → *workflow management systems*
 
-# odMLtables
+# Metadata Management
+
+## open metaData Markup Language — odML
+
+  ![](material/odml.png){width=45% .left}
+
+  * hierarchical metadata structure
+  * generic objects
+  * human & machine readable
+  * limited support for manual interaction
+
+  * needs to be generated based <br> on metadata source files & *manual notes*
 
 ## ![](material/logos/odMLtables.png){width=10% .left} </t> odMLtables
 
@@ -124,9 +123,9 @@ There is need for
   * generic spreadsheet software can be used for metadata collection
   * additional utility functions
 
-  ![](material/odmltables_usage.png)
+  ![](material/odmltables_usage_edit.svg)
 
-## Graphical User Interface
+## Graphical user interface
 
   ![](material/Screenshot.png){width=40% .left}
 
@@ -135,43 +134,75 @@ There is need for
   * saving of configuration <br> settings for repeated use
   * wizards are linked in _odML-ui_ <br> for simplified accessiblity
 
-# Neo
+# Data Management
 
 ## ![](material/logos/neo.svg){width=15%}
 
-  ![](material/neo07_schema.svg){width=90% .left}
-
-
-## ![](material/logos/neo.svg){width=15%}
-
-  ![](material/neo.svg){width=80%}
+  ![](material/neo_ios_and_tools.svg){width=45% .left}
 
 ### Features
 
-  * generic, standardized data representation for electrophysiological data
-  * basis for higher level data processing tools
-  * interface to >30 proprietary & open data formats
+  * generic, standardized data <br> representation for electrophysiological <br> data
+  * basis for higher level data <br> processing tools
+  * interface to >30 proprietary <br> & open data formats
 
 ## ![](material/logos/neo.svg){width=15%}
 
-### Recent development
+  ![](material/neo_schema.svg){width=50% .right}
 
-  * Support of new formats
-    * Neuralynx
-    * latest Blackrock version
-    * Nix
-  * unification of reader API
-  * simplification of object structure
-  * data linked custom annotations
-  * extension of utility functionality
+### Features
 
-### Outlook
+  * object oriented representation
+    * data objects
+    * container objects
+  * generic structure
+  * custom names &  annotations
+  * utility functions
 
-  * improvements of object structure
-    * replacement of ambiguous objects
-    * shift from graph to hierarchical structure
-  * integration with related formats (EEG, Imaging)
-  * integration with simulation software (nest)
+
+### Recent updates
+
+  * data related annotations
+  * interface to  additional formats
+  * extended utilities
+  * simplification of  object structure
+  * performance improvements and refactoring
+
+# Data & Metadata Management in Practice
+
+## _Brochier et al. 2018_ — The metadata concept  
+
+  ![](material/scidata_odMLgeneration_diagram_0.png){width=50% .right}
+
+### Metadata pipeline
+
+  * multiple, diverse source files
+  * hierarchical metadata collection
+  * scripted aggregation of metadata
+    1. generation of hierarchical <br> structure
+    2. enrichment with metadata
+
+## _Brochier et al. 2018_ — The metadata concept
+
+  ![](material/scidata_odMLgeneration_diagram.png){width=50% .right}
+
+### Issues
+
+  * *monolithic, linear compilation script*
+  * structure and content are not <br> completely independent <br>
+    → *convoluted generation* and <br> enrichment process
+  * requires manual inspection <br> of output for *status tracking*
+  * compilation mechanism is <br> obscured in scripts
+  * *reuse* in other context requires <br> extended adjustments
+  * separate storage of compiled <br> metadata and original data files
+
+. . .
+
+  **Solutions**
+
+  * *Nix* format (*Neo*) can capture metadata and data
+  * *Workflow management systems* for organization data and metadata processing
+
 
 # Workflows
 
@@ -191,47 +222,31 @@ There is need for
   * change propagation
   * relation tracking & visualization
 
-## Workflow management system
+## Workflows in science
 
-  General requirements
+### From data recording to reproducible publications using snakemake ![](material/logos/snakemake.svg){width=8% .right}
 
-  * no additional computational overhead
-  * no expert knowledge required
-  * standalone
-  * visualizable
-  * easy to debug
-  * actively supported
-  * open source
+  ![](material/global_picture_workflow.png){width=50% .left}
 
-. . .
-
-  Project specific requirements
-
-  * support Python
-  * good integration
-  * flexibility (bash support)
-  * support HPC
+  * visualization of dependencies <br> and execution status
+  * portable and extendable via <br> via modular approach
+  * combined data & metadata packaging <br> using *Nix*
+  * enables automatized provenance tracking on file level
 
 
-## Workflow Implementation
+## Workflow implementation
 
-  ![](material/rulegraph_colored.svg){width=50% .center}
-  ![](material/logos/snakemake.svg){width=8% .right}
+  ![](material/rulegraph_colored.svg){width=50% .left}
 
+### Advantages ![](material/logos/snakemake.svg){width=8% .right}
 
-## Improvements
-
-  * combination of template structure & automatic enrichment
-  * modularization
-    * separation of generic and project specific aspects
-    * reusability in other contexts
-  * flexible
-  * extendable
-  * combined data & metadata
-  * facilitated
-    - portability
-    - parallelisation
-
+  * categorization of rules based <br> on application level
+  * separation of generic and <br> project specific rules
+  * parallelization capabilities
+  * explicit dependency handling
+  * flexibly extendable
+  * no separation of metadata <br> structure & content
+  * selective, automated execution upon <br> change in source file
 
 # Summary & Outlook
 
@@ -246,9 +261,10 @@ There is need for
 
 ## Outlook
   * integration of *odMLtables* functionality into _odML_ package
-  * continuation of *Neo* development for better integration, user friendliness & performance
-  * implementation of metadata workflow using cluster computing and remote data files
-  * transfer of generic workflow rules to other projects and initialization of public rule collection
+  * continuation of *Neo* development for extended support of formats, better user friendliness & improved performance
+  * implementation of workflow on a larger scale using cluster computing and remote data files
+  * application of workflow concept in different projects
+  * integration with larger frameworks, e.g. HBP infrastructures
 
 
 
@@ -273,10 +289,6 @@ There is need for
 
   ![](material/scidata_reachgraspio_diagram.png){width=60%}
 
-## Workflow outlook
-
-  ![](material/global_picture_workflow.png){width=60%}
-
 
 ## Overview - Involved Projects & Publications
 
@@ -294,3 +306,55 @@ There is need for
   - community based Python package
   - standardized representation of electrophysiological data
   - interfacing to numerous proprietary and open source formats
+
+
+## ![](material/logos/neo.svg){width=15%}
+
+### Recent development
+
+  * support of new formats
+    * Neuralynx
+    * latest Blackrock version
+    * Nix
+  * unification of reader API
+  * simplification of object structure
+  * data linked custom annotations
+  * extension of utility functionality
+
+### Outlook
+
+  * improvements of object structure
+    * replacement of ambiguous objects
+    * shift from graph to hierarchical structure
+  * integration with related formats (EEG, Imaging)
+  * integration with simulation software (nest)
+
+
+## Workflow management system
+
+  General requirements
+
+  * no additional computational overhead
+  * no expert knowledge required
+  * standalone
+  * visualizable
+  * easy to debug
+  * actively supported
+  * open source
+
+. . .
+
+  Project specific requirements
+
+  * support Python
+  * good integration
+  * flexibility (bash support)
+  * support HPC
+
+## Comparison R2G & V4A
+
+  ![](material/discussion_odml_build_comparison.svg)
+
+## odMLtables mapping
+
+  ![](material/hierarchy_table_mapping.svg)
