@@ -60,9 +60,9 @@
 </figure>
 <h3 id="metadata">Metadata</h3>
 <ul>
-<li class="fragment">date and time</li>
 <li class="fragment">brain area</li>
 <li class="fragment">subject</li>
+<li class="fragment">date and time</li>
 <li class="fragment">preparation technique</li>
 <li class="fragment">visualization techniquec</li>
 </ul>
@@ -85,38 +85,36 @@
 </div>
 </section><section id="growing-importance-of-reproducibility-collaboration" class="slide level2">
 <h2>Growing importance of reproducibility &amp; collaboration</h2>
-<p>Fraction of publications relating to reproducibility and collaboration <img src="material/trends.svg" style="width:70.0%" /></p>
+<p>Fraction of publications relating to reproducibility and collaboration</p>
+<figure>
+<img src="material/trends.svg" style="width:60.0%" />
+</figure>
+<p>Figure based on data from <a href="https://www.ncbi.nlm.nih.gov/pubmed/">PubMed</a> using <a href="http://dan.corlan.net/medline-trend.html">Corlan (2004)</a>.</p>
 </section><section id="overview-projects-publications" class="slide level2">
 <h2>Overview — projects &amp; publications</h2>
-<h3 id="data-publication">Data publication</h3>
+<h3 id="data-publication-gin.g-node.orgintmultielectrode_grasp">Data publication (<a href="https://gin.g-node.org/INT/multielectrode_grasp">gin.g-node.org/INT/multielectrode_grasp</a>)</h3>
 <blockquote>
 <p><strong>Massively parallel multi-electrode recordings of macaque motor cortex during an instructed delayed reach-to-grasp task</strong><br> Brochier, T., Zehl, L., Hao, Y., Duret, M., <em>Sprenger, J.</em>, Denker, M., Grün, S., Riehle, A., 2018. Scientific Data 5, 180055. <a href="https://doi.org/10.1038/sdata.2018.55"></a></p>
 </blockquote>
-<h3 id="the-odmltables-package"><strong>The <em>odMLtables</em> package</strong></h3>
+<h3 id="the-odmltables-package-github.cominm-6python-odmltables"><strong>The <em>odMLtables</em> package</strong> (<a href="https://github.com/inm-6/python-odmltables">github.com/inm-6/python-odmltables</a>)</h3>
 <blockquote>
 <p><strong>odMLtables: A user-friendly approach for managing metadata of neurophysiological experiments</strong> <br> <em>Sprenger, J.</em>, Zehl, L., Pick, J., Sonntag, M., Grewe, J., Wachtler, T., Grün, S., Denker, M., 2019. Front. Neuroinform. 13. <a href="https://doi.org/10.3389/fninf.2019.00062"></a></p>
 </blockquote>
-<h3 id="the-neo-package"><strong>The <em>Neo</em> package</strong></h3>
+<h3 id="the-neo-package-github.comneuralensemblepython-neo"><strong>The <em>Neo</em> package</strong> (<a href="https://github.com/neuralensemble/python-neo">github.com/neuralensemble/python-neo</a>)</h3>
 <ul>
 <li>open source, community based Python package</li>
 <li>standardized representation of electrophysiological data</li>
 <li>interfacing to numerous proprietary and open source formats</li>
 </ul>
 </section></section>
-<section><section id="neuroscience-today" class="titleslide slide level1"><h1>Neuroscience today</h1></section><section id="a-recent-example-brochier-et-al.-2018" class="slide level2">
+<section><section id="neuroscience-today" class="titleslide slide level1"><h1>Neuroscience Today</h1></section><section id="a-recent-example-brochier-et-al.-2018" class="slide level2">
 <h2>A recent example — <em>Brochier et al. 2018</em></h2>
 <figure>
-<img src="material/scidata_experiment_simple.svg" class="left" style="width:45.0%" />
+<img src="material/scidata_experiment_simple.svg" style="width:70.0%" />
 </figure>
-<h3 id="overview">Overview</h3>
 <ul>
-<li>96 recording electrodes</li>
-<li>sampling rate 30kHz</li>
-<li>online &amp; offline signal processing</li>
-<li>custom recording setup</li>
-<li><p>~ 10k metadata values per session</p></li>
-<li>proprietary recording devices &amp; formats</li>
-<li><p>~ 5GB data per session</p></li>
+<li class="fragment">~ 5GB data per session (proprietary formats)</li>
+<li class="fragment">~ 10k metadata values per session (various formats)</li>
 </ul>
 </section><section id="requirements-for-modern-neuroscience" class="slide level2">
 <h2>Requirements for modern neuroscience</h2>
@@ -128,16 +126,25 @@
 </ul>
 </section></section>
 <section><section id="metadata-management" class="titleslide slide level1"><h1>Metadata Management</h1></section><section id="open-metadata-markup-language-odml" class="slide level2">
-<h2>open metaData Markup Language — odML</h2>
+<h2>open metadata Markup Language — odML</h2>
 <figure>
-<img src="material/odml.png" class="left" style="width:45.0%" />
+<img src="material/odml.svg" style="width:70.0%" />
 </figure>
+<table>
+<tr>
+<td width="50%">
 <ul>
 <li>hierarchical metadata structure</li>
 <li>generic objects</li>
 <li>human &amp; machine readable</li>
-<li><p>limited support for manual interaction</p></li>
-<li><p>needs to be generated based <br> on metadata source files &amp; <em>manual notes</em></p></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li>limited support for manual interaction</li>
+<li>needs to be generated based <br> on metadata source files &amp; <em>manual notes</em>
+</td>
+</table></li>
 </ul>
 </section><section id="odmltables" class="slide level2">
 <h2><img src="material/logos/odMLtables.png" class="left" style="width:10.0%" /> </t> odMLtables</h2>
@@ -152,32 +159,41 @@
 </section><section id="graphical-user-interface" class="slide level2">
 <h2>Graphical user interface</h2>
 <figure>
-<img src="material/Screenshot.png" class="left" style="width:40.0%" />
+<img src="material/Screenshot.png" class="left" style="width:50.0%" />
 </figure>
+<p><br><br></p>
 <ul>
 <li>easy access to the <em>odML</em> format <br> also for non-programmers</li>
-<li>5 main functionalities available <br> as <code>wizard</code> dialogs for step-wise configuration <br> of odMLtables function</li>
+<li>5 main functionalities available <br> as <code>wizard</code> dialogs for step-wise <br> configuration of odMLtables function</li>
 <li>saving of configuration <br> settings for repeated use</li>
-<li>wizards are linked in <em>odML-ui</em> <br> for simplified accessiblity</li>
+<li><code>wizards</code> are linked in <em>odML-ui</em> <br> for simplified accessiblity</li>
 </ul>
 </section></section>
 <section><section id="data-management" class="titleslide slide level1"><h1>Data Management</h1></section><section id="section" class="slide level2">
 <h2><img src="material/logos/neo.svg" style="width:15.0%" /></h2>
 <figure>
-<img src="material/neo_ios_and_tools.svg" class="left" style="width:45.0%" />
+<img src="material/neo_ios_and_tools_0.svg" style="width:45.0%" />
 </figure>
-<h3 id="features">Features</h3>
-<ul>
-<li>generic, standardized data <br> representation for electrophysiological <br> data</li>
-<li>basis for higher level data <br> processing tools</li>
-<li>interface to &gt;30 proprietary <br> &amp; open data formats</li>
-</ul>
+<h3 id="neo-as-interface">Neo as interface</h3>
 </section><section id="section-1" class="slide level2">
 <h2><img src="material/logos/neo.svg" style="width:15.0%" /></h2>
 <figure>
+<img src="material/neo_ios_and_tools.svg" class="right" style="width:45.0%" />
+</figure>
+<h3 id="neo-as-interface-1">Neo as interface</h3>
+<p><br> <br></p>
+<ul>
+<li>interface to &gt;30 proprietary <br> &amp; open data formats</li>
+<li>generic, standardized data <br> representation for electrophysiological <br> data</li>
+<li>basis for higher level data <br> processing tools</li>
+</ul>
+</section><section id="section-2" class="slide level2">
+<h2><img src="material/logos/neo.svg" style="width:15.0%" /></h2>
+<h3 id="neo-as-standardized-data-representation">Neo as standardized data representation</h3>
+<figure>
 <img src="material/neo_schema.svg" class="right" style="width:50.0%" />
 </figure>
-<h3 id="features-1">Features</h3>
+<h3 id="features">Features</h3>
 <ul>
 <li>object oriented representation
 <ul>
@@ -185,10 +201,11 @@
 <li>container objects</li>
 </ul></li>
 <li>generic structure</li>
-<li>custom names &amp; annotations</li>
+<li>support for custom metadata <br> via object names &amp; annotations</li>
 <li>utility functions</li>
 </ul>
 <h3 id="recent-updates">Recent updates</h3>
+<div style="float: left; margin-left: 55px;">
 <ul>
 <li>data related annotations</li>
 <li>interface to additional formats</li>
@@ -196,43 +213,77 @@
 <li>simplification of object structure</li>
 <li>performance improvements and refactoring</li>
 </ul>
+</div>
 </section></section>
 <section><section id="data-metadata-management-in-practice" class="titleslide slide level1"><h1>Data &amp; Metadata Management in Practice</h1></section><section id="brochier-et-al.-2018-the-metadata-concept" class="slide level2">
 <h2><em>Brochier et al. 2018</em> — The metadata concept</h2>
 <figure>
-<img src="material/scidata_odMLgeneration_diagram_0.png" class="right" style="width:50.0%" />
+<img src="material/scidata_odMLgeneration_diagram_0_ext_0.png" class="right" style="width:60.0%" />
 </figure>
 <h3 id="metadata-pipeline">Metadata pipeline</h3>
 <ul>
-<li>multiple, diverse source files</li>
-<li>hierarchical metadata collection</li>
 <li>scripted aggregation of metadata
 <ol type="1">
 <li>generation of hierarchical <br> structure</li>
-<li>enrichment with metadata</li>
+<li>enrichment with <br> metadata</li>
 </ol></li>
 </ul>
 </section><section id="brochier-et-al.-2018-the-metadata-concept-1" class="slide level2">
 <h2><em>Brochier et al. 2018</em> — The metadata concept</h2>
 <figure>
-<img src="material/scidata_odMLgeneration_diagram.png" class="right" style="width:50.0%" />
+<img src="material/scidata_odMLgeneration_diagram_0_ext_1.png" class="right" style="width:60.0%" />
+</figure>
+<h3 id="metadata-pipeline-1">Metadata pipeline</h3>
+<ul>
+<li>scripted aggregation of metadata
+<ol type="1">
+<li>generation of hierarchical <br> structure</li>
+<li>enrichment with <br> metadata</li>
+</ol></li>
+</ul>
+</section><section id="brochier-et-al.-2018-the-metadata-concept-2" class="slide level2">
+<h2><em>Brochier et al. 2018</em> — The metadata concept</h2>
+<figure>
+<img src="material/scidata_odMLgeneration_diagram_0_ext_2.png" class="right" style="width:60.0%" />
+</figure>
+<h3 id="metadata-pipeline-2">Metadata pipeline</h3>
+<ul>
+<li>scripted aggregation of metadata
+<ol type="1">
+<li>generation of hierarchical <br> structure</li>
+<li>enrichment with <br> metadata</li>
+</ol></li>
+<li>multiple, diverse source files</li>
+</ul>
+</section><section id="brochier-et-al.-2018-the-metadata-concept-3" class="slide level2">
+<h2><em>Brochier et al. 2018</em> — The metadata concept</h2>
+<figure>
+<img src="material/scidata_odMLgeneration_diagram_ext.png" class="right" style="width:60.0%" />
 </figure>
 <h3 id="issues">Issues</h3>
 <ul>
-<li><em>monolithic, linear compilation script</em></li>
+<li><em>monolithic, linear compilation <br> script</em></li>
 <li>structure and content are not <br> completely independent <br> → <em>convoluted generation</em> and <br> enrichment process</li>
 <li>requires manual inspection <br> of output for <em>status tracking</em></li>
 <li>compilation mechanism is <br> obscured in scripts</li>
 <li><em>reuse</em> in other context requires <br> extended adjustments</li>
 <li>separate storage of compiled <br> metadata and original data files</li>
 </ul>
-<div class="fragment">
-<p><strong>Solutions</strong></p>
+</section><section id="improvement-of-the-metadata-concept" class="slide level2">
+<h2>Improvement of the metadata concept</h2>
+<h3 id="solutions-proposals">Solutions proposals</h3>
+<figure>
+<img src="material/scidata_odMLgeneration_diagram_ext.png" class="right" style="width:30.0%" />
+</figure>
+<p><strong>Combination of data and metadata in a single framework</strong> <br> → <em>Nix</em> format (<em>Neo</em>) captures data and metadata <br><br><br></p>
+<p><strong>Systematic modularization of the compilation process</strong></p>
 <ul>
-<li><em>Nix</em> format (<em>Neo</em>) can capture metadata and data</li>
-<li><em>Workflow management systems</em> for organization data and metadata processing</li>
+<li>less maintenance</li>
+<li>easier to reuse in other projects</li>
+<li>improved tracking of compilation process</li>
+<li>explicit dependencies</li>
 </ul>
-</div>
+<p>→<em>Workflow management systems</em> (<em>snakemake</em>) for organization of data and metadata processes</p>
 </section></section>
 <section><section id="workflows" class="titleslide slide level1"><h1>Workflows</h1></section><section id="workflow-concept" class="slide level2">
 <h2>Workflow concept</h2>
@@ -256,46 +307,68 @@
 </ul>
 </section><section id="workflows-in-science" class="slide level2">
 <h2>Workflows in science</h2>
-<h3 id="from-data-recording-to-reproducible-publications-using-snakemake">From data recording to reproducible publications using snakemake <img src="material/logos/snakemake.svg" class="right" style="width:8.0%" /></h3>
+<h3 id="from-data-recording-to-reproducible-publications-using-workflows">From data recording to reproducible publications using workflows</h3>
 <figure>
-<img src="material/global_picture_workflow.png" class="left" style="width:50.0%" />
+<img src="material/global_picture_workflow_0.png" class="left" style="width:45.0%" />
 </figure>
 <ul>
 <li>visualization of dependencies <br> and execution status</li>
 <li>portable and extendable via <br> via modular approach</li>
 <li>combined data &amp; metadata packaging <br> using <em>Nix</em></li>
-<li>enables automatized provenance tracking on file level</li>
+<li>enables automatized provenance <br> tracking on file level</li>
+</ul>
+</section><section id="workflows-in-science-1" class="slide level2">
+<h2>Workflows in science</h2>
+<h3 id="from-data-recording-to-reproducible-publications-using-workflows-1">From data recording to reproducible publications using workflows</h3>
+<figure>
+<img src="material/global_picture_workflow_1.png" class="left" style="width:45.0%" />
+</figure>
+<ul>
+<li>visualization of dependencies <br> and execution status</li>
+<li>portable and extendable via <br> via modular approach</li>
+<li>combined data &amp; metadata packaging <br> using <em>Nix</em></li>
+<li>enables automatized provenance <br> tracking on file level</li>
+</ul>
+</section><section id="workflows-in-science-2" class="slide level2">
+<h2>Workflows in science</h2>
+<h3 id="from-data-recording-to-reproducible-publications-using-workflows-2">From data recording to reproducible publications using workflows</h3>
+<figure>
+<img src="material/global_picture_workflow_2.png" class="left" style="width:45.0%" />
+</figure>
+<ul>
+<li>visualization of dependencies <br> and execution status</li>
+<li>portable and extendable via <br> via modular approach</li>
+<li>combined data &amp; metadata packaging <br> using <em>Nix</em></li>
+<li>enables automatized provenance <br> tracking on file level</li>
 </ul>
 </section><section id="workflow-implementation" class="slide level2">
 <h2>Workflow implementation</h2>
-<figure>
-<img src="material/rulegraph_colored.svg" class="left" style="width:50.0%" />
-</figure>
-<h3 id="advantages">Advantages <img src="material/logos/snakemake.svg" class="right" style="width:8.0%" /></h3>
+<p>Visualization of snakemake rules <img src="material/logos/snakemake.svg" class="left" style="width:4.0%" /> <br><br> <img src="material/rulegraph_colored.svg" class="left" style="width:45.0%" /></p>
+<h3 id="advantages">Advantages</h3>
 <ul>
 <li>categorization of rules based <br> on application level</li>
-<li>separation of generic and <br> project specific rules</li>
+<li>separation of <em>generic</em> and <br> project specific rules</li>
 <li>parallelization capabilities</li>
-<li>explicit dependency handling</li>
-<li>flexibly extendable</li>
+<li>explicit <em>dependency description</em> <br> and visualization</li>
+<li>flexibly <em>extendable</em></li>
 <li>no separation of metadata <br> structure &amp; content</li>
-<li>selective, automated execution upon <br> change in source file</li>
+<li><em>automatic propagation</em> of changes</li>
 </ul>
 </section></section>
 <section><section id="summary-outlook" class="titleslide slide level1"><h1>Summary &amp; Outlook</h1></section><section id="summary" class="slide level2">
 <h2>Summary</h2>
 <ul>
-<li><em>Brochier et al. 2018</em> demonstrates that new tools &amp; methods are needed for comprehensive data and metadata handling in the neurosciences</li>
-<li><em>odMltables</em> facilitates the standardized metadata collection in laboratory environments</li>
-<li><em>Neo</em> provides a extensive conversion capabilities for proprietary &amp; open electrophysiological formats &amp; forms a standardized data representation for further data processing</li>
-<li><em>workflow management systems</em> are a suitable approach for comprehensive metadata management for complex experiments &amp; a basis for reproducible science</li>
+<li>In <em>Brochier et al. 2018</em> we demonstrate the need for new tools &amp; methods for comprehensive data and metadata handling in the neurosciences and identify missing key components.</li>
+<li>By providing <em>odMLtables</em> we facilitates the standardized metadata collection in laboratory environments.</li>
+<li>We develop <em>Neo</em> as an essential component for unified representation of electrophysiological data.</li>
+<li>We devise a new approach for reproducible data and metadata management based on <em>workflow management systems</em> that scales from experimental data acquisition to data and analysis publication.</li>
 </ul>
 </section><section id="outlook" class="slide level2">
 <h2>Outlook</h2>
 <ul>
 <li>integration of <em>odMLtables</em> functionality into <em>odML</em> package</li>
 <li>continuation of <em>Neo</em> development for extended support of formats, better user friendliness &amp; improved performance</li>
-<li>implementation of workflow on a larger scale using cluster computing and remote data files</li>
+<li>implementation of workflows on a larger scale using cluster computing and remote data files</li>
 <li>application of workflow concept in different projects</li>
 <li>integration with larger frameworks, e.g. HBP infrastructures</li>
 </ul>
@@ -313,22 +386,22 @@
 </figure>
 </section><section id="overview---involved-projects-publications" class="slide level2">
 <h2>Overview - Involved Projects &amp; Publications</h2>
-<h3 id="data-publication-1">Data publication</h3>
+<h3 id="data-publication">Data publication</h3>
 <ul>
 <li>publication of two complex neuroscientific datasets</li>
 <li>based on semi-automatic metadata collection organization</li>
 </ul>
-<h3 id="the-odmltables-package-1"><strong>The <em>odMLtables</em> package</strong></h3>
+<h3 id="the-odmltables-package"><strong>The <em>odMLtables</em> package</strong></h3>
 <ul>
 <li>open source tool for facilitated metadata collection in the laboratory</li>
 </ul>
-<h3 id="the-neo-package-1"><strong>The <em>Neo</em> package</strong></h3>
+<h3 id="the-neo-package"><strong>The <em>Neo</em> package</strong></h3>
 <ul>
 <li>community based Python package</li>
 <li>standardized representation of electrophysiological data</li>
 <li>interfacing to numerous proprietary and open source formats</li>
 </ul>
-</section><section id="section-2" class="slide level2">
+</section><section id="section-3" class="slide level2">
 <h2><img src="material/logos/neo.svg" style="width:15.0%" /></h2>
 <h3 id="recent-development">Recent development</h3>
 <ul>
