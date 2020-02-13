@@ -39,8 +39,8 @@
   <p class="date">14 Feb 2020</p>
 </section>
 
-<section><section id="introduction" class="titleslide slide level1"><h1>Introduction</h1></section><section id="neuroscience" class="slide level2">
-<h2>Neuroscience</h2>
+<section><section id="introduction" class="titleslide slide level1"><h1>Introduction</h1></section><section id="neuroscientific-data---a-historic-example" class="slide level2">
+<h2>Neuroscientific data - a historic example</h2>
 <p>Image of a neuron, 1912</p>
 <figure>
 <img src="material/pyramidal_neuron_blue.png" style="width:70.0%" />
@@ -61,10 +61,10 @@
 <h3 id="metadata">Metadata</h3>
 <ul>
 <li class="fragment">brain area</li>
-<li class="fragment">subject</li>
+<li class="fragment">species</li>
 <li class="fragment">date and time</li>
 <li class="fragment">preparation technique</li>
-<li class="fragment">visualization techniquec</li>
+<li class="fragment">visualization technique</li>
 </ul>
 <div class="fragment">
 <p>Additional Metadata</p>
@@ -122,7 +122,7 @@
 <ul>
 <li>comprehensive metadata organization → odML, <em>odMLtables</em></li>
 <li>comprehensive data organization → <em>Neo</em></li>
-<li>systematic organization of data &amp; metadata processes → <em>workflow management systems</em></li>
+<li>systematic organization of data &amp; metadata processes → <em>modular workflow approach</em></li>
 </ul>
 </section></section>
 <section><section id="metadata-management" class="titleslide slide level1"><h1>Metadata Management</h1></section><section id="open-metadata-markup-language-odml" class="slide level2">
@@ -169,12 +169,12 @@
 <li><code>wizards</code> are linked in <em>odML-ui</em> <br> for simplified accessiblity</li>
 </ul>
 </section></section>
-<section><section id="data-management" class="titleslide slide level1"><h1>Data Management</h1></section><section id="section" class="slide level2">
+<section><section id="handling-of-electrophysiological-data" class="titleslide slide level1"><h1>Handling of Electrophysiological Data</h1></section><section id="section" class="slide level2">
 <h2><img src="material/logos/neo.svg" style="width:15.0%" /></h2>
-<figure>
-<img src="material/neo_ios_and_tools_0.svg" style="width:45.0%" />
-</figure>
 <h3 id="neo-as-interface">Neo as interface</h3>
+<figure>
+<img src="material/neo_ios_and_tools_0.svg" style="width:42.0%" />
+</figure>
 </section><section id="section-1" class="slide level2">
 <h2><img src="material/logos/neo.svg" style="width:15.0%" /></h2>
 <figure>
@@ -185,7 +185,7 @@
 <ul>
 <li>interface to &gt;30 proprietary <br> &amp; open data formats</li>
 <li>generic, standardized data <br> representation for electrophysiological <br> data</li>
-<li>basis for higher level data <br> processing tools</li>
+<li>basis for applications and <br> scripts working on the data</li>
 </ul>
 </section><section id="section-2" class="slide level2">
 <h2><img src="material/logos/neo.svg" style="width:15.0%" /></h2>
@@ -207,15 +207,15 @@
 <h3 id="recent-updates">Recent updates</h3>
 <div style="float: left; margin-left: 55px;">
 <ul>
-<li>data related annotations</li>
-<li>interface to additional formats</li>
-<li>extended utilities</li>
+<li>data related annotations (array annotations)</li>
+<li>interface to additional formats (neuralynx, nest, blackrock, nix)</li>
+<li>extended utilities (trial based slicing, resampling, ...)</li>
 <li>simplification of object structure</li>
 <li>performance improvements and refactoring</li>
 </ul>
 </div>
 </section></section>
-<section><section id="data-metadata-management-in-practice" class="titleslide slide level1"><h1>Data &amp; Metadata Management in Practice</h1></section><section id="brochier-et-al.-2018-the-metadata-concept" class="slide level2">
+<section><section id="a-process-for-data-metadata-management" class="titleslide slide level1"><h1>A Process for Data &amp; Metadata Management</h1></section><section id="brochier-et-al.-2018-the-metadata-concept" class="slide level2">
 <h2><em>Brochier et al. 2018</em> — The metadata concept</h2>
 <figure>
 <img src="material/scidata_odMLgeneration_diagram_0_ext_0.png" class="right" style="width:60.0%" />
@@ -262,16 +262,15 @@
 </figure>
 <h3 id="issues">Issues</h3>
 <ul>
-<li><em>monolithic, linear compilation <br> script</em></li>
 <li>structure and content are not <br> completely independent <br> → <em>convoluted generation</em> and <br> enrichment process</li>
+<li><em>monolithic, linear compilation <br> script</em> <br> → obscured compilation <br> mechanism</li>
 <li>requires manual inspection <br> of output for <em>status tracking</em></li>
-<li>compilation mechanism is <br> obscured in scripts</li>
 <li><em>reuse</em> in other context requires <br> extended adjustments</li>
-<li>separate storage of compiled <br> metadata and original data files</li>
+<li><em>detached</em> for data and <br> metadata storage</li>
 </ul>
 </section><section id="improvement-of-the-metadata-concept" class="slide level2">
 <h2>Improvement of the metadata concept</h2>
-<h3 id="solutions-proposals">Solutions proposals</h3>
+<h3 id="solutions-approach">Solutions approach</h3>
 <figure>
 <img src="material/scidata_odMLgeneration_diagram_ext.png" class="right" style="width:30.0%" />
 </figure>
@@ -358,10 +357,10 @@
 <section><section id="summary-outlook" class="titleslide slide level1"><h1>Summary &amp; Outlook</h1></section><section id="summary" class="slide level2">
 <h2>Summary</h2>
 <ul>
-<li>In <em>Brochier et al. 2018</em> we demonstrate the need for new tools &amp; methods for comprehensive data and metadata handling in the neurosciences and identify missing key components.</li>
-<li>By providing <em>odMLtables</em> we facilitates the standardized metadata collection in laboratory environments.</li>
-<li>We develop <em>Neo</em> as an essential component for unified representation of electrophysiological data.</li>
-<li>We devise a new approach for reproducible data and metadata management based on <em>workflow management systems</em> that scales from experimental data acquisition to data and analysis publication.</li>
+<li>Based on our data publication <em>Brochier et al. 2018</em> we identified deficiencies and issues in designing a scalable, portable, generic, rigorous workflow for data and metadata acquisition. Based on this we designed solutions which close these gaps:</li>
+<li>By providing <em>odMLtables</em> we facilitate the standardized metadata collection in laboratory environments.</li>
+<li>We contributed major functionality to the <em>Neo</em> package that was lacking in building our acquisition workflow.</li>
+<li>We devise a portable, modular approach for reproducible data and metadata management based on <em>workflow management systems</em> that scales from experimental data acquisition to data and analysis publication.</li>
 </ul>
 </section><section id="outlook" class="slide level2">
 <h2>Outlook</h2>

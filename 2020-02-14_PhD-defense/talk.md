@@ -9,7 +9,7 @@ css: slides.css
 
 # Introduction
 
-## Neuroscience
+## Neuroscientific data - a historic example
 
   Image of a neuron, 1912
 
@@ -32,10 +32,10 @@ css: slides.css
 ### Metadata
 
   >* brain area
-  * subject
+  * species
   * date and time
   * preparation technique
-  * visualization techniquec
+  * visualization technique
 
   . . .
 
@@ -81,9 +81,7 @@ css: slides.css
   - standardized representation of electrophysiological data
   - interfacing to numerous proprietary and open source formats
 
-# Neuroscience Today
-
-## A recent example — _Brochier et al. 2018_
+## Neuroscience today — _Brochier et al. 2018_
 
   ![](material/scidata_experiment_simple.svg){width=70%}
 
@@ -97,7 +95,7 @@ There is need for
 
   - comprehensive metadata organization → odML, *odMLtables*
   - comprehensive data organization → *Neo*
-  - systematic organization of data & metadata processes → *workflow management systems*
+  - systematic organization of data & metadata processes → *modular workflow approach*
 
 # Metadata Management
 
@@ -133,13 +131,14 @@ There is need for
   * saving of configuration <br> settings for repeated use
   * `wizards` are linked in _odML-ui_ <br> for simplified accessiblity
 
-# Data Management
+# Handling of Electrophysiological Data
 
 ## ![](material/logos/neo.svg){width=15%}
 
-  ![](material/neo_ios_and_tools_0.svg){width=45%}
-
 ### Neo as interface
+  ![](material/neo_ios_and_tools_0.svg){width=42%}
+
+
 
 ## ![](material/logos/neo.svg){width=15%}
 
@@ -152,7 +151,7 @@ There is need for
 
   * interface to >30 proprietary <br> & open data formats
   * generic, standardized data <br> representation for electrophysiological <br> data
-  * basis for higher level data <br> processing tools
+  * basis for applications and <br> scripts working on the data
 
 
 ## ![](material/logos/neo.svg){width=15%}
@@ -173,14 +172,14 @@ There is need for
 ### Recent updates
 
 <div style="float: left; margin-left: 55px;">
-  * data related annotations
-  * interface to  additional formats
-  * extended utilities
+  * data related annotations (array annotations)
+  * interface to  additional formats (neuralynx, nest, blackrock, nix)
+  * extended utilities (trial based slicing, resampling, ...)
   * simplification of  object structure
   * performance improvements and refactoring
 </div>
 
-# Data & Metadata Management in Practice
+# A Process for Data & Metadata Management
 
 ## _Brochier et al. 2018_ — The metadata concept  
 
@@ -219,17 +218,17 @@ There is need for
 
 ### Issues
 
-  * *monolithic, linear compilation <br> script*
   * structure and content are not <br> completely independent <br>
     → *convoluted generation* and <br> enrichment process
+  * *monolithic, linear compilation <br> script* <br>
+    → obscured compilation <br> mechanism
   * requires manual inspection <br> of output for *status tracking*
-  * compilation mechanism is <br> obscured in scripts
   * *reuse* in other context requires <br> extended adjustments
-  * separate storage of compiled <br> metadata and original data files
+  * *detached* for data and <br> metadata storage
 
 ## Improvement of the metadata concept
 
-### Solutions proposals
+### Solutions approach
 
   ![](material/scidata_odMLgeneration_diagram_ext.png){width=30% .right}
 
@@ -317,10 +316,10 @@ There is need for
 
 ## Summary
 
-  * In _Brochier et al. 2018_ we demonstrate the need for new tools & methods for comprehensive data and metadata handling in the neurosciences and identify missing key components.
-  * By providing _odMLtables_ we facilitates the standardized metadata collection in laboratory environments.
-  * We develop _Neo_ as an essential component for unified representation of electrophysiological data.
-  * We devise a new approach for reproducible data and metadata management based on _workflow management systems_ that scales from experimental data acquisition to data and analysis publication.
+ * Based on our data publication _Brochier et al. 2018_ we identified deficiencies and issues in designing a scalable, portable, generic, rigorous workflow for data and metadata acquisition. Based on this we designed solutions which close these gaps:
+  * By providing _odMLtables_ we facilitate the standardized metadata collection in laboratory environments.
+  * We contributed major functionality to the _Neo_ package that was lacking in building our acquisition workflow.
+  * We devise a portable, modular approach for reproducible data and metadata management based on _workflow management systems_ that scales from experimental data acquisition to data and analysis publication.
 
 ## Outlook
   * integration of *odMLtables* functionality into _odML_ package
