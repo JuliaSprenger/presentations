@@ -74,14 +74,17 @@
 <li class="fragment">experimental notes, etc</li>
 </ul>
 </div>
-<div class="fragment">
-<p>Additional data modalities</p>
-<div style="margin-left:-600px">
+</section><section id="neuroscience-today-brochier-et-al.-2018" class="slide level2">
+<h2>Neuroscience today — <em>Brochier et al. 2018</em></h2>
+<figure>
+<img src="material/scidata_experiment_simple_ext.svg" style="width:90.0%" />
+</figure>
 <ul>
-<li class="fragment">electric activity of neurons</li>
-<li class="fragment">connectivity between cells, etc</li>
+<li class="fragment">~ 5GB data per session (proprietary formats)</li>
+<li class="fragment">~ 10k metadata values per session (various formats)</li>
 </ul>
-</div>
+<div class="fragment">
+<p>How can we handle such amounts of diverse data and metadata in a reproducible fashion?</p>
 </div>
 </section><section id="growing-importance-of-reproducibility-collaboration" class="slide level2">
 <h2>Growing importance of reproducibility &amp; collaboration</h2>
@@ -90,6 +93,14 @@
 <img src="material/trends.svg" style="width:60.0%" />
 </figure>
 <p>Figure based on data from <a href="https://www.ncbi.nlm.nih.gov/pubmed/">PubMed</a> using <a href="http://dan.corlan.net/medline-trend.html">Corlan (2004)</a>.</p>
+</section><section id="challenges-for-modern-neuroscience" class="slide level2">
+<h2>Challenges for modern neuroscience</h2>
+<p>How to devise a general data and metadata management approach to ensure reproducibility of scientific findings?</p>
+<ul>
+<li>comprehensive metadata collection used by all collaboration members</li>
+<li>standardized tools and formats for data and metadata for facilitated access</li>
+<li>systematic organization of data and metadata aggregation process</li>
+</ul>
 </section><section id="overview-projects-publications" class="slide level2">
 <h2>Overview — projects &amp; publications</h2>
 <h3 id="data-publication-gin.g-node.orgintmultielectrode_grasp">Data publication (<a href="https://gin.g-node.org/INT/multielectrode_grasp">gin.g-node.org/INT/multielectrode_grasp</a>)</h3>
@@ -105,24 +116,6 @@
 <li>open source, community based Python package</li>
 <li>standardized representation of electrophysiological data</li>
 <li>interfacing to numerous proprietary and open source formats</li>
-</ul>
-</section></section>
-<section><section id="neuroscience-today" class="titleslide slide level1"><h1>Neuroscience Today</h1></section><section id="a-recent-example-brochier-et-al.-2018" class="slide level2">
-<h2>A recent example — <em>Brochier et al. 2018</em></h2>
-<figure>
-<img src="material/scidata_experiment_simple.svg" style="width:70.0%" />
-</figure>
-<ul>
-<li class="fragment">~ 5GB data per session (proprietary formats)</li>
-<li class="fragment">~ 10k metadata values per session (various formats)</li>
-</ul>
-</section><section id="requirements-for-modern-neuroscience" class="slide level2">
-<h2>Requirements for modern neuroscience</h2>
-<p>There is need for</p>
-<ul>
-<li>comprehensive metadata organization → odML, <em>odMLtables</em></li>
-<li>comprehensive data organization → <em>Neo</em></li>
-<li>systematic organization of data &amp; metadata processes → <em>modular workflow approach</em></li>
 </ul>
 </section></section>
 <section><section id="metadata-management" class="titleslide slide level1"><h1>Metadata Management</h1></section><section id="open-metadata-markup-language-odml" class="slide level2">
@@ -266,7 +259,7 @@
 <li><em>monolithic, linear compilation <br> script</em> <br> → obscured compilation <br> mechanism</li>
 <li>requires manual inspection <br> of output for <em>status tracking</em></li>
 <li><em>reuse</em> in other context requires <br> extended adjustments</li>
-<li><em>detached</em> for data and <br> metadata storage</li>
+<li><em>detached</em> data and <br> metadata storage</li>
 </ul>
 </section><section id="improvement-of-the-metadata-concept" class="slide level2">
 <h2>Improvement of the metadata concept</h2>
@@ -356,20 +349,42 @@
 </section></section>
 <section><section id="summary-outlook" class="titleslide slide level1"><h1>Summary &amp; Outlook</h1></section><section id="summary" class="slide level2">
 <h2>Summary</h2>
+<p>We provide a solution for reproducible data and metadata collection and processing based on open source tools.</p>
 <ul>
-<li>Based on our data publication <em>Brochier et al. 2018</em> we identified deficiencies and issues in designing a scalable, portable, generic, rigorous workflow for data and metadata acquisition. Based on this we designed solutions which close these gaps:</li>
-<li>By providing <em>odMLtables</em> we facilitate the standardized metadata collection in laboratory environments.</li>
-<li>We contributed major functionality to the <em>Neo</em> package that was lacking in building our acquisition workflow.</li>
-<li>We devise a portable, modular approach for reproducible data and metadata management based on <em>workflow management systems</em> that scales from experimental data acquisition to data and analysis publication.</li>
+<li>Based on our data publication <em>Brochier et al. 2018</em> we identified deficiencies and issues in designing a scalable, portable, generic, rigorous workflow for data and metadata acquisition. We designed solutions which close these gaps:</li>
+<li>By providing <em>odMLtables</em> we facilitate the metadata collection in laboratory environments and make the odML standard available to non-programmers, while conserving existing interfaces (spreadsheet software).</li>
+<li>We contributed major functionality to the <em>Neo</em> package that was lacking in building our acquisition workflow: support for additional formats, functionality for data manipulations, direct links between data and metadata.</li>
+<li>We devise a portable, modular approach for reproducible data and metadata management based on <em>workflow management systems</em> that scales from experimental data acquisition to data and analysis publication. The approach is flexibly adaptable and can be implemented based on generic modules.</li>
 </ul>
 </section><section id="outlook" class="slide level2">
 <h2>Outlook</h2>
+<h3 id="odmltables-1">odMLtables</h3>
+<div style="margin-top:0px;margin-bottom:0px; position:relative; float:left;">
 <ul>
-<li>integration of <em>odMLtables</em> functionality into <em>odML</em> package</li>
-<li>continuation of <em>Neo</em> development for extended support of formats, better user friendliness &amp; improved performance</li>
-<li>implementation of workflows on a larger scale using cluster computing and remote data files</li>
-<li>application of workflow concept in different projects</li>
-<li>integration with larger frameworks, e.g. HBP infrastructures</li>
+<li>integration of <em>odMLtables</em> functionality into <em>odML</em> package
+</div>
+<br><br></li>
+</ul>
+<h3 id="neo">Neo</h3>
+<div style="margin-top:0px;margin-bottom:0px; position:relative; float:left;">
+<ul>
+<li>extended support of formats and improve user friendliness &amp; performance
+</div>
+<br><br></li>
+</ul>
+<h3 id="workflows-1">Workflows</h3>
+<ul>
+<li>application to other collaborative projects</li>
+<li>integration of <strong>systematic version control</strong> mechanisms in workflow (pull-requests)</li>
+<li>support for larger frameworks, e.g. HBP <strong>knowledgegraph</strong></li>
+<li>extension to capture <strong>provenance</strong> information</li>
+<li><strong>parallelization</strong> using cluster computing</li>
+<li>initialization of a community based <strong>collection of general rules</strong> and standardized preprocessing steps, e.g. format conversions and signal quality checks</li>
+<li>embedding in <strong>continuous integration</strong> system
+<ul>
+<li>automated execution upon data or metadata update</li>
+<li>immediate quality control of data (artifact detection)</li>
+</ul></li>
 </ul>
 </section><section id="thank-you" class="slide level2">
 <h2>Thank you!</h2>

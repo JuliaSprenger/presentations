@@ -45,16 +45,16 @@ css: slides.css
   * temperature
   * experimental notes, etc
 
+## Neuroscience today — _Brochier et al. 2018_
+
+  ![](material/scidata_experiment_simple_ext.svg){width=90%}
+
+  >* ~ 5GB data per session (proprietary formats)
+   * ~ 10k metadata values per session (various formats)
+
   . . .
 
-  Additional data modalities
-
-  <div style="margin-left:-600px">
-
-  >* electric activity of neurons
-  * connectivity between cells, etc
-
-  </div>
+  How can we handle such amounts of diverse data and metadata in a reproducible fashion?
 
 ## Growing importance of reproducibility & collaboration
 
@@ -63,6 +63,15 @@ css: slides.css
  ![](material/trends.svg){width=60%}
 
   Figure based on data from [PubMed](https://www.ncbi.nlm.nih.gov/pubmed/) using [Corlan (2004)](http://dan.corlan.net/medline-trend.html).
+
+
+## Challenges for modern neuroscience
+
+  How to devise a general data and metadata management approach to ensure reproducibility of scientific findings?
+
+  - comprehensive metadata collection used by all collaboration members
+  - standardized tools and formats for data and metadata for facilitated access
+  - systematic organization of data and metadata aggregation process
 
 ## Overview — projects & publications
 
@@ -80,22 +89,6 @@ css: slides.css
   - open source, community based Python package
   - standardized representation of electrophysiological data
   - interfacing to numerous proprietary and open source formats
-
-## Neuroscience today — _Brochier et al. 2018_
-
-  ![](material/scidata_experiment_simple.svg){width=70%}
-
-  >* ~ 5GB data per session (proprietary formats)
-   * ~ 10k metadata values per session (various formats)
-
-
-## Requirements for modern neuroscience
-
-There is need for
-
-  - comprehensive metadata organization → odML, *odMLtables*
-  - comprehensive data organization → *Neo*
-  - systematic organization of data & metadata processes → *modular workflow approach*
 
 # Metadata Management
 
@@ -224,7 +217,7 @@ There is need for
     → obscured compilation <br> mechanism
   * requires manual inspection <br> of output for *status tracking*
   * *reuse* in other context requires <br> extended adjustments
-  * *detached* for data and <br> metadata storage
+  * *detached* data and <br> metadata storage
 
 ## Improvement of the metadata concept
 
@@ -316,17 +309,40 @@ There is need for
 
 ## Summary
 
- * Based on our data publication _Brochier et al. 2018_ we identified deficiencies and issues in designing a scalable, portable, generic, rigorous workflow for data and metadata acquisition. Based on this we designed solutions which close these gaps:
-  * By providing _odMLtables_ we facilitate the standardized metadata collection in laboratory environments.
-  * We contributed major functionality to the _Neo_ package that was lacking in building our acquisition workflow.
-  * We devise a portable, modular approach for reproducible data and metadata management based on _workflow management systems_ that scales from experimental data acquisition to data and analysis publication.
+  We provide a solution for reproducible data and metadata collection and processing based on open source tools.
+
+ * Based on our data publication _Brochier et al. 2018_ we identified deficiencies and issues in designing a scalable, portable, generic, rigorous workflow for data and metadata acquisition. We designed solutions which close these gaps:
+  * By providing _odMLtables_ we facilitate the metadata collection in laboratory environments and make the odML standard available to non-programmers, while conserving existing interfaces (spreadsheet software).
+  * We contributed major functionality to the _Neo_ package that was lacking in building our acquisition workflow: support for additional formats, functionality for data manipulations, direct links between data and metadata.
+  * We devise a portable, modular approach for reproducible data and metadata management based on _workflow management systems_ that scales from experimental data acquisition to data and analysis publication. The approach is flexibly adaptable and can be implemented based on generic modules.
+
+
 
 ## Outlook
-  * integration of *odMLtables* functionality into _odML_ package
-  * continuation of *Neo* development for extended support of formats, better user friendliness & improved performance
-  * implementation of workflows on a larger scale using cluster computing and remote data files
-  * application of workflow concept in different projects
-  * integration with larger frameworks, e.g. HBP infrastructures
+
+### odMLtables
+
+<div style="margin-top:0px;margin-bottom:0px; position:relative; float:left;">
+  * integration of *odMLtables* functionality into _odML_ package</div><br><br>
+
+### Neo
+
+<div style="margin-top:0px;margin-bottom:0px; position:relative; float:left;">
+  * extended support of formats and improve user friendliness & performance</div><br><br>
+
+
+### Workflows
+
+  * application to other collaborative projects
+  * integration of **systematic version control** mechanisms in workflow (pull-requests)
+  * support for larger frameworks, e.g. HBP **knowledgegraph**
+  * extension to capture **provenance** information
+  * **parallelization** using cluster computing
+  * initialization of a community based **collection of general rules** and standardized preprocessing steps, e.g. format conversions and signal quality checks
+  * embedding in **continuous integration** system
+    - automated execution upon data or metadata update
+    - immediate quality control of data (artifact detection)
+
 
 ## Thank you!
 
