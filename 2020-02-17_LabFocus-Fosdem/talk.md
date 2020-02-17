@@ -76,12 +76,12 @@ css: slides.css
     - general-purpose tool to manage data across different repos
     - capable of handling large datasets via git-annex
     - provenance tracking & complete decentralization
+
+# Open Research Tools and Technologies (devroom)
   - *Lilly Winfree*  [Frictionless Data for Reproducible Research](https://fosdem.org/2020/schedule/event/open_research_frictionless_data/)
     - metadata aggregation, validation and curation pipelines for oceanographic data
     - [open knowledge foundation](https://okfn.org/)
     - [frictionlessdata](create.frictionlessdata.io) & data validation [goodtables](try.goodtables.io)
-
-# Open Research Tools and Technologies (devroom)
   - *Mateusz Kuzak* [On the road to sustainable research software](https://fosdem.org/2020/schedule/event/open_research_sustainable_soft/)
     - 4OSS simple recommendations (OSS from the beginning)
     - Develop a publicly accessible open-source code from day one.
@@ -89,6 +89,7 @@ css: slides.css
     - Adopt a license and comply with the licence of third-party dependencies.
     - Clear and transparent contribution, governance and communication processes.
 
+# Open Research Tools and Technologies (devroom)
   - *Sébastien Rochette* [Transforming scattered analyses into a documented, reproducible and shareable workflow](https://fosdem.org/2020/schedule/event/open_research_shareable_workflow/)
     - *collaboration fest*, R workshop for supporting software development in the sciences
   - *Emmy Tsang* (Innovation Community Manager eLife) [A community-driven approach towards open innovation for research communication](https://fosdem.org/2020/schedule/event/open_research_elife/)
@@ -104,7 +105,7 @@ css: slides.css
 
 # Notes
   Feedback to [Challenges and opportunities in scientific software development](https://fosdem.org/2020/schedule/event/open_research_science_soft_dev/)
-  
+
   - questions
     - Software carpentry - For general programming skills, not for our particular softwares
     - How to better connect scientists to not duplicate software? - NFDI
