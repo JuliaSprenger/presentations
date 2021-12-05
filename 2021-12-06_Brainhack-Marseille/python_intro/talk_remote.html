@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="dcterms.date" content="2021-12-06">
+  <title>Introduction to Python</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="https://revealjs.com/css/reveal.css">
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <link rel="stylesheet" href="https://revealjs.com/css/theme/black.css" id="theme">
+  <link rel="stylesheet" href="slides.css"/>
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'https://revealjs.com/css/print/pdf.css' : 'https://revealjs.com/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="https://revealjs.com/lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide">
+  <h1 class="title">Introduction to Python <img data-src="material/python.svg" height="80" /></h1>
+  <p class="subtitle"><tiny>Follow the slides at <a href="https://tinyurl.com/BHM-Python">https://tinyurl.com/BHM-Python</a></tiny></p>
+  <p class="author">Brainhack Marseille<br><br>Julia Sprenger<br><br>
+<div style="margin-top:100px; position:relative; float:right;">
+<img data-src="material/INT_logo.png" class="left" width="250" />
+</div>
+<br><br><br></p>
+  <p class="date">6 December 2021</p>
+</section>
+
+<section><section id="why-python" class="title-slide slide level1"><h1>Why Python?</h1></section><section id="why-programming-when-theres-graphical-tools" class="slide level2">
+<h2>Why programming when there’s graphical tools?</h2>
+<ul>
+<li>limitations of graphical user interface</li>
+<li>black-box effect</li>
+</ul>
+</section><section id="but-what-about-excel" class="slide level2">
+<h2>But what about Excel?</h2>
+<ul>
+<li>good for
+<ul>
+<li>office data organization</li>
+<li>simple data manipulation</li>
+<li>quick visualization</li>
+</ul></li>
+<li>not suited for
+<ul>
+<li>reproducible data analysis</li>
+<li>modularization of data, computation and visualization</li>
+<li><em>large</em> datasets</li>
+<li>distributed datasets</li>
+<li>complex computation</li>
+<li>automation of computation and visualization</li>
+<li>sharing of computations</li>
+</ul></li>
+</ul>
+</section><section id="and-matlab" class="slide level2">
+<h2>… and Matlab?</h2>
+<ul>
+<li>Matlab features
+<ul>
+<li>focus on matrix manipulation and program solving related to Linear Algebra</li>
+<li>additional functionality available via <em>Toolboxes</em></li>
+<li>a single integrated development environment</li>
+<li>a single, commercial developer: MathWorks</li>
+<li>requires a licence</li>
+</ul></li>
+<li>Python features
+<ul>
+<li>high level general purpose programming language</li>
+<li>specific functionality available via <em>Packages</em></li>
+<li>diverse fields of application</li>
+<li>community based</li>
+<li>free and open</li>
+<li>very flexible language, ‘easy’ for learning programming</li>
+</ul></li>
+</ul>
+</section><section id="what-is-programming" class="slide level2">
+<h2>What is ‘programming’?</h2>
+<ul>
+<li>providing set of instruction to be executed by the computer</li>
+<li>text file of instructions: script</li>
+<li>scripts can make use of
+<ul>
+<li>basic language inherent commands</li>
+<li>other scripts</li>
+<li>other installed libraries/<em>packages</em>/<em>toolboxes</em></li>
+</ul></li>
+<li>conventional file extensions for storing scripts
+<ul>
+<li>Python <code>.py</code> / Matlab <code>.m</code></li>
+</ul></li>
+<li>scripts are interpreted (/compiled) and executed non interactively</li>
+</ul>
+</section></section>
+<section><section id="the-python-world" class="title-slide slide level1"><h1>The Python World</h1></section><section id="python-on-your-computer" class="slide level2">
+<h2>Python on your computer</h2>
+<p><img data-src="material/python_world_1.svg" /></p>
+<p>Conda: Package, dependency and environment management for any language—Python, R, Ruby, Lua, Scala, Java, JavaScript, C/ C++, FORTRAN, and more.</p>
+<p><a href="https://docs.conda.io">https://docs.conda.io</a></p>
+<p><em>On linux</em> you can check all available Python instances using <code>whereis python</code></p>
+</section><section id="action-install-miniconda-on-your-computer" class="slide level2">
+<h2><em>Action</em> Install (mini)conda on your computer</h2>
+<ul>
+<li>Download the latest miniconda installer from <a href="https://docs.conda.io/en/latest/miniconda.html">https://docs.conda.io/en/latest/miniconda.html</a></li>
+<li>Follow the regular install instructions using the default settings (<a href="https://conda.io/projects/conda/en/latest/user-guide/install/index.html">https://conda.io/projects/conda/en/latest/user-guide/install/index.html</a>)</li>
+<li>Locate Python
+<ul>
+<li>On Windows: Open an Anaconda prompt (<code>Start menu</code> &gt; <code>Anaconda prompt</code>)</li>
+<li>On Linux: Open a terminal</li>
+</ul></li>
+<li>Confirm Python and miniconda packages were successfully installed
+<ul>
+<li>by running <code>conda list</code></li>
+<li>have a ‘(base)’ prefix in your prompt</li>
+</ul></li>
+</ul>
+</section><section id="package-management" class="slide level2">
+<h2>Package Management</h2>
+<p><img data-src="material/conda_install.svg" class="left" style="width:35.0%" /></p>
+<h3 id="conda">Conda</h3>
+<ul>
+<li class="fragment">view installed packages: <code>conda list</code></li>
+<li class="fragment">install package <code>conda install &lt;package_name&gt;</code></li>
+<li class="fragment">use <code>&lt;package_name&gt;==1.0.0</code> to install fix version</li>
+<li class="fragment">conda channels: collection of packages for specific fields</li>
+<li class="fragment">anaconda (default), bioconda, conda-forge, …</li>
+<li class="fragment">specify channel to use via <code>--channel &lt;channel_name&gt;</code></li>
+</ul>
+<div class="fragment">
+<ul>
+<li><strong>general note</strong>: remember to use <code>--help</code> to get an overview of available arguments</li>
+</ul>
+</div>
+</section><section id="python-package-management" class="slide level2">
+<h2>Python Package Management</h2>
+<p><img data-src="material/pip_install.svg" class="left" style="width:50.0%" /></p>
+<h3 id="python-package-index---pypi">Python Package Index - PyPI</h3>
+<p><a href="https://pypi.org/">https://pypi.org/</a></p>
+<ul>
+<li class="fragment">Python packages <strong>only</strong></li>
+<li class="fragment">corresponding package manager: pip</li>
+<li class="fragment">pip itself is a python package</li>
+<li class="fragment">installs on same level as pip</li>
+</ul>
+</section><section id="environments" class="slide level2">
+<h2>Environments</h2>
+<p><img data-src="material/conda_envs.svg" class="left" style="width:50.0%" /></p>
+<ul>
+<li>dedicated package versions</li>
+<li>environment creation:
+<ul>
+<li><code>conda create -n &lt;name&gt; python</code></li>
+</ul></li>
+<li>show existing environments:
+<ul>
+<li><code>conda env list</code></li>
+</ul></li>
+<li>switch / activate an environment
+<ul>
+<li><code>conda activate &lt;name&gt;</code></li>
+</ul></li>
+<li>leave an environment
+<ul>
+<li><code>conda deactivate</code></li>
+</ul></li>
+</ul>
+</section><section id="action-environment-creation" class="slide level2">
+<h2><em>Action</em> Environment creation</h2>
+<ul>
+<li>Create a new environment with python version <code>3.9</code></li>
+<li>use the environment name ‘BHMexercise’</li>
+<li>verify the environment contains <code>pip</code></li>
+<li>use conda to install a package named <code>numpy</code></li>
+<li>use pip to install a package named <code>xlrd</code></li>
+<li>use conda to verify the installation(s)
+<ul>
+<li>is conda aware of pip-installed packages?</li>
+</ul></li>
+</ul>
+</section></section>
+<section><section id="lets-code-python" class="title-slide slide level1"><h1>Let’s code Python</h1></section><section id="action-execution-and-output" class="slide level2">
+<h2><em>Action</em> Execution and output</h2>
+<ul>
+<li>Create a text file <code>my_first_script.py</code></li>
+<li>use your preferred text editor to add the following line</li>
+</ul>
+<pre><code>print(&#39;hello world&#39;)</code></pre>
+<ul>
+<li>save the file</li>
+<li>run <code>python my_first_script.py</code> in your terminal</li>
+</ul>
+<blockquote>
+<p>Numerous Python tutorials exist. This one is heavily inspired by <a href="https://www.learnpython.org/">https://www.learnpython.org/</a>. For more resources on the topic see also <a href="https://wiki.python.org/moin/BeginnersGuide/Programmers">https://wiki.python.org/moin/BeginnersGuide/Programmers</a></p>
+</blockquote>
+</section><section id="variables-and-data-types" class="slide level2">
+<h2>Variables and data types</h2>
+<p>Python can be your calculator!</p>
+<ul>
+<li>replace the content of the print with a simple calculation, e.g. <code>1+3</code>. What happens if you use <code>'1+3'</code> instead?</li>
+</ul>
+<h3 id="basic-data-types">Basic data types</h3>
+<ul>
+<li><code>''</code> indicates a <em>string</em></li>
+<li>Numbers are automatically handles either as <em>integer</em> or <em>float</em> (or <em>complex</em>, e.g. for <code>3+3j</code>)</li>
+<li>True / False values are stored as <em>boolean</em></li>
+<li>To identify which data type is currently used for a variable, use <code>type()</code></li>
+</ul>
+<h3 id="operations">Operations</h3>
+<p>Basic operators</p>
+<ul>
+<li><code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>%</code> (modulo), <code>**</code> (power), <code>//</code> (integer divison) work like a calculator on numbers</li>
+<li>but can also be used with other data types, e.g. <code>'Brainhack' + 'Marseille'</code></li>
+</ul>
+</section><section id="task-explore-data-types" class="slide level2">
+<h2><em>Task</em> Explore data types</h2>
+<ul>
+<li>What happens if you try to add a string and a number?</li>
+<li>Can you multiply a string and an integer?</li>
+<li>Print the result of the <code>1+4</code> calculation with a descriptive text, e.g. <code>The sum of 1 and 4 is '5'</code></li>
+</ul>
+</section><section id="variables" class="slide level2">
+<h2>Variables</h2>
+<p>Define the content of the <code>print()</code> statement in the line and use <code>print()</code> only in the second line. You can assign a value to a variable using the <code>=</code> symbol.</p>
+<ul>
+<li>The value on the right is assigned (stored) in the variable on the left.</li>
+<li><p>You can also assign the result of an operation to a variable</p></li>
+<li><p><em>Task</em>: Try this <code>to_print = 'hello world'</code> and print the content of the variable in the 2nd line of code.</p></li>
+</ul>
+</section><section id="comments" class="slide level2">
+<h2>Comments</h2>
+<p>With a growing number of lines present in your script it is usefull to add some comments explaining what your code is about. You can add comment lines in your script by adding <code>#</code> at the beginning. Python will ignore these lines.</p>
+</section><section id="lists" class="slide level2">
+<h2>Lists</h2>
+<p>A list stores multiple values/elements. The elements can be of different types.</p>
+<p>Use <code>my_list = [1, 2, 3]</code>. You can access the different elements stored in the list via their index. Python uses <strong>0-based</strong> indexing, so the first element in the list can be retrieved via <code>my_list[0]</code>. To get the total number of elements in a list use <code>len()</code>.</p>
+<p>List entries can also be indexed counting from the end of the list. For this use a negative index, e.g. <code>my_list[-1]</code> will give the last element.</p>
+<ul>
+<li><em>Task</em>: Print the type of the list and the 2nd value as well as its type</li>
+</ul>
+</section><section id="modifying-a-list" class="slide level2">
+<h2>Modifying a list</h2>
+<ul>
+<li>You can add a value to a list by using <code>append()</code>. This is a method of the list, so use <code>my_list.append(4)</code></li>
+<li><em>Task</em>: Print the resulting list and confirm it has now 4 elements.</li>
+<li><em>Task</em>: Try to access the individual characters (elements) of a string via the same method. How can you find out the number of elements in a string?</li>
+<li><em>Task</em>: Try to replace the first element of the list by the <code>5</code>.</li>
+</ul>
+</section><section id="loops" class="slide level2">
+<h2>Loops</h2>
+<p>To do an operation with each element of a list, we need to loop over all elements. This can be done using a <code>for</code> loop:</p>
+<pre><code>for elem in my_list:
+    print(elem)</code></pre>
+<p>Here the value assigned to <code>elem</code> changes for each iteration of the loop. The line <code>print(elem)</code> will be called for each element of the <code>my_list</code> list once.</p>
+<p>Note that all lines that you want to loop across need to be indented consistently for Python to recognize them. By convention this indentation should consist of 4 spaces.</p>
+</section><section id="range" class="slide level2">
+<h2>Range</h2>
+<p>If you want to iterate over a range of numbers instead of an existing list, Python provides the <code>range()</code> function.</p>
+<pre><code>for elem in range(3):
+    print(elem)</code></pre>
+<p>Here, range will on the fly generate 3 elements (<code>0</code>, <code>1</code> and <code>2</code>). Note that <code>3</code> is not included here.</p>
+<p><em>Task</em></p>
+<ul>
+<li>Print each element of <code>my_list</code> by using <code>range</code> and accessing the corresponding element of <code>my_list</code> inside of the loop.</li>
+</ul>
+</section><section id="dictionaries" class="slide level2">
+<h2>Dictionaries</h2>
+<p>A dictionary is an data structure complementary to a list. In a dictionary data are stored as a key-value pair. A dictionary is defined via curly braces</p>
+<pre><code>my_dict = {&#39;event&#39;: &#39;Brainhack&#39;, &#39;location&#39;: &#39;Marseille&#39;}</code></pre>
+<p>We can access or set a particular value via its key:</p>
+<pre><code>my_dict[&#39;event&#39;]</code></pre>
+<p><em>Task</em></p>
+<ul>
+<li>Define the dictionary as above. In a separate line of code add a 3rd entry with the key <code>'year'</code> and the value <code>2021</code></li>
+</ul>
+</section><section id="dictionaries---looping" class="slide level2">
+<h2>Dictionaries - looping</h2>
+<p>You can also loop over a dictionary. The element that you loop across is in this case the key.</p>
+<pre><code>for elem in my_dict:
+  print(&#39;My key is &#39; + elem)</code></pre>
+<p>To iterate over keys and values at the same time use the <code>.items()</code> method:</p>
+<pre><code>for key, value in my_dict.items():
+    print(&#39;The value for the key &#39; + key + &#39; is &#39; + value)</code></pre>
+</section><section id="nested-data" class="slide level2">
+<h2>Nested Data</h2>
+<p>Elements of lists or dictionaries can be lists or dictionaries itself.</p>
+<p><em>Task</em></p>
+<ul>
+<li>Create a list that contains 5 dictionaries - one for each of the past Brainhack Marseille events. Use the correct for each event.</li>
+</ul>
+</section><section id="using-packages" class="slide level2">
+<h2>Using packages</h2>
+<p>Thousands of Python packages exist to extend the functions available for your code. The basic ones are already in Python directly.</p>
+<h3 id="imports">Imports</h3>
+<p>To make the functionality of package available within your code you need to import the package. Here we are loading a package for reading data from a comma-separated-values (csv) file:</p>
+<pre><code>import csv</code></pre>
+</section><section id="using-imports" class="slide level2">
+<h2>Using imports</h2>
+<p>Now we can use the csv package to create a reader for a csv file. First we open the file using the Python <code>open()</code> function, then we provide this access to the file to the <code>csv</code> package to read the content of the file.</p>
+<pre><code>import csv
+
+with open(&#39;example.csv&#39;, newline=&#39;&#39;) as f:
+    reader = csv.reader(f)
+    data = list(reader)
+
+print(data)</code></pre>
+<p>To learn about the functionality provided by a package, check the <code>help()</code> or it’s documentation, in this case the <a href="https://docs.python.org/3/library/csv.html">csv documentation</a>.</p>
+<p><em>Task</em></p>
+<ul>
+<li>convert the list of lists that is stored in <code>data</code> into a list of dictionaries, containing a dictionary per person. As keys of the dictionary use the first row (header) of the csv table.</li>
+</ul>
+</section></section>
+<section><section id="next-steps" class="title-slide slide level1"><h1>Next steps</h1></section><section id="easier-coding-with-ides" class="slide level2">
+<h2>Easier coding with IDEs</h2>
+<p>A number of integrated development environments exist. The level of complexity and support can very from basic to fully integrated with other software development tools. Here a list of tools that are commonly used (order by increasing complexity) - <a href="https://jupyter.org/install">Jupyter notebook</a> - <a href="https://docs.spyder-ide.org/current/installation.html">Spyder</a> - <a href="https://code.visualstudio.com">Visual Studio Code</a> - <a href="https://www.jetbrains.com/pycharm/">PyCharm</a></p>
+</section><section id="outlook" class="slide level2">
+<h2>Outlook</h2>
+<p>A lot of Pythons power lies in Packages. For advanced data handling and functionality check out the following packages:</p>
+<ul>
+<li><a href="https://numpy.org/">NumPy</a>: Efficient data representation &amp; computation based on arrays</li>
+<li><a href="https://scipy.org/">SciPy</a>: Scientific Python, builds on NumPy</li>
+<li><a href="https://sympy.org">SymPy</a>: Symbolic Python, algebraic operations</li>
+<li><a href="https://pandas.pydata.org/">Pandas</a> Data manipulation</li>
+</ul>
+</section></section>
+    </div>
+  </div>
+
+  <script src="https://revealjs.com/lib/js/head.min.js"></script>
+  <script src="https://revealjs.com/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Push each slide change to the browser history
+        history: true,
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'https://revealjs.com/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'https://revealjs.com/plugin/zoom-js/zoom.js', async: true },
+          { src: 'https://revealjs.com/plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+    </body>
+</html>
