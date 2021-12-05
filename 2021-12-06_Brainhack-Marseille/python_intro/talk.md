@@ -161,7 +161,7 @@ Python can be your calculator!
 
 - `''` indicates a _string_
 - Numbers are automatically handles either as _integer_ or _float_ (or _complex_, e.g. for `3+3j`)
-- True / False values are stored as _boolean_
+- `True` / `False` values are stored as _boolean_
 - To identify which data type is currently used for a variable, use `type()`
 
 ### Operations
@@ -183,6 +183,13 @@ Define the content of the `print()` statement in the line and use `print()` only
 - You can also assign the result of an operation to a variable
 
 - _Task_: Try this `to_print = 'hello world'` and print the content of the variable in the 2nd line of code.
+
+## Comparison
+
+To compare two values the `==` operation can be used. Both sides will be compared and the result will be a boolean value (`True`/`False`). You can use `not` to invert a boolean value
+
+- _Task_: What is the result for the comparisons of `5==1+4`? Does this change for `5.0==1+4`?
+
 
 ## Comments
 
@@ -232,6 +239,7 @@ Here, range will on the fly generate 3 elements (`0`, `1` and `2`). Note that `3
 _Task_
 
 - Print each element of `my_list` by using `range` and accessing the corresponding element of `my_list` inside of the loop.
+- Range can take multiple arguments: `start`, `stop` and `step`. Can you print only even numbers between 10 and 20?
 
 
 ## Dictionaries
@@ -266,6 +274,17 @@ To iterate over keys and values at the same time use the `.items()` method:
 for key, value in my_dict.items():
     print('The value for the key ' + key + ' is ' + value)
 ```
+
+## Conditions
+
+To execute pieces of code only when specific criteria are met an `if` condition can be used. E.g. to only print even numbers up to 20 you can use
+```
+for i in range(20):
+    if (i % 2)==0:
+      print(i)
+```
+Here the condition `(i % 2)==0` is evaluated to a boolean value (`True`/`False`) and the print is only performed in case of `True`.
+
 
 ## Nested Data
 
