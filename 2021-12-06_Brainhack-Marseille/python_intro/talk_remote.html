@@ -219,7 +219,7 @@
 <ul>
 <li><code>''</code> indicates a <em>string</em></li>
 <li>Numbers are automatically handles either as <em>integer</em> or <em>float</em> (or <em>complex</em>, e.g. for <code>3+3j</code>)</li>
-<li>True / False values are stored as <em>boolean</em></li>
+<li><code>True</code> / <code>False</code> values are stored as <em>boolean</em></li>
 <li>To identify which data type is currently used for a variable, use <code>type()</code></li>
 </ul>
 <h3 id="operations">Operations</h3>
@@ -242,6 +242,12 @@
 <li>The value on the right is assigned (stored) in the variable on the left.</li>
 <li><p>You can also assign the result of an operation to a variable</p></li>
 <li><p><em>Task</em>: Try this <code>to_print = 'hello world'</code> and print the content of the variable in the 2nd line of code.</p></li>
+</ul>
+</section><section id="comparison" class="slide level2">
+<h2>Comparison</h2>
+<p>To compare two values the <code>==</code> operation can be used. Both sides will be compared and the result will be a boolean value (<code>True</code>/<code>False</code>). You can use <code>not</code> to invert a boolean value</p>
+<ul>
+<li><em>Task</em>: What is the result for the comparisons of <code>5==1+4</code>? Does this change for <code>5.0==1+4</code>?</li>
 </ul>
 </section><section id="comments" class="slide level2">
 <h2>Comments</h2>
@@ -278,6 +284,7 @@
 <p><em>Task</em></p>
 <ul>
 <li>Print each element of <code>my_list</code> by using <code>range</code> and accessing the corresponding element of <code>my_list</code> inside of the loop.</li>
+<li>Range can take multiple arguments: <code>start</code>, <code>stop</code> and <code>step</code>. Can you print only even numbers between 10 and 20?</li>
 </ul>
 </section><section id="dictionaries" class="slide level2">
 <h2>Dictionaries</h2>
@@ -297,6 +304,13 @@
 <p>To iterate over keys and values at the same time use the <code>.items()</code> method:</p>
 <pre><code>for key, value in my_dict.items():
     print(&#39;The value for the key &#39; + key + &#39; is &#39; + value)</code></pre>
+</section><section id="conditions" class="slide level2">
+<h2>Conditions</h2>
+<p>To execute pieces of code only when specific criteria are met an <code>if</code> condition can be used. E.g. to only print even numbers up to 20 you can use</p>
+<pre><code>for i in range(20):
+    if (i % 2)==0:
+      print(i)</code></pre>
+<p>Here the condition <code>(i % 2)==0</code> is evaluated to a boolean value (<code>True</code>/<code>False</code>) and the print is only performed in case of <code>True</code>.</p>
 </section><section id="nested-data" class="slide level2">
 <h2>Nested Data</h2>
 <p>Elements of lists or dictionaries can be lists or dictionaries itself.</p>
@@ -338,6 +352,7 @@ print(data)</code></pre>
 <li><a href="https://sympy.org">SymPy</a>: Symbolic Python, algebraic operations</li>
 <li><a href="https://pandas.pydata.org/">Pandas</a> Data manipulation</li>
 </ul>
+<p>This tutorial only covered the very beginning of Python basics. If you want to learn more use one of the numerous Python tutorials online, e.g. <a href="https://www.learnpython.org/">https://www.learnpython.org/</a></p>
 </section></section>
     </div>
   </div>
