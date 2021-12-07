@@ -163,6 +163,7 @@ Python can be your calculator!
 - Numbers are automatically handles either as _integer_ or _float_ (or _complex_, e.g. for `3+3j`)
 - `True` / `False` values are stored as _boolean_
 - To identify which data type is currently used for a variable, use `type()`
+- You can explicitly convert to a data type, e.g. using `str()`, `int()`, `float()` or `bool()`, even though this is considered bad Python style.
 
 ### Operations
 Basic operators
@@ -188,7 +189,7 @@ Define the content of the `print()` statement in the line and use `print()` only
 
 To compare two values the `==` operation can be used. Both sides will be compared and the result will be a boolean value (`True`/`False`). You can use `not` to invert a boolean value
 
-- _Task_: What is the result for the comparisons of `5==1+4`? Does this change for `5.0==1+4`?
+- _Task_: What is the result for the comparisons of `5==1+4`? Does this change for `0.3==0.1+0.1+0.1`?
 
 
 ## Comments
