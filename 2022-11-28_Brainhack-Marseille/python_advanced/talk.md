@@ -100,18 +100,6 @@ print(f"{time=:{width}.{precision}} μs")
 # 'time=4.802e+08 μs'
 ```
 
-## dict
-### Dictionary order is preserved since Python 3.5
-
-```python
-my_dict = {'first': 'A'}
-my_dict['second'] = 'B'
-my_dict['third'] = '3'
-
-print(" ".join(my_dict.keys()))
-# 'A B 3'
-```
-
 ## typing
 ### Defining in and output variable types of functions since Python 3.5
 
@@ -124,7 +112,19 @@ def greeting(name: str) -> str:
 breakpoint() # convenience function to run the Python Debugger (pdb) (python>=3.7)
 ```
 
-argparse
+## argparse
+### define a command line interface for you python scripts
+
+```python
+parser = argparse.ArgumentParser(description='Process some integers.')
+parser.add_argument('integers', metavar='N', type=int, nargs='+',
+                    help='an integer for the accumulator')
+parser.add_argument('--sum', dest='accumulate', action='store_const',
+                    const=sum, default=max,
+                    help='sum the integers (default: find the max)')
+
+args = parser.parse_args()
+```
 
 ## dataclass decorator
 ### Automatically add special (data) methods to your classes since Python 3.7
@@ -254,13 +254,28 @@ import modin.pandas as pd
 ## Know your units
 ### Physical units in Python
 
-- [Quantities](https://python-quantities.readthedocs.io/en/latest/)
 - [Pint](https://pint.readthedocs.io/en/stable/)
+- [Quantities](https://python-quantities.readthedocs.io/en/latest/)
+
+```python
+# start_time_ms = 1
+# time_steps_μs = 1
+# sample_time_1_ms = start_time_ms + time_steps_μs / 1000
+
+import quantities as pq
+start_time = 1 * pq.ms
+time_steps = 1 * pq.us
+sample_time_1 = start_time + time_steps
+# sample_time = 1.001 ms
+```
 
 
 # Tools around Python
 
 ## Profiling
+
+- `timeit` for measuring execution time of small code snippets
+
 - `cprofile` for line-by-line code profiling
 
 ```python
@@ -275,11 +290,11 @@ or as a script
 ```bash
 python -m cProfile [-o output_file] [-s sort_order] (-m module | myscript.py)
 ```
-to be viewed with `pstats`
+output can be managed with `pstats` for custom sorting and filtering
 
 ## More Profiling
 
-profiling visualizer [`runsnakerun`](https://pypi.org/project/RunSnakeRun/)
+profiling visualizer [`runsnakerun`](https://pypi.org/project/RunSnakeRun/) (not maintained?)
 
 profiling to the point: [`kernprof`]() (convenience wrapper of `line_profiler` and `cProfile`)
 
@@ -313,7 +328,8 @@ import gc
 gc.collect()
 ```
 
-## A word of warning
+## Profiling and optimization
+### A word of warning
 
 ![](material/xkcd_1205_is_it_worth_the_time.png)
 
@@ -329,8 +345,9 @@ gc.collect()
 ## Testing
 ### Always be sure your code still works
 
-- [unittest]()
-- [pytest]()
+- [unittest](https://docs.python.org/3/library/unittest.html) Python Core Library for code testing
+- [doctest](https://docs.python.org/3/library/doctest.html#module-doctest) Python Core Library for documentation testing
+- [pytest](https://docs.pytest.org) framework for functional testing
 
 
 ## Easier coding with IDEs
@@ -361,3 +378,23 @@ Python Schools
 
 - [Software Carpentries](https://software-carpentry.org/)
 - [Advanced Scientific Python](https://aspp.school/wiki/), no date yet in 2023
+
+Other resources
+
+- [Scientific Visualization Cookbook](https://github.com/rougier/scientific-visualization-book) Extensive visualization examples using matplotlib ([pdf](https://hal.inria.fr/hal-03427242/document))
+- [Write the docs](https://www.writethedocs.org/) Documentation community
+
+
+# Additional slides
+
+## dict
+### Dictionary order is preserved since Python 3.5
+
+```python
+my_dict = {'first': 'A'}
+my_dict['second'] = 'B'
+my_dict['third'] = '3'
+
+print(" ".join(my_dict.keys()))
+# 'A B 3'
+```
