@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="dcterms.date" content="2022-11-29">
+  <title>Software Tools for (Microelectrode) Electrophysiology and beyond</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="https://revealjs.com/css/reveal.css">
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <link rel="stylesheet" href="https://revealjs.com/css/theme/black.css" id="theme">
+  <link rel="stylesheet" href="slides.css"/>
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'https://revealjs.com/css/print/pdf.css' : 'https://revealjs.com/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="https://revealjs.com/lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide">
+  <h1 class="title">Software Tools for (Microelectrode) Electrophysiology and beyond <img data-src="material/python.svg" height="80" /></h1>
+  <p class="author">Brainhack Marseille<br><br>Julia Sprenger<br><br>
+<div style="margin-top:100px; position:relative; float:right;">
+<img data-src="material/INT_logo.png" class="left" width="220" />
+</div>
+<div style="margin-top:100px; position:relative; float:right;">
+<img data-src="material/logo_brainhack_blanc.jpg" class="left" width="550" />
+</div>
+<br><br><br></p>
+  <p class="date">29 November 2022</p>
+</section>
+
+<section><section id="tools-for-data-and-metadata-organization" class="title-slide slide level1"><h1>Tools for data and metadata organization</h1></section><section id="data-access-standardization-neo" class="slide level2">
+<h2>Data access &amp; standardization: <a href="https://neo.readthedocs.io/en/latest/">Neo</a></h2>
+<ul>
+<li>interfaces with 30+ electrophysiology formats</li>
+<li>recent addition: imagesequence &amp; region of interest representation</li>
+<li>standardized structure for data representation</li>
+</ul>
+<p><img data-src="material/neo_ecosystem.svg" /></p>
+</section><section id="neo-usage-example" class="slide level2">
+<h2>Neo usage example</h2>
+<p>Loading datasets from different formats into same framework</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1"><span class="im">import</span> neo</a>
+<a class="sourceLine" id="cb1-2" title="2"></a>
+<a class="sourceLine" id="cb1-3" title="3">io <span class="op">=</span> neo.get_io(<span class="st">&#39;my_recording_session_path&#39;</span>)</a>
+<a class="sourceLine" id="cb1-4" title="4">block <span class="op">=</span> io.read_block()</a></code></pre></div>
+</section><section id="packaging-and-sharing-data-and-metadata" class="slide level2">
+<h2>Packaging and sharing data and metadata</h2>
+<p>Linking of data and metadata: <a href="https://nixio.readthedocs.io/en/latest/">Neuroscience Information eXchange format</a></p>
+<ul>
+<li>Combines data and metadata (odML format) in a single framework</li>
+<li>Domain independent</li>
+<li>Generic data structure for scientific data</li>
+</ul>
+</section><section id="neurodata-without-border-nwb" class="slide level2">
+<h2>Neurodata Without Border (<a href="www.nwb.org">NWB</a>)</h2>
+<p><img data-src="material/nwb_datatypes_overview.png" /></p>
+</section><section id="spikeinterface" class="slide level2">
+<h2><a href="https://spikeinterface.readthedocs.io">Spikeinterface</a></h2>
+<p>A Python interface to Spike Sorters</p>
+<ul>
+<li>uses Neo to load diversity of data formats</li>
+<li>standardized interface to run sorters, e.g.
+<ul>
+<li>HDSort</li>
+<li>Ironclust</li>
+<li>Kilosort (2, 2.5, 3, pykilosort)</li>
+<li>Klusta</li>
+<li>SpykingCircus</li>
+<li>Tridesclous</li>
+<li>Yass</li>
+</ul></li>
+<li>comes with containerized versions of sorters</li>
+<li>provides utility functions for spike sorting comparison</li>
+</ul>
+</section><section id="elephant" class="slide level2">
+<h2><a href="https://elephant.readthedocs.io">Elephant</a></h2>
+<p><img data-src="material/elephant.png" /></p>
+<ul>
+<li>spike and LFP based analysis of ephys data</li>
+<li>based on Neo, Quantity and Numpy</li>
+<li>contains a number of spike pattern and higher order correlation methods</li>
+<li>[in development] is accompanied by a visualization packages for analysis results: <a href="https://viziphant.readthedocs.io">Viziphant</a></li>
+</ul>
+</section><section id="metadata-organization-open-metadata-markup-language-odml" class="slide level2">
+<h2>Metadata organization: <a href="https://g-node.github.io/python-odml/">open metadata markup language</a> (odML)</h2>
+<p><img data-src="material/odml.svg" class="center" style="width:60.0%" /></p>
+<table>
+<tr>
+<td width="50%">
+<ul>
+<li>hierarchical metadata structure
+<ul>
+<li>generic objects</li>
+<li>human &amp; machine readable</li>
+</ul></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li>limited support for manual interaction
+<ul>
+<li>needs to be generated based <br> on metadata source files &amp; <em>manual notes</em></li>
+</ul>
+</td>
+</table></li>
+</ul>
+</section><section id="coordinating-automatization-snakemake" class="slide level2">
+<h2>Coordinating &amp; automatization: <a href="https://snakemake.readthedocs.io/en/stable/">Snakemake</a></h2>
+<ul>
+<li>Modular workflow for data and metadata organization</li>
+<li>separation of project specific and general processing steps</li>
+<li>reusability of modules</li>
+</ul>
+<p><img data-src="material/rulegraph_colored.svg" class="center" style="width:40.0%" /></p>
+</section></section>
+<section><section id="standardizing-across-projects-and-modalities" class="title-slide slide level1"><h1>Standardizing across projects and modalities</h1></section><section id="brain-imaging-data-structure-bids" class="slide level2">
+<h2>Brain Imaging Data Structure (BIDS)</h2>
+<p><img data-src="material/BIDS_overview.png" /></p>
+<p style="margin-top:1cm;">
+<font color="#808080" size="3">Gau, https://zenodo.org/record/5872274_ </font>
+</p>
+</section><section id="standard-data-representation-bids-ephys" class="slide level2">
+<h2>Standard data representation: <a href="https://bids.neuroimaging.io/bep032">BIDS-ephys</a></h2>
+<ul>
+<li>Extension proposal for BIDS to cover microelectrode electrophysiology data
+<ul>
+<li>Related tools
+<ul>
+<li><a href="https://neo.readthedocs.io/en/latest/">Neo</a></li>
+<li><a href="https://probeinterface.readthedocs.io/en/main/">ProbeInterface</a></li>
+<li><a href="https://github.com/INT-NIT/BEP032tools">BEP032Tools</a> Validation &amp; Generation</li>
+</ul></li>
+</ul></li>
+</ul>
+</section><section id="references" class="slide level2">
+<h2>References</h2>
+<ul>
+<li>Neo, <a href="https://neo.readthedocs.io">https://neo.readthedocs.io</a></li>
+<li>NIX, <a href="https://nixio.readthedocs.io">https://nixio.readthedocs.io</a></li>
+<li>NWB, <a href="https://www.nwb.org/">https://www.nwb.org/</a></li>
+<li>SpikeInterface, <a href="https://spikeinterface.readthedocs.io">https://spikeinterface.readthedocs.io</a></li>
+<li>Elephant, <a href="https://elephant.readthedocs.io">https://elephant.readthedocs.io</a></li>
+<li>odML, <a href="https://g-node.github.io/python-odml">https://g-node.github.io/python-odml</a></li>
+<li>BIDS, <a href="https://bids.neuroimaging.io">https://bids.neuroimaging.io</a></li>
+<li>BIDS-ephys, <a href="https://bids.neuroimaging.io/bep032">https://bids.neuroimaging.io/bep032</a></li>
+<li>Snakemake, <a href="https://snakemake.readthedocs.io">https://snakemake.readthedocs.io</a></li>
+</ul>
+</section></section>
+<section><section id="backup-slides" class="title-slide slide level1"><h1>Backup Slides</h1></section><section id="metadata-collection-odmltables" class="slide level2">
+<h2><img data-src="material/logos/odMLtables.png" class="left" style="width:10.0%" /> </t> Metadata collection: odMLtables</h2>
+<ul>
+<li>conversion between tabular metadata structures and odML</li>
+<li>generic spreadsheet software can be used for metadata collection</li>
+<li><p>additional utility functions</p>
+<p><img data-src="material/odmltables_usage_edit.svg" /></p></li>
+</ul>
+</section><section id="workflow-concept" class="slide level2">
+<h2>Workflow concept</h2>
+<p><img data-src="material/workflow_concept_2.svg" class="left" style="width:30.0%" /></p>
+<ul>
+<li>modular processing steps (rules)
+<ul>
+<li>defined input and output files</li>
+<li>change propagation</li>
+<li>relation tracking &amp; visualization</li>
+</ul></li>
+</ul>
+</section><section id="metadata-management" class="slide level2">
+<h2>Metadata Management</h2>
+</section><section id="open-metadata-markup-language-odml" class="slide level2">
+<h2>open metadata Markup Language — odML</h2>
+<p><img data-src="material/odml.svg" style="width:70.0%" /></p>
+<table>
+<tr>
+<td width="50%">
+<ul>
+<li>hierarchical metadata structure
+<ul>
+<li>generic objects</li>
+<li>human &amp; machine readable</li>
+</ul></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li>limited support for manual interaction
+<ul>
+<li>needs to be generated based <br> on metadata source files &amp; <em>manual notes</em></li>
+</ul>
+</td>
+</table></li>
+</ul>
+</section><section id="odmltables" class="slide level2">
+<h2><img data-src="material/logos/odMLtables.png" class="left" style="width:10.0%" /> </t> odMLtables</h2>
+<ul>
+<li>conversion between tabular metadata structures and odML
+<ul>
+<li>generic spreadsheet software can be used for metadata collection</li>
+<li>additional utility functions</li>
+</ul>
+<img data-src="material/odmltables_usage_edit.svg" /></li>
+</ul>
+</section><section id="graphical-user-interface" class="slide level2">
+<h2>Graphical user interface</h2>
+<p><img data-src="material/Screenshot.png" class="left" style="width:50.0%" /></p>
+<p><br><br></p>
+<ul>
+<li>easy access to the <em>odML</em> format <br> also for non-programmers
+<ul>
+<li>5 main functionalities available <br> as <code>wizard</code> dialogs for step-wise <br> configuration of odMLtables function</li>
+<li>saving of configuration <br> settings for repeated use</li>
+<li><code>wizards</code> are linked in <em>odML-ui</em> <br> for simplified accessiblity</li>
+</ul></li>
+</ul>
+</section><section id="handling-of-electrophysiological-data" class="slide level2">
+<h2>Handling of Electrophysiological Data</h2>
+</section><section id="section" class="slide level2">
+<h2><img data-src="material/logos/neo.svg" style="width:15.0%" /></h2>
+<h3 id="neo-as-interface">Neo as interface</h3>
+<p><img data-src="material/neo_ios_and_tools_0.svg" style="width:42.0%" /></p>
+</section><section id="section-1" class="slide level2">
+<h2><img data-src="material/logos/neo.svg" style="width:15.0%" /></h2>
+<p><img data-src="material/neo_ios_and_tools.svg" class="right" style="width:45.0%" /></p>
+<h3 id="neo-as-interface-1">Neo as interface</h3>
+<p><br> <br></p>
+<ul>
+<li>interface to &gt;30 proprietary <br> &amp; open data formats
+<ul>
+<li>generic, standardized data <br> representation for electrophysiological <br> data</li>
+<li>basis for applications and <br> scripts working on the data</li>
+</ul></li>
+</ul>
+</section><section id="neo-usage-example-1" class="slide level2">
+<h2>Neo usage example</h2>
+<p>Loading datasets from different formats into same framework ```python import neo</p>
+<p>io = neo.get_io(‘my_recording_session_path’) block = io.read_block()</p>
+<p>```</p>
+</section><section id="section-2" class="slide level2">
+<h2><img data-src="material/logos/neo.svg" style="width:15.0%" /></h2>
+<h3 id="neo-as-standardized-data-representation">Neo as standardized data representation</h3>
+<p><img data-src="material/neo_schema.svg" class="right" style="width:50.0%" /></p>
+<h3 id="features">Features</h3>
+<ul>
+<li>object oriented representation
+<ul>
+<li>data objects</li>
+<li>container objects</li>
+<li>generic structure</li>
+<li>support for custom metadata <br> via object names &amp; annotations</li>
+<li>utility functions</li>
+</ul></li>
+</ul>
+</section><section id="improvement-of-the-metadata-concept" class="slide level2">
+<h2>Improvement of the metadata concept</h2>
+<h3 id="solutions-approach">Solutions approach</h3>
+<p><img data-src="material/scidata_odMLgeneration_diagram_ext.png" class="right" style="width:30.0%" /></p>
+<p><strong>Combination of data and metadata in a single framework</strong> <br> → <em>Nix</em> format (<em>Neo</em>) captures data and metadata <br><br><br></p>
+</section><section id="workflow-management-using-snakemake" class="slide level2">
+<h2>Workflow management using snakemake</h2>
+<p>Visualization of snakemake rules <img data-src="material/logos/snakemake.svg" class="left" style="width:4.0%" /> <br><br> <img data-src="material/rulegraph_colored.svg" class="left" style="width:45.0%" /></p>
+</section></section>
+<section><section id="backup-slides-1" class="title-slide slide level1"><h1>Backup slides</h1></section><section id="neo" class="slide level2">
+<h2>neo</h2>
+<h3 id="recent-updates">Recent updates</h3>
+<div style="float: left; margin-left: 55px;">
+<ul>
+<li>data related annotations (array annotations)</li>
+<li>interface to additional formats (neuralynx, nest, blackrock, nix)</li>
+<li>extended utilities (trial based slicing, resampling, …)</li>
+<li>simplification of object structure</li>
+<li>performance improvements and refactoring</li>
+</ul>
+</div>
+</section><section id="workflows-using-snakemake" class="slide level2">
+<h2>Workflows using snakemake</h2>
+<h3 id="from-data-recording-to-reproducible-publications-using-workflows">From data recording to reproducible publications using workflows</h3>
+<p><img data-src="material/global_picture_workflow_2.png" class="left" style="width:45.0%" /></p>
+<ul>
+<li>visualization of dependencies <br> and execution status
+<ul>
+<li>portable and extendable via <br> via modular approach</li>
+<li>combined data &amp; metadata packaging <br> using <em>Nix</em></li>
+<li>enables automatized provenance <br> tracking on file level</li>
+</ul></li>
+</ul>
+<h3 id="advantages">Advantages</h3>
+<ul>
+<li>categorization of rules based <br> on application level
+<ul>
+<li>separation of <em>generic</em> and <br> project specific rules</li>
+<li>parallelization capabilities</li>
+<li>explicit <em>dependency description</em> <br> and visualization</li>
+<li>flexibly <em>extendable</em></li>
+<li>no separation of metadata <br> structure &amp; content</li>
+<li><em>automatic propagation</em> of changes</li>
+</ul></li>
+</ul>
+</section><section id="standardizing-manual-metadata-acquisition" class="slide level2">
+<h2>Standardizing manual metadata acquisition</h2>
+<ul>
+<li><a href="https://github.com/INT-NIT/DigLabTools">DigLabTools</a>
+<ul>
+<li>Simple, digital metadata acquisition via RedCap surveys</li>
+<li>Modular survey generation with templates</li>
+</ul>
+<img data-src="material/DigLabSurvey.png" height="400" /></li>
+</ul>
+</section></section>
+    </div>
+  </div>
+
+  <script src="https://revealjs.com/lib/js/head.min.js"></script>
+  <script src="https://revealjs.com/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Push each slide change to the browser history
+        history: true,
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'https://revealjs.com/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'https://revealjs.com/plugin/zoom-js/zoom.js', async: true },
+          { src: 'https://revealjs.com/plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+    </body>
+</html>
