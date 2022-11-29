@@ -1,6 +1,7 @@
 ---
 author: Brainhack Marseille<br><br>Julia Sprenger<br><br> <div style="margin-top:100px; position:relative; float:right;"> ![](material/INT_logo.png){width=220px .left}</div><div style="margin-top:100px; position:relative; float:right;">![](material/logo_brainhack_blanc.jpg){width=550px .left}</div><br><br><br>
 title: Software Tools for (Microelectrode) Electrophysiology and beyond ![](material/python.svg){height=80px}
+subtitle: <tiny>Follow the slides at [https://tinyurl.com/BHMEphysTools](https://tinyurl.com/BHMEphysTools)</tiny>
 date: 29 November 2022
 css: slides.css
 
