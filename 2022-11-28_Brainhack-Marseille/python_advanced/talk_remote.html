@@ -178,67 +178,69 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h3 id="defining-in-and-output-variable-types-of-functions-since-python-3.5">Defining in and output variable types of functions since Python 3.5</h3>
 <div class="sourceCode" id="cb8"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb8-1" title="1"><span class="kw">def</span> greeting(name: <span class="bu">str</span>) <span class="op">-&gt;</span> <span class="bu">str</span>:</a>
 <a class="sourceLine" id="cb8-2" title="2">    <span class="cf">return</span> <span class="st">&#39;Hello &#39;</span> <span class="op">+</span> name</a></code></pre></div>
-<div class="sourceCode" id="cb9"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb9-1" title="1">breakpoint() <span class="co"># convenience function to run the Python Debugger (pdb) (python&gt;=3.7)</span></a></code></pre></div>
 </section><section id="argparse" class="slide level2">
 <h2>argparse</h2>
 <h3 id="define-a-command-line-interface-for-you-python-scripts">define a command line interface for you python scripts</h3>
-<div class="sourceCode" id="cb10"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb10-1" title="1">parser <span class="op">=</span> argparse.ArgumentParser(description<span class="op">=</span><span class="st">&#39;Process some integers.&#39;</span>)</a>
-<a class="sourceLine" id="cb10-2" title="2">parser.add_argument(<span class="st">&#39;integers&#39;</span>, metavar<span class="op">=</span><span class="st">&#39;N&#39;</span>, <span class="bu">type</span><span class="op">=</span><span class="bu">int</span>, nargs<span class="op">=</span><span class="st">&#39;+&#39;</span>,</a>
-<a class="sourceLine" id="cb10-3" title="3">                    <span class="bu">help</span><span class="op">=</span><span class="st">&#39;an integer for the accumulator&#39;</span>)</a>
-<a class="sourceLine" id="cb10-4" title="4">parser.add_argument(<span class="st">&#39;--sum&#39;</span>, dest<span class="op">=</span><span class="st">&#39;accumulate&#39;</span>, action<span class="op">=</span><span class="st">&#39;store_const&#39;</span>,</a>
-<a class="sourceLine" id="cb10-5" title="5">                    const<span class="op">=</span><span class="bu">sum</span>, default<span class="op">=</span><span class="bu">max</span>,</a>
-<a class="sourceLine" id="cb10-6" title="6">                    <span class="bu">help</span><span class="op">=</span><span class="st">&#39;sum the integers (default: find the max)&#39;</span>)</a>
-<a class="sourceLine" id="cb10-7" title="7"></a>
-<a class="sourceLine" id="cb10-8" title="8">args <span class="op">=</span> parser.parse_args()</a></code></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb9-1" title="1">parser <span class="op">=</span> argparse.ArgumentParser(description<span class="op">=</span><span class="st">&#39;Process some integers.&#39;</span>)</a>
+<a class="sourceLine" id="cb9-2" title="2">parser.add_argument(<span class="st">&#39;integers&#39;</span>, metavar<span class="op">=</span><span class="st">&#39;N&#39;</span>, <span class="bu">type</span><span class="op">=</span><span class="bu">int</span>, nargs<span class="op">=</span><span class="st">&#39;+&#39;</span>,</a>
+<a class="sourceLine" id="cb9-3" title="3">                    <span class="bu">help</span><span class="op">=</span><span class="st">&#39;an integer for the accumulator&#39;</span>)</a>
+<a class="sourceLine" id="cb9-4" title="4">parser.add_argument(<span class="st">&#39;--sum&#39;</span>, dest<span class="op">=</span><span class="st">&#39;accumulate&#39;</span>, action<span class="op">=</span><span class="st">&#39;store_const&#39;</span>,</a>
+<a class="sourceLine" id="cb9-5" title="5">                    const<span class="op">=</span><span class="bu">sum</span>, default<span class="op">=</span><span class="bu">max</span>,</a>
+<a class="sourceLine" id="cb9-6" title="6">                    <span class="bu">help</span><span class="op">=</span><span class="st">&#39;sum the integers (default: find the max)&#39;</span>)</a>
+<a class="sourceLine" id="cb9-7" title="7"></a>
+<a class="sourceLine" id="cb9-8" title="8">args <span class="op">=</span> parser.parse_args()</a></code></pre></div>
 </section><section id="dataclass-decorator" class="slide level2">
 <h2>dataclass decorator</h2>
 <h3 id="automatically-add-special-data-methods-to-your-classes-since-python-3.7">Automatically add special (data) methods to your classes since Python 3.7</h3>
-<div class="sourceCode" id="cb11"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb11-1" title="1"><span class="im">from</span> dataclasses <span class="im">import</span> dataclass</a>
-<a class="sourceLine" id="cb11-2" title="2"></a>
-<a class="sourceLine" id="cb11-3" title="3"><span class="at">@dataclass</span></a>
-<a class="sourceLine" id="cb11-4" title="4"><span class="kw">class</span> InventoryItem:</a>
-<a class="sourceLine" id="cb11-5" title="5">    <span class="co">&quot;&quot;&quot;Class for keeping track of an item in inventory.&quot;&quot;&quot;</span></a>
-<a class="sourceLine" id="cb11-6" title="6">    name: <span class="bu">str</span></a>
-<a class="sourceLine" id="cb11-7" title="7">    unit_price: <span class="bu">float</span></a>
-<a class="sourceLine" id="cb11-8" title="8">    quantity_on_hand: <span class="bu">int</span> <span class="op">=</span> <span class="dv">0</span></a>
-<a class="sourceLine" id="cb11-9" title="9"></a>
-<a class="sourceLine" id="cb11-10" title="10">    <span class="kw">def</span> total_cost(<span class="va">self</span>) <span class="op">-&gt;</span> <span class="bu">float</span>:</a>
-<a class="sourceLine" id="cb11-11" title="11">        <span class="cf">return</span> <span class="va">self</span>.unit_price <span class="op">*</span> <span class="va">self</span>.quantity_on_hand</a></code></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb10-1" title="1"><span class="im">from</span> dataclasses <span class="im">import</span> dataclass</a>
+<a class="sourceLine" id="cb10-2" title="2"></a>
+<a class="sourceLine" id="cb10-3" title="3"><span class="at">@dataclass</span></a>
+<a class="sourceLine" id="cb10-4" title="4"><span class="kw">class</span> InventoryItem:</a>
+<a class="sourceLine" id="cb10-5" title="5">    <span class="co">&quot;&quot;&quot;Class for keeping track of an item in inventory.&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb10-6" title="6">    name: <span class="bu">str</span></a>
+<a class="sourceLine" id="cb10-7" title="7">    unit_price: <span class="bu">float</span></a>
+<a class="sourceLine" id="cb10-8" title="8">    quantity_on_hand: <span class="bu">int</span> <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb10-9" title="9"></a>
+<a class="sourceLine" id="cb10-10" title="10">    <span class="kw">def</span> total_cost(<span class="va">self</span>) <span class="op">-&gt;</span> <span class="bu">float</span>:</a>
+<a class="sourceLine" id="cb10-11" title="11">        <span class="cf">return</span> <span class="va">self</span>.unit_price <span class="op">*</span> <span class="va">self</span>.quantity_on_hand</a></code></pre></div>
 <p>This will automatically add special methods as <code>__init__()</code> and <code>__repr__()</code> to the class, e.g. like</p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb12-1" title="1"><span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, name: <span class="bu">str</span>, unit_price: <span class="bu">float</span>, quantity_on_hand: <span class="bu">int</span> <span class="op">=</span> <span class="dv">0</span>):</a>
-<a class="sourceLine" id="cb12-2" title="2">    <span class="va">self</span>.name <span class="op">=</span> name</a>
-<a class="sourceLine" id="cb12-3" title="3">    <span class="va">self</span>.unit_price <span class="op">=</span> unit_price</a>
-<a class="sourceLine" id="cb12-4" title="4">    <span class="va">self</span>.quantity_on_hand <span class="op">=</span> quantity_on_hand</a></code></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb11-1" title="1"><span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, name: <span class="bu">str</span>, unit_price: <span class="bu">float</span>, quantity_on_hand: <span class="bu">int</span> <span class="op">=</span> <span class="dv">0</span>):</a>
+<a class="sourceLine" id="cb11-2" title="2">    <span class="va">self</span>.name <span class="op">=</span> name</a>
+<a class="sourceLine" id="cb11-3" title="3">    <span class="va">self</span>.unit_price <span class="op">=</span> unit_price</a>
+<a class="sourceLine" id="cb11-4" title="4">    <span class="va">self</span>.quantity_on_hand <span class="op">=</span> quantity_on_hand</a></code></pre></div>
 </section><section id="assignment-expressions" class="slide level2">
 <h2>Assignment Expressions</h2>
 <h3 id="the-walrus-operator-since-python-3.8">The walrus operator := (since Python 3.8)</h3>
 <p>assigning variables on the fly</p>
-<div class="sourceCode" id="cb13"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb13-1" title="1"><span class="cf">if</span> (n :<span class="op">=</span> <span class="bu">len</span>(a)) <span class="op">&gt;</span> <span class="dv">10</span>:</a>
-<a class="sourceLine" id="cb13-2" title="2">    <span class="bu">print</span>(<span class="ss">f&quot;List is too long (</span><span class="sc">{n}</span><span class="ss"> elements, expected &lt;= 10)&quot;</span>)</a></code></pre></div>
-<div class="sourceCode" id="cb14"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb14-1" title="1"><span class="co"># Loop over fixed length blocks</span></a>
-<a class="sourceLine" id="cb14-2" title="2"><span class="cf">while</span> (block :<span class="op">=</span> f.read(<span class="dv">256</span>)) <span class="op">!=</span> <span class="st">&#39;&#39;</span>:</a>
-<a class="sourceLine" id="cb14-3" title="3">    process(block)</a></code></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb12-1" title="1"><span class="cf">if</span> (n :<span class="op">=</span> <span class="bu">len</span>(a)) <span class="op">&gt;</span> <span class="dv">10</span>:</a>
+<a class="sourceLine" id="cb12-2" title="2">    <span class="bu">print</span>(<span class="ss">f&quot;List is too long (</span><span class="sc">{n}</span><span class="ss"> elements, expected &lt;= 10)&quot;</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb13-1" title="1"><span class="co"># Loop over fixed length blocks</span></a>
+<a class="sourceLine" id="cb13-2" title="2"><span class="cf">while</span> (block :<span class="op">=</span> f.read(<span class="dv">256</span>)) <span class="op">!=</span> <span class="st">&#39;&#39;</span>:</a>
+<a class="sourceLine" id="cb13-3" title="3">    process(block)</a></code></pre></div>
 <p><strong>Try to limit use of the walrus operator to clean cases that reduce complexity and improve readability.</strong></p>
 </section><section id="positional-only-arguments" class="slide level2">
 <h2>Positional Only Arguments</h2>
 <h3 id="detailed-args-and-kwargs-specifications">Detailed *args and **kwargs specifications</h3>
-<div class="sourceCode" id="cb15"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb15-1" title="1"><span class="kw">def</span> my_func(a, b, <span class="op">**</span>kwargs):</a>
-<a class="sourceLine" id="cb15-2" title="2">  <span class="cf">pass</span></a></code></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb14-1" title="1"><span class="kw">def</span> my_func(a, b, <span class="op">**</span>kwargs):</a>
+<a class="sourceLine" id="cb14-2" title="2">  <span class="cf">pass</span></a></code></pre></div>
 <p>Here, <code>kwargs</code> can not contain the keys ‘a’ and ‘b’ as this would cause a <code>TypeError: my_func() got multiple values for argument 'a'</code> error.</p>
 <p>New parameter syntax with <code>/</code> and <code>*</code> separates position-only arguments, mixed arguments, and keyword-only arguments.</p>
-<div class="sourceCode" id="cb16"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb16-1" title="1"><span class="kw">def</span> my_func(a, b, <span class="op">/</span>, c, d, <span class="op">*</span>, e, f)</a></code></pre></div>
+<div class="sourceCode" id="cb15"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb15-1" title="1"><span class="kw">def</span> my_func(a, b, <span class="op">/</span>, c, d, <span class="op">*</span>, e, f)</a></code></pre></div>
 </section><section id="structural-pattern-matching" class="slide level2">
 <h2>Structural Pattern Matching</h2>
 <h3 id="switch-cases-for-python-since-python-3.10"><code>switch</code> cases for Python (since Python 3.10)</h3>
-<div class="sourceCode" id="cb17"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb17-1" title="1">match subject:</a>
-<a class="sourceLine" id="cb17-2" title="2">    case <span class="op">&lt;</span>pattern_1<span class="op">&gt;</span>:</a>
-<a class="sourceLine" id="cb17-3" title="3">        <span class="op">&lt;</span>action_1<span class="op">&gt;</span></a>
-<a class="sourceLine" id="cb17-4" title="4">    case <span class="op">&lt;</span>pattern_2<span class="op">&gt;</span> <span class="op">|</span> <span class="op">&lt;</span>pattern_3<span class="op">&gt;</span>:</a>
-<a class="sourceLine" id="cb17-5" title="5">        <span class="op">&lt;</span>action_2<span class="op">&gt;</span></a>
-<a class="sourceLine" id="cb17-6" title="6">    case <span class="op">&lt;</span>pattern_4<span class="op">&gt;</span>:</a>
-<a class="sourceLine" id="cb17-7" title="7">        <span class="op">&lt;</span>action_3<span class="op">&gt;</span></a>
-<a class="sourceLine" id="cb17-8" title="8">    case _:</a>
-<a class="sourceLine" id="cb17-9" title="9">        <span class="op">&lt;</span>action_wildcard<span class="op">&gt;</span></a></code></pre></div>
+<div class="sourceCode" id="cb16"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb16-1" title="1">match subject:</a>
+<a class="sourceLine" id="cb16-2" title="2">    case <span class="op">&lt;</span>pattern_1<span class="op">&gt;</span>:</a>
+<a class="sourceLine" id="cb16-3" title="3">        <span class="op">&lt;</span>action_1<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb16-4" title="4">    case <span class="op">&lt;</span>pattern_2<span class="op">&gt;</span> <span class="op">|</span> <span class="op">&lt;</span>pattern_3<span class="op">&gt;</span>:</a>
+<a class="sourceLine" id="cb16-5" title="5">        <span class="op">&lt;</span>action_2<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb16-6" title="6">    case <span class="op">&lt;</span>pattern_4<span class="op">&gt;</span>:</a>
+<a class="sourceLine" id="cb16-7" title="7">        <span class="op">&lt;</span>action_3<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb16-8" title="8">    case _:</a>
+<a class="sourceLine" id="cb16-9" title="9">        <span class="op">&lt;</span>action_wildcard<span class="op">&gt;</span></a></code></pre></div>
+</section><section id="other-new-python-features" class="slide level2">
+<h2>Other new Python features</h2>
+<div class="sourceCode" id="cb17"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb17-1" title="1">breakpoint() <span class="co"># convenience function to run the Python Debugger (pdb) (python&gt;=3.7)</span></a></code></pre></div>
 </section><section id="useful-object-representations" class="slide level2">
 <h2>Useful object representations</h2>
 <p>Implement <code>__repr__()</code> for classes to get a print that is optimized for readability also check <code>pprint.pprint</code> for nicer prints of python objects</p>
@@ -287,7 +289,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>multi-threaded implementation of pandas</li>
 <li>avoids pandas <code>out of memory</code> issues for larger datasets</li>
 <li>can use different backends: python, dask, ray</li>
-<li>easy to test</li>
+<li>easy to switch to:</li>
 </ul>
 <div class="sourceCode" id="cb18"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb18-1" title="1"><span class="co"># import pandas as pd</span></a>
 <a class="sourceLine" id="cb18-2" title="2"><span class="im">import</span> modin.pandas <span class="im">as</span> pd</a></code></pre></div>

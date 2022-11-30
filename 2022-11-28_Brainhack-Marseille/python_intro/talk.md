@@ -258,7 +258,7 @@ my_dict['event']
 
 _Task_
 
-- Define the dictionary as above. In a separate line of code add a 3rd entry with the key `'year'` and the value `2021`
+- Define the dictionary as above. In a separate line of code add a 3rd entry with the key `'year'` and the value `2022`
 
 ## Dictionaries - looping
 
@@ -293,7 +293,7 @@ Elements of lists or dictionaries can be lists or dictionaries itself.
 
 _Task_
 
-- Create a list that contains 5 dictionaries - one for each of the past Brainhack Marseille events. Use the correct for each event.
+- Create a list that contains 5 dictionaries - one for each of the past Brainhack Marseille events. Use the correct year for each event.
 
 
 ## Using packages

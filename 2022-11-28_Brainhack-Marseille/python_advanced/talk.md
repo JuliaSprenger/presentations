@@ -108,10 +108,6 @@ def greeting(name: str) -> str:
     return 'Hello ' + name
 ```
 
-```python
-breakpoint() # convenience function to run the Python Debugger (pdb) (python>=3.7)
-```
-
 ## argparse
 ### define a command line interface for you python scripts
 
@@ -198,6 +194,12 @@ match subject:
         <action_wildcard>
 ```
 
+## Other new Python features
+
+```python
+breakpoint() # convenience function to run the Python Debugger (pdb) (python>=3.7)
+```
+
 ## Useful object representations
 Implement ```__repr__()``` for classes to get a print that is optimized for readability
 also check `pprint.pprint` for nicer prints of python objects
@@ -244,7 +246,7 @@ Great for ...
 - multi-threaded implementation of pandas
 - avoids pandas `out of memory` issues for larger datasets
 - can use different backends: python, dask, ray
-- easy to test
+- easy to switch to:
 
 ```python
 # import pandas as pd
