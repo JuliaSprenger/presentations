@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <title>PyConDE &amp; PyData Berlin 2023</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../../reveal.js/css/reveal.css">
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <link rel="stylesheet" href="../../reveal.js/css/theme/black.css" id="theme">
+  <link rel="stylesheet" href="slides.css"/>
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? '../../reveal.js/css/print/pdf.css' : '../../reveal.js/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="../../reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide">
+  <h1 class="title">PyConDE &amp; PyData Berlin 2023</h1>
+  <p class="author"><div style="margin-top:100px; position:relative; float:center;">
+<img data-src="material/PyConDe.jpg" class="center" height="400" />
+</div></p>
+  <p class="date">17 - 19 April 2023</p>
+</section>
+
+<section><section id="conference-concept" class="title-slide slide level1"><h1>Conference concept</h1></section><section id="section" class="slide level2">
+<h2></h2>
+<p><img data-src="material/pycon_venue.jpg" /></p>
+</section><section id="in-numbers" class="slide level2">
+<h2>In Numbers</h2>
+<ul>
+<li>1 venue (Berlin Congress Center)</li>
+<li>2 session flavours: PyData &amp; PyCon</li>
+<li>3 days</li>
+<li>4 keynote presentations</li>
+<li>5 presentation rooms, 2 workshop rooms</li>
+<li>~1700 participants</li>
+<li>100% international, English, inclusive &amp; vegetarian</li>
+</ul>
+</section><section id="conference-setup" class="slide level2">
+<h2>Conference setup</h2>
+<ul>
+<li>hybrid participation via Discord</li>
+<li>questions / polls via Slido</li>
+<li>no posters!</li>
+</ul>
+</section></section>
+<section><section id="news-from-major-python-packages" class="title-slide slide level1"><h1>News from major Python packages</h1></section><section id="pandas-2.0-released-3rd-of-april-2023" class="slide level2">
+<h2><a href="https://pretalx.com/pyconde-pydata-berlin-2023/talk/DB3KC7/">Pandas 2.0</a> (released 3rd of April 2023)</h2>
+<ul>
+<li>Memory management improvement: adding consistency and performance
+<ul>
+<li><code>in-place</code> argument will be deprecated</li>
+<li>Pandas operations will use views of data unless shared memory is changed, this will trigger a copy of the data</li>
+<li>new behaviour can be already tested via opt-in setting: <code>pd.options.mode.copy-on-write</code></li>
+<li>see also <a href="https://jorisvandenbossche.github.io/blog/2022/04/07/pandas-copy-views/">this</a> blogpost</li>
+</ul></li>
+</ul>
+</section><section id="jupyterlab" class="slide level2">
+<h2>JupyterLab</h2>
+<ul>
+<li>A server-free way of running notebooks directly in the browser is in development: <a href="https://pretalx.com/pyconde-pydata-berlin-2023/talk/FZY9VV/">JupyterLite</a></li>
+<li>No need for mybinder for demonstration notebooks.</li>
+<li><p>Limited resources (browser limitation)</p></li>
+<li><a href="https://voila.readthedocs.io/en/stable/">Voilà</a> for rendering Jupyter Notebooks into interactive widgets</li>
+<li><p><a href="https://pypi.org/project/voici/">Voici</a> for rendering Jupyter Notebooks into <em>self-contained</em> interactive widgets</p></li>
+</ul>
+</section></section>
+<section><section id="packages-on-the-rise" class="title-slide slide level1"><h1>Packages on the rise</h1></section><section id="apache-arrow" class="slide level2">
+<h2><a href="https://pretalx.com/pyconde-pydata-berlin-2023/talk/H7ZCWK/">Apache Arrow</a></h2>
+<p><strong>language-independent columnar memory format for flat and hierarchical data, organized for efficient analytic operations</strong></p>
+<ul>
+<li>pyarrow implementation integrates with <a href="https://arrow.apache.org/docs/python/numpy.html">Numpy</a> and <a href="https://arrow.apache.org/docs/python/pandas.html">Pandas</a></li>
+<li><a href="https://jorisvandenbossche.github.io/talks/2023_PyDataBerlin_Arrow">Original slides</a></li>
+</ul>
+</section><section id="polars" class="slide level2">
+<h2><a href="https://www.pola.rs/">Polars</a></h2>
+<ul>
+<li>fast DataFrame library</li>
+<li>can handle datasets larger than working memory</li>
+<li>supports Apache Arrow data types</li>
+</ul>
+</section><section id="pydantic" class="slide level2">
+<h2><a href="https://pydantic.dev/">PyDantic</a></h2>
+<ul>
+<li>validate input data by using Python classes</li>
+</ul>
+</section><section id="ecosystem-news" class="slide level2">
+<h2>Ecosystem news</h2>
+<ul>
+<li><a href="https://pretalx.com/pyconde-pydata-berlin-2023/talk/VBP3PE/">Overview of Python package tools</a>: Rising project management tool: <a href="https://hatch.pypa.io">hatch</a></li>
+<li><a href="https://pypi.org/project/memray/">MemRay</a>: very fast Python memory profiler</li>
+<li><a href="https://docs.python.org/3/library/typing.html">Typing</a>: Converging type hint styles between Python Scala 3 &amp; Rust</li>
+<li><a href="https://toml.io/en/">TOML files</a>: Converging package configuration scheme between many languages: Go, Scala, ….</li>
+<li><a href="https://mamba.readthedocs.io/en/latest/user_guide/micromamba.html">MicroMamba</a> light weight, fast anaconda environment resolution &amp; package installation</li>
+</ul>
+</section><section id="discoveries" class="slide level2">
+<h2>Discoveries</h2>
+<h3 id="events">Events</h3>
+<ul>
+<li><a href="https://pyladies.com/">PyLadies</a>:
+<ul>
+<li>global organization with regional chapters</li>
+<li>organizes workshops and meetups</li>
+<li>closest chapter: <a href="https://pyladies.com/locations/paris/">Paris</a></li>
+</ul></li>
+<li><a href="https://barcamps.eu/pyr2023/">Python Camps</a>
+<ul>
+<li>unconference-style coding camps for any level of Python expertise</li>
+</ul></li>
+<li><a href="https://en.wikipedia.org/wiki/Mob_programming">MobProgramming</a>
+<ul>
+<li>pair programming advanced</li>
+<li>very fast paced, role switching every 2-5 minutes</li>
+</ul></li>
+</ul>
+</section><section id="complete-material" class="slide level2">
+<h2>Complete Material</h2>
+<ul>
+<li>All conference sessions in the official <a href="https://pretalx.com/pyconde-pydata-berlin-2023/schedule/">schedule</a></li>
+<li>All talks are recorded and will be soon available on the <a href="https://www.youtube.com/user/PyConDE">PyConDE youtube channel</a></li>
+</ul>
+</section></section>
+    </div>
+  </div>
+
+  <script src="../../reveal.js/lib/js/head.min.js"></script>
+  <script src="../../reveal.js/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Push each slide change to the browser history
+        history: true,
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: '../../reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '../../reveal.js/plugin/zoom-js/zoom.js', async: true },
+          { src: '../../reveal.js/plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+    </body>
+</html>
