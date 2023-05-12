@@ -74,6 +74,7 @@ __language-independent columnar memory format for flat and hierarchical data, or
 - [Typing](https://docs.python.org/3/library/typing.html): Converging type hint styles between Python Scala 3 & Rust
 - [TOML files](https://toml.io/en/): Converging package configuration scheme between many languages: Go, Scala, ....
 - [MicroMamba](https://mamba.readthedocs.io/en/latest/user_guide/micromamba.html) light weight, fast anaconda environment resolution & package installation
+- [Orange](https://orangedatamining.com/) Visual programming for analysis and visualization
 
 
 ## Discoveries
