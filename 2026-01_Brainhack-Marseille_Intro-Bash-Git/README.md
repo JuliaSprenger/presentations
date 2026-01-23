@@ -39,7 +39,7 @@ Follow the install instructions to set up the [Bash Shell](https://carpentries.g
     - `git push` put my changes in the server repository
    
   What does Github add?
-  - `issues` discuss ideas around a project, see e.g. [Brainhack Publication](https://github.com/brainhackorg/brainhack_jupyter_book/issues)
+  - `issues` discuss ideas around a project, see e.g. [BHM project suggestions](https://github.com/Brainhack-Marseille/brainhack-marseille.github.io/issues) or discussion around the [Brainhack Publication](https://github.com/brainhackorg/brainhack_jupyter_book/issues)
   - `pull requests` suggest concrete changes to a project and review them, see e.g [Brainhack Publication](https://github.com/brainhackorg/brainhack_jupyter_book/pulls)
   - `CI/CID` automation features, e.g. to run tests, validate formats, build packages
   - `forks` create a copy of a repository in your personal Github space
