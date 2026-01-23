@@ -33,10 +33,16 @@ Follow the install instructions to set up the [Bash Shell](https://carpentries.g
   - collaborating with oneself
     - `git branch -v` what alternative timelines exist?
     - `git checkout -b <branch_name>` start an alternative timeline
-  - collaborating with others
+  - collaborating with others, e.g. via github.com or gitlab.com
     - `git clone` get local copy of a repository on a server
     - `git pull` update local repository version
     - `git push` put my changes in the server repository
+   
+  What does Github add?
+  - `issues` discuss ideas around a project, see e.g. [Brainhack Publication](https://github.com/brainhackorg/brainhack_jupyter_book/issues)
+  - `pull requests` suggest concrete changes to a project and review them, see e.g [Brainhack Publication](https://github.com/brainhackorg/brainhack_jupyter_book/pulls)
+  - `CI/CID` automation features, e.g. to run tests, validate formats, build packages
+  - `forks` create a copy of a repository in your personal Github space
   
 
 
