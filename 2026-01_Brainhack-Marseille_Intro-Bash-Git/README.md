@@ -1,24 +1,30 @@
-# Introduction to Bash and Git
+# Introduction to Github and Git
 _Brainhack Marseille, 27th January 2026, 12h00-13h00_
 
-This type-along introduction to Bash and Git will strongly rely on the Carpentries courses [Introduction to Unix Shell](https://swcarpentry.github.io/shell-novice/) and [Introduction to Git](https://swcarpentry.github.io/git-novice/). We will cover basics of both courses, but don't have enough time to go into detail. Please use this session to get started working through the course material independently.
+This type-along introduction to Github and Git will strongly rely on the Carpentries courses [Introduction to Unix Shell](https://swcarpentry.github.io/shell-novice/) and [Introduction to Git](https://swcarpentry.github.io/git-novice/). We will cover basics of both courses, but don't have enough time to go into detail. Please use this session to get started working through the course material independently.
 
 ## How to prepare
 Follow the install instructions to set up the [Bash Shell](https://carpentries.github.io/workshop-template/install_instructions/#the-bash-shell) and [Git](https://carpentries.github.io/workshop-template/install_instructions/#git-1) on your system. For the use of github.com, please don't forget to bring your mobile phone (or any other 2nd factor), so you can log in to github.
 
+**Alternatives to proprietary Authentication applications:** [AlternativeTo:Authenticater](https://alternativeto.net/category/security/authenticator-app)
+
 ## Keypoints scheduled
-- What is a shell and how to open it? What is a directory?
-- Why did the slashes flip? Windows vs Unix standards.
-- Essential Bash commands & tools
-  - `pw` - print working directory
-  - `ls` - list directory content
-  - `cd` - change directory
-  - `~` - going home
-  - `cat` - print file content
-  - `nano` editing text files in the terminal
-  
+- What is Github used for? How does it relate to Git?
+
+### Github
+- Creation of Github account & 2FA setup
+- The Github webinterface
+  - `issues` - communication around your project
+  - `fork` - your personal copy of a project
+  - webinterface: single file editor
+  - `pull requests` - contribute to the *official* (upstream) project version
+
+### Git
 - Why version control? Unlimited time travel!
+- Install [Git](https://carpentries.github.io/workshop-template/install_instructions/#git-1)
+- Get a local copy of a repository, e.g. [BHM-Recipes](https://github.com/JuliaSprenger/BHM-Recipes) via `git clone https://github.com/JuliaSprenger/BHM-Recipes.git`
 - Setup `git`
+  - setup Personal Access Token (PAT) at Github _Settings > Developer Settings > Personal Access Token_ with `repo` permissions
   - user data (`git config --global user.name "My Name"`, `git config --global user.email "mycontact@email.com`)
   - default editor (`git config --global core.editor "nano -w"`)
   - default branch (`git config --global init.defaultBranch main`)
@@ -37,12 +43,21 @@ Follow the install instructions to set up the [Bash Shell](https://carpentries.g
     - `git clone` get local copy of a repository on a server
     - `git pull` update local repository version
     - `git push` put my changes in the server repository
-   
-  What does Github add?
-  - `issues` discuss ideas around a project, see e.g. [BHM project suggestions](https://github.com/Brainhack-Marseille/brainhack-marseille.github.io/issues) or discussion around the [Brainhack Publication](https://github.com/brainhackorg/brainhack_jupyter_book/issues)
-  - `pull requests` suggest concrete changes to a project and review them, see e.g [Brainhack Publication](https://github.com/brainhackorg/brainhack_jupyter_book/pulls)
-  - `CI/CID` automation features, e.g. to run tests, validate formats, build packages
-  - `forks` create a copy of a repository in your personal Github space
+
+### Unix Shell (Bash)
+- What is a shell and how to open it? What is a directory?
+- Why did the slashes flip? Windows vs Unix standards.
+- Essential Bash commands & tools
+  - `pw` - print working directory
+  - `ls` - list directory content
+  - `cd` - change directory
+  - `~` - going home
+  - `cat` - print file content
+  - `nano` editing text files in the terminal
+  
+
+ ## Outlooks
+ To go deeper into the topics of Git and Gitlab (and other software related topics), find a suitable [Carpentries event](https://carpentries.org/workshops/upcoming-workshops/) or [host one at your institute or online](https://carpentries.org/workshops/host-workshop/). The Carpentries will help you to find tutors for the topics you would like to have taught.
   
 
 
